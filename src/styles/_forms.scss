@@ -1,0 +1,19 @@
+.mailSubscribe {
+    width: 60%;
+    max-width: 500px;
+
+    label {
+        font-size: 0.9em;
+        color: $blue3;
+        margin-left: 5px;
+    }
+
+    input[type=text], input[type=email] {
+        border: 2px solid $blue1;
+        border-radius: 2px;
+        width: 100%;
+        margin: 5px 0 15px 0;
+        padding: 10px;
+        font-size: 1em;
+    }
+}

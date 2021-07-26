@@ -1,6 +1,10 @@
+require("dotenv").config({
+  path: '.env.${process.env.NODE_ENV}',
+})
+
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://brolgadigital.com.au",
     title: "Brolga Design",
   },
   plugins: [
@@ -9,7 +13,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: "278830719",
+        trackingId: "G-VFZCRFC58Q",
       },
     },
     "gatsby-plugin-react-helmet",
@@ -17,7 +21,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "src/images/brolga-red-01.png",
       },
     },
     "gatsby-plugin-sharp",
@@ -30,5 +34,7 @@ module.exports = {
       },
       __key: "images",
     },
+    "react-feather",
+    "react-slideshow-image",
   ],
 };

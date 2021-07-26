@@ -1,0 +1,26 @@
+.homepage {
+    background-color: $red;
+    background-color: #bf3c43;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+
+    .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: auto;
+        z-index: 5;
+    }
+}
+
+.home-gallery {
+    filter: blur(3px);
+    mix-blend-mode: multiply;
+
+}

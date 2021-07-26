@@ -1,0 +1,36 @@
+.faqs {
+    display: grid;
+    grid-gap: 10px 10px;
+    overflow: visible;
+    grid-template-columns: 1fr 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.question {
+    border: solid 2px $blue2;
+    border-radius: 2px;
+    padding: 15px;
+
+    h4 {
+        font-weight: 400;
+    }
+
+    p {
+        display: none;
+    }
+
+    &:hover {
+        background-color: $blue1;
+        cursor: pointer;
+    }
+}
+
+.openQ {
+    grid-row: span 3;
+
+    p {
+        display: inline;
+    }
+}
