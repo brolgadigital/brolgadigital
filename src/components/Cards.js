@@ -18,8 +18,8 @@ export default function Cards(props) {
             </div>
             <p>Prices from ${props.price}, get started with a free 30 minute consult</p>
             
-            <Button text='Book Now'/>
-            <Button text='Learn More' class='tinyButton' />
+            <Button text='Book Now' to={props.book}/>
+            <Button text='Learn More' class='tinyButton' to={props.info}/>
             
         </div>
     )
@@ -30,4 +30,6 @@ Cards.defaultProps = {
     desc: 'Duis suscipit purus vitae lectus pharetra egestas. Mauris auctor pulvinar nibh, sed pellentesque dolor imperdiet quis. Aenean finibus commodo orci, ac blandit mauris ultrices quis',
     price: '200',
     details: ['weekly backups', 'domain and hosting', 'basic email support'],
+    book: '',
+    info: '/packages',
 }

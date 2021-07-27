@@ -3,13 +3,19 @@ import Layout from '../components/Layout'
 import { StaticImage } from 'gatsby-plugin-image'
 import { Fade } from 'react-slideshow-image'
 import 'react-slideshow-image/dist/styles.css'
+import Button from '../components/Button'
 
 export default function index() {
   return (
     <>
       <Layout>
         <div className='homepage'>
-          <StaticImage class='logo' src='../images/bd-text-paleblue-01.png' alt='Brolga Digital' loading='eager'/>
+          <div className='titles'>
+            <StaticImage class='logo' src='../images/bd-text-paleblue-01.png' alt='Brolga Digital' loading='eager'/>
+            <h2>Hire a Digital Manager</h2>
+            <p>For a fraction of the price</p>
+            <Button text='Find Out How' to='/subscriptions'/>
+          </div>
           <div className='slide-container'>
             <Fade {...fadeProperties}>
             

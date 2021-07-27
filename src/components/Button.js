@@ -9,12 +9,13 @@ export default function Button(props) {
     }
 
     return (
-        <div className={classes}>
+        <a className={classes} href={props.to}>
             <p>{props.text}</p>
-        </div>
+        </a>
     )
 }
 
 Button.defaultProps = {
     text: 'Learn More',
+    to: '',
 }
