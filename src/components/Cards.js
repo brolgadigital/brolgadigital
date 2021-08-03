@@ -9,8 +9,10 @@ export default function Cards(props) {
 
     return (
         <div className={props.message ? 'card sale' : 'card'} data-content={props.message}>
-            <h3>{props.title}</h3>
-            <hr></hr>
+            <div>
+                <h3>{props.title}</h3>
+                <hr></hr>
+            </div>
             <div className='details'>
                 <p>{props.desc}</p>
                 <h3>Includes:</h3>

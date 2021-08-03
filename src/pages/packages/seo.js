@@ -6,7 +6,7 @@ export default function seo() {
     return (
         <>
         <Layout>
-            <Headers subtitle='' title=''/>
+            <Headers subtitle='Get found online with' title='SEO and Performance Boosting'/>
 
         </Layout>   
         </>

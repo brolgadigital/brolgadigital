@@ -21,19 +21,23 @@ export default function index() {
                 <Cards 
                     title='Social Media Marketing and Advertising'
                     desc='Develop a marketing plan that attracts your customers and feels right for your brand'
+                    info='/packages/marketing'
                 />
                 <Cards
                     title='Branding Refresher'
                     desc='Overhaul your branding and get a fresh new face for your business'
+                    info='/packages/branding'
                 />
                 <Cards
                     message='Covid Sale!'
                     title='Website Overhaul'
                     desc="Need an online shop? Membership area? We'll help you upgrade your existing site with new features"
+                    info='/packages/webdev'
                 />
                 <Cards
                     title='SEO and Performance Optimisation'
                     desc='Update your website with the latest white-hat SEO to boost your search engine rankings'
+                    info='/packages/seo'
                 />
             </div>
             <Headers subtitle='Make it your own with' title='DIY Templates and Instructionals'/>
