@@ -1,6 +1,6 @@
 .cardwrapper {
     margin-top: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -13,15 +13,13 @@
 
 .card {
     background-color: $blue1;
-    padding: 15px;
-    padding-top: 20px;
+    padding: 20px;
     margin-right: 2.5%;
     border-radius: 2px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
     flex: 1;
 
     &:last-of-type {
@@ -41,6 +39,15 @@
         background: $red;
         margin: 15px 0 15px 0;
         margin-right: calc(100% - 30px);
+    }
+
+    svg {
+        stroke: $blue2;
+        margin-bottom: 10px;
+    }
+
+    .button {
+        margin: 30px 0 15px 0;
     }
 
     &>.details {
@@ -112,10 +119,10 @@
 
 @media (max-width: 900px) {
     .card {
-        width: 48%;
+        flex: 1 1 48%;
         margin-bottom: 4%;
 
-        &:nth-of-type(odd) {
+        &:nth-of-type(even) {
             margin-right: 0;
         }
     }
