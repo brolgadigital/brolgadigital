@@ -5,7 +5,7 @@ import * as Icon from 'react-feather'
 
 
 export default function Cards(props) {
-    const iconSvg = {'search': <Icon.Search />, 'layout': <Icon.Layout />, 'clipboard': <Icon.Clipboard />, 'brand': <Icon.Loader />};
+    const iconSvg = {'search': <Icon.Search />, 'layout': <Icon.Layout />, 'clipboard': <Icon.Clipboard />, 'brand': <Icon.Loader />, 'gift': <Icon.Gift />};
     // const listItems = props.details.map((detail, index) => <li key={index}>{detail}</li>);
 
     return (
@@ -18,7 +18,7 @@ export default function Cards(props) {
             <p>{props.desc}</p>
             {/* <p>Starting from ${props.price}</p> */}
             
-            <Button text='Learn More' class='tinyButton' to={props.info}/>
+            {props.info ? <Button text='Learn More' class='tinyButton' to={props.info}/> : <></>}
         </div>
     )
 }
@@ -29,5 +29,4 @@ Cards.defaultProps = {
     price: '200',
     icon: '',
     book: '',
-    info: '/packages',
 }

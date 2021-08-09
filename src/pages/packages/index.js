@@ -16,14 +16,9 @@ export default function index() {
                 <div className='card'>
                     <p className='last'>Just getting started, needing a complete overhaul or just wanting to start afresh? We're here for whatever your business needs.</p>
                     
-                    <h3>How The Complete Design Package Works</h3>
-                    <div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
                     
-                    <Button text='Learn More' class='tinyButton' to=''/>
+                    
+                    <Button text='Learn More' class='tinyButton' to='packages/the-works'/>
                 </div>
             </div>
 
