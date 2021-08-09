@@ -4,7 +4,7 @@ import Layout from '../../components/Layout'
 import Headers from '../../components/Headers'
 import Cards from '../../components/Cards'
 import Button from '../../components/Button'
-import * as Icon from 'react-feather'
+// import * as Icon from 'react-feather'
 
 export default function index() {
   return (
@@ -15,7 +15,6 @@ export default function index() {
             <div className='cardwrapper'>
                 <div className='card'>
                     <p className='last'>Just getting started, needing a complete overhaul or just wanting to start afresh? We're here for whatever your business needs.</p>
-                    
                     
                     
                     <Button text='Learn More' class='tinyButton' to='packages/the-works'/>
