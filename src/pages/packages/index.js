@@ -45,7 +45,7 @@ export default function index() {
                 <Cards
                     title='SEO and Performance Optimisation'
                     icon='search'
-                    desc='Update your website with the latest white-hat SEO to boost your search engine rankings'
+                    desc='Update your website with the latest white-hat Search Engine Optomisation (SEO) to boost your search engine rankings'
                     info='/packages/seo'
                 />
             </div>
