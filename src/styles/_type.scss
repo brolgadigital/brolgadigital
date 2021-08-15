@@ -2,6 +2,16 @@ b {
     color: $blue3;
 }
 
+a {
+    color: $blue2;
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover {
+        color: $red;
+    }
+}
+
 .button {
     display: inline-block;
     border: 2px solid $blue2;

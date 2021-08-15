@@ -61,7 +61,7 @@ export default function index() {
                     />
                 </div>
 
-                <p>We also promise not to build a something complicated and then abandon you when it gets hard. Check out our <Link to='../subscriptions'>ongoing subscriptions</Link> for more information on how we can support you long term.</p>
+                <p className='last'>We also promise not to build a something complicated and then abandon you when it gets hard. Check out our <Link to='../subscriptions'>ongoing subscriptions</Link> for more information on how we can support you long term.</p>
 
                 <Faqs />
 
