@@ -75,6 +75,18 @@ a {
     }
 }
 
+#brolga-email {
+    font-size: 1em;
+    background-color: inherit;
+    color: $blue2;
+    font-weight: 500;
+
+    &:hover {
+        color: $red;
+        cursor: pointer;
+    }
+}
+
 .content {
     &> p {
         width: 60%;
