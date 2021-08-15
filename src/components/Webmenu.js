@@ -18,10 +18,10 @@ export default function Webmenu() {
             </ul>
 
             <div className="psudoFooter">
-                <p>info@brolgadigital.com.au</p>
+                <p>hello@brolgadigital.com.au</p>
                 <ul>
                     <li><a href="https://instagram.com/brolgadigital" title="Instagram" aria-label="Instagram"><Icon.Instagram /></a></li>
-                    <li><a href="https://www.linkedin.com/in/shelley-bassett/" title="Facebook" aria-label="Facebook"><Icon.Facebook /></a></li>
+                    <li><a href="https://www.facebook.com/brolgadigital" title="Facebook" aria-label="Facebook"><Icon.Facebook /></a></li>
                     <li><Link to='/faqs' title="FAQ's" aria-label="FAQ's"><Icon.HelpCircle /></Link></li>
                 </ul>
             </div>
