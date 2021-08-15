@@ -12,7 +12,7 @@ export default function subscriptions() {
       <Headers subtitle='What makes Brolga Digital Different?' title='Ongoing Support Subscriptions' />
       
       <p>It seems like subscription services are everywhere. Streaming, mail boxes, food... We get it. We also know that a lot of these stemmed from the tech industry, where renewing domains and hosting has been standard practice for a long time.</p>
-      <p>Ongoing support with Brolga Design is simple. You own everything. We just manage it. From creating backups to scheduling social media posts, we can handle it for you. We aim to take the stress out of online content by consolodating all your online marketing activities and managing them on your behalf.</p>
+      <p>Ongoing support with Brolga Digital is simple. You own everything. We just manage it. From creating backups to scheduling social media posts, we can handle it for you. We aim to take the stress out of online content by consolodating all your online marketing activities and managing them on your behalf.</p>
       <p>Unlike a hosting provider or scheduling service, you don't need to log into anything. <b>Just shoot us an email and we'll get to work for you.</b> And for our premium customers, we'll have a monthly video call to check in with what exactly you need from us.</p>
 
       
