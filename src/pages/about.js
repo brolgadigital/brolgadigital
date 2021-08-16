@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import Headers from '../components/Headers'
-import Faqs from '../components/FAQ'
+import { Link } from 'gatsby'
 
 export default function about() {
   return (
@@ -18,6 +18,8 @@ export default function about() {
         {/* <Headers subtitle="Who's working for you?" title='Meet Our Team' />
         <h3>Shelley Bassett</h3>
         <h4>Owner, Lead Designer</h4> */}
+
+        <p className='last'>Still have questions? Check out our <Link to='/faqs'>FAQ's</Link></p>
 
       </Layout>
     </div>
