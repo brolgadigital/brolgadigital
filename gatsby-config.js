@@ -10,6 +10,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     url: config.siteUrl,
+    siteUrl: config.siteUrl,
     title: config.siteTitle,
     twitterHandle: config.twitterHandle,
     description: config.siteDescription,
