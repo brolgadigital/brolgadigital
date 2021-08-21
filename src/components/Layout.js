@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import {graphql, useStaticQuery} from 'gatsby'
 import Webmenu from '../components/Webmenu'
+import Mobilemenu from '../components/Mobilemenu'
 import config from '../../brolga-config'
 
 export default function Layout({children}) {
@@ -41,7 +42,14 @@ export default function Layout({children}) {
         <noscript>This site runs best with JavaScript enabled.</noscript>
       </Helmet>
 
-      <Webmenu />
+      <div className="sidemenu">
+        <Webmenu />
+      </div>
+
+      
+        <Mobilemenu />
+      
+
       <div className="content">{children}</div>
     </div>
   )

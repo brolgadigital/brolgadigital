@@ -6,7 +6,7 @@ import '../styles/style.scss'
 
 export default function Webmenu() {
     return (
-        <div className="sidemenu">
+        <>
             <Link to='/'><StaticImage src='../images/bd-text-paleblue-01.png' alt='Brolga Digital' loading='eager'/></Link>
             <ul className="navigation">
                 <li><Link to='/packages' activeClassName="currentPage">Packages</Link></li>
@@ -25,6 +25,6 @@ export default function Webmenu() {
                     <li><Link to='/faqs' title="FAQ's" aria-label="FAQ's"><Icon.HelpCircle /></Link></li>
                 </ul>
             </div>
-        </div>
+        </>
     )
 }

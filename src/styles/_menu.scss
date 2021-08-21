@@ -1,9 +1,53 @@
 .layout {
-
     .content {
         position: relative;
         padding: 30px 45px;
         margin-left: 200px;
+        z-index: -1;
+    }
+}
+
+.navigation {
+    list-style: none;
+
+    li {
+        display: block;
+        margin: 30px 0;
+        text-align: center;
+
+        a {
+            color: $blue1;
+            text-decoration: none;
+        }
+
+        .currentPage {
+            font-weight: 600;
+        }
+    }
+}
+
+.psudoFooter {
+    color: $blue4;
+    text-align: center;
+    font-size: 0.9em;
+
+    ul {
+        list-style: none;
+        margin-top: 10px;
+
+        li {
+            display: inline;
+            margin: 5px;
+
+            a {
+                color: $blue4;
+            }
+
+            svg {
+                stroke-width: 1.5px;
+                height: 18px;
+            }
+        }
     }
 }
 
@@ -19,48 +63,74 @@
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
+}
 
-    .navigation {
-        list-style: none;
+.topmenu {
+    position: fixed;
+    background-color: $blue3;
+    width: 100%;
+    height: 60px;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 2;
+    padding: 10px 30px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 
-        li {
-            display: block;
-            margin: 30px 0;
-            text-align: center;
+    .homebutton {
+        width: 100px;
+        display: inline-block;
+    }
+    
+    .drawer {
+        display: inline;
+    }
 
-            a {
-                color: $blue1;
-                text-decoration: none;
-            }
+    #menu, #close {
+        float: right;
+        cursor: pointer;
+        padding-top: 8px;
+        background: inherit;
 
-            .currentPage {
-                font-weight: 600;
-            }
+        svg {
+            stroke: $blue1;
         }
     }
 
-    .psudoFooter {
-        color: $blue4;
-        text-align: center;
-        font-size: 0.9em;
+    #menu {
+        display: inline;
+    }
 
-        ul {
-            list-style: none;
-            margin-top: 10px;
+    #close {
+        display: none;
+    }
 
-            li {
-                display: inline;
-                margin: 5px;
+    .navigation, .psudoFooter {
+        display: none;
+    }
 
-                a {
-                    color: $blue4;
-                }
+    img {
+        height: 100%;
+        width: auto;
+    }
+}
 
-                svg {
-                    stroke-width: 1.5px;
-                    height: 18px;
-                }
-            }
+@media(max-width: 600px) {
+    .topmenu {
+        display: flex;
+    }
+    .sidemenu {
+        display: none;
+    }
+
+    .layout {
+        .content {
+            position: relative;
+            padding: 50px 45px;
+            margin-left: 0;
+            margin-top: 60px;
         }
     }
 }
