@@ -64,5 +64,25 @@ module.exports = {
     },
     "react-feather",
     "react-slideshow-image",
+    {
+      resolve: 'gatsby-plugin-google-gtag',
+      options: {
+        trackingIds: [
+          "G-VFZCRFC58Q",
+          // "AW-CONVERSION_ID", 
+          // "DC-FLOODIGHT_ID", 
+        ],
+        gtagConfig: {
+          optimize_id: "OPT_CONTAINER_ID",
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        pluginConfig: {
+          head: true,
+          respectDNT: true,
+          exclude: ["/preview/**", "/do-not-track/me/too/"],
+        },
+      },
+    },
   ],
 };

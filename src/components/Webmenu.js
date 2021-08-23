@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { OutboundLink } from 'gatsby-plugin-google-gtag'
 import { StaticImage } from 'gatsby-plugin-image'
 import * as Icon from 'react-feather'
 import '../styles/style.scss'
@@ -20,8 +21,8 @@ export default function Webmenu() {
             <div className="psudoFooter">
                 <p>hello@brolgadigital.com.au</p>
                 <ul>
-                    <li><a href="https://instagram.com/brolgadigital" title="Instagram" aria-label="Instagram"><Icon.Instagram /></a></li>
-                    <li><a href="https://www.facebook.com/brolgadigital" title="Facebook" aria-label="Facebook"><Icon.Facebook /></a></li>
+                    <li><OutboundLink href="https://instagram.com/brolgadigital" title="Instagram" aria-label="Instagram"><Icon.Instagram /></OutboundLink></li>
+                    <li><OutboundLink href="https://www.facebook.com/brolgadigital" title="Facebook" aria-label="Facebook"><Icon.Facebook /></OutboundLink></li>
                     <li><Link to='/faqs' title="FAQ's" aria-label="FAQ's"><Icon.HelpCircle /></Link></li>
                 </ul>
             </div>
