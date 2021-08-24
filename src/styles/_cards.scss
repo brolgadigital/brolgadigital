@@ -117,6 +117,33 @@
     }
 }
 
+.project-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-right: 0;
+    margin-bottom: 30px;
+
+    .project-outline {
+        flex-basis: 30%;
+
+        p {
+            margin-bottom: 40px;
+        }
+
+        a {
+            display: block;
+            margin: 12px 0;
+    
+            svg {
+                width: 20px;
+                margin: 0 10px -5px 0;
+            }
+        }
+    }
+}
+
 @media (max-width: 900px) {
     .card {
         flex: 1 1 48%;
