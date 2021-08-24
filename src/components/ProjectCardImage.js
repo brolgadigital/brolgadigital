@@ -27,8 +27,8 @@ const ProjectCardImage = (props) => {
   
   if (useImage) { 
     const imageData = useImage.node.childImageSharp.gatsbyImageData
-    return ( <GatsbyImage image={imageData} className={props.class} alt='' /> )
+    return ( <GatsbyImage image={imageData} className='project-image' alt='' /> )
   }
-  return (null)
+  else { return (null) }
 }
 export default ProjectCardImage

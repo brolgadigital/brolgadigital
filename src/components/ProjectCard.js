@@ -6,7 +6,7 @@ import * as Icon from 'react-feather'
 
 export default function ProjectCard(props) {
     return (
-        <div className=' card project-card'>
+        <div className='card project-card'>
             <ProjectCardImage imageName={props.image} />
 
             <div className='project-outline'>
