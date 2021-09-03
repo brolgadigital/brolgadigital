@@ -2,6 +2,8 @@ import React from 'react'
 import Layout from '../../components/Layout'
 import Headers from '../../components/Headers'
 import ProjectCard from '../../components/ProjectCard'
+import { OutboundLink } from 'gatsby-plugin-google-gtag'
+import * as Icon from 'react-feather'
 
 export default function index() {
   return (
@@ -22,6 +24,11 @@ export default function index() {
           image='LMD Screen Mockups'
           website='https://localminidigger.com.au'
         />
+
+        <div>
+          <OutboundLink href="https://instagram.com/brolgadigital" className='button' title="Instagram" aria-label="Instagram"><Icon.Instagram /> See More On Instagram</OutboundLink>
+          <OutboundLink href="https://dribbble.com/brolgadigital" className='button' title="Dribbble" aria-label="Dribbble"><Icon.Dribbble /> See More On Dribbble</OutboundLink>
+        </div>
 
       </Layout>
     </div>
