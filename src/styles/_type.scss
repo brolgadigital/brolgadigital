@@ -28,6 +28,17 @@ a {
         cursor: pointer;
         background-color: $blue2;
         color: $blue1;
+
+        svg {
+            stroke: $blue1;
+        }
+    }
+
+    svg {
+        stroke: $blue3;
+        height: 1.1em;
+        margin-bottom: -3px;
+        margin-left: -5px;
     }
 
     &:first-of-type {
