@@ -29,9 +29,10 @@ $barlow: 'Barlow Condensed', sans-serif;
 
 // Imports
 @import '_menu.scss';
-@import './homepage';
+@import '_homepage';
 @import '_heading.scss';
 @import '_cards.scss';
 @import '_type.scss';
 @import '_forms.scss';
 @import '_faqs.scss';
+@import '_content.scss';
