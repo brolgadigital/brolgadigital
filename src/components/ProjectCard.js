@@ -14,7 +14,7 @@ export default function ProjectCard(props) {
                     <hr></hr>
                 <p>{props.desc}</p>
 
-                <Link to='/'><Icon.CheckCircle />How We Helped</Link>
+                <Link to={props.case}><Icon.CheckCircle />How We Helped</Link>
                 <OutboundLink href={props.website}><Icon.ExternalLink />View Live Project</OutboundLink>
             </div>
             

@@ -66,7 +66,7 @@ export default function joannebingham() {
             </div>
 
             <h2>Ongoing Support</h2>
-            <p>With no web maanagement experience, Joanne asked that we provide maintenance and hosting for her website. We also included weekly backups, just in case she made an error editing and wanted to roll back.</p>
+            <p>With no web management experience, Joanne asked that we provide maintenance and hosting for her website. We also included weekly backups, just in case she made an error editing and wanted to roll back.</p>
             <h2>Adding a shop</h2>
             <p>About one year after the intial website rebuild, Joanne requested a custom homepage for her shopfront. She had begun making earrings, and also wanted to sell these in the same online shop. Because we already had strong visual rules for her website, desiging a building a new shopfront was a quick task. We also provided Joanne with some additional training on adding multiple types of products into the same WooCommerce shop.</p>
             <div className='portfolio-image'>
@@ -78,7 +78,7 @@ export default function joannebingham() {
             <p>Joanne started with a website that wasn't working for her, and no brand presence or cohesion. If you're in a similar spot, we can help! Read more about our <Link to='../../packages'>design packages</Link> or book a free consultation today.</p>
 
             <h2>From Joanne</h2>
-            <p className='last'>I'd love to put a short quote from Jo here</p>
+            <p className='last'>Shelley from Brolga Digital designed and built a beautiful, easy to navigate website to showcase and sell my work.  She listened, and incorporated or improved my ideas and suggestions and I am delighted with the results, and the ongoing help and support.</p>
             <OutboundLink href="https://joannebingham.com/" className='button' title="Joanne Bingham Animal Artist" aria-label="Joanne Bingham Animal Artist"><Icon.Instagram /> Joanne's Website</OutboundLink>
             <OutboundLink href="https://www.instagram.com/jo_bingham_animal_artist/" className='button' title="Instagram" aria-label="Instagram"><Icon.Instagram /> Joanne's Instagram</OutboundLink>
 
