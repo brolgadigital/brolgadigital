@@ -1,4 +1,4 @@
-name: Rebuild on Publish
+name: Rebuild
 
 # workflow triggers
 on:
