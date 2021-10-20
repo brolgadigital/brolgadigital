@@ -1,11 +1,11 @@
 backend:
-  name: git-gateway # For GitHub
+  name: github # For GitHub
   repo: brolgadigital/brolgadigital
   branch: main # Branch to update (optional; defaults to master)
   api_root: https://api.github.com
   base_url: https://brolgadigital-cms.herokuapp.com/
-  auth_endpoint: api/auth
-# publish_mode: editorial_workflow
+  auth_endpoint: auth
+publish_mode: editorial_workflow
 media_folder: static/images/uploads
 public_folder: /assets
 collections:
