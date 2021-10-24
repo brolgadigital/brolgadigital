@@ -34,6 +34,8 @@ jobs:
     steps:      
       - uses: actions/checkout@v2
         with:
+          persist-credentials: false
+          fetch-depth: 0
           token: ${{ secrets.PAT }}
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
