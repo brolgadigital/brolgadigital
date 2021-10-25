@@ -5,15 +5,6 @@ import ProjectCard from '../../components/ProjectCard'
 import { OutboundLink } from 'gatsby-plugin-google-gtag'
 import * as Icon from 'react-feather'
 
-
-import CMS from 'netlify-cms-app'
-// Initialize the CMS object
-CMS.init()
-// Now the registry is available via the CMS object.
-CMS.registerPreviewTemplate('my-template', MyTemplate)
-
-
-
 export default function index() {
   return (
     <div>

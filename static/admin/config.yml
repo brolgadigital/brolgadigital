@@ -3,15 +3,21 @@ backend:
   branch: main
   repo: brolgadigital/brolgadigital
   base_url: https://brolgadigital-cms.herokuapp.com/
-publish_mode: editorial_workflow
+  commit_messages:
+    create: 'Created {{collection}} “{{slug}}”'
+    update: 'Updated {{collection}} “{{slug}}”'
+    delete: 'Deleted {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] Uploaded “{{path}}”'
+    deleteMedia: '[skip ci] Deleted “{{path}}”'
+
 media_folder: static/images/uploads
 public_folder: /assets
+
 collections:
   - name: blog
     label: Blog
-    folder: blog
+    folder: content/blog
     create: true
-    slug: '{{slug}}'
     fields:
       - { name: path, label: Path }
       - { name: layout, label: Layout, widget: hidden, default: blog }
@@ -21,9 +27,8 @@ collections:
       - { name: thumbnail, label: Featured Image, widget: image, required: false }
   - name: portfolio
     label: Portfolio
-    folder: portfolio
+    folder: content/portfolio
     create: true
-    slug: '{{slug}}'
     fields:
       - { name: path, label: Path }
       - { name: layout, label: Layout, widget: hidden, default: blog }
