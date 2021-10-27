@@ -13,25 +13,36 @@ backend:
 media_folder: static/images/uploads
 public_folder: /assets
 
+site_url: https://brolgadigital.com.au
+display_url: https://brolgadigital.com.au
+
 collections:
   - name: blog
+    identifier_field: name
     label: Blog
     folder: content/blog
     create: true
+    slug: '{{fields.path}}'
+    preview_path: 'blog/{{fields.path}}'
+    path: 'blog/{{fields.path}}'
     fields:
+      - { name: "templateKey", label: "Template Key", widget: "hidden", default: "blog" }
       - { name: path, label: Path }
-      - { name: layout, label: Layout, widget: hidden, default: blog }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title, widget: string }
       - { name: body, label: Body, widget: markdown }
       - { name: thumbnail, label: Featured Image, widget: image, required: false }
   - name: portfolio
+    identifier_field: name
     label: Portfolio
     folder: content/portfolio
     create: true
+    slug: '{{fields.path}}'
+    preview_path: 'portfolio/{{fields.path}}'
+    path: 'portfolio/{{fields.path}}'
     fields:
+      - { name: "templateKey", label: "Template Key", widget: "hidden", default: "portfolio" }
       - { name: path, label: Path }
-      - { name: layout, label: Layout, widget: hidden, default: blog }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title, widget: string }
       - { name: body, label: Body, widget: markdown }

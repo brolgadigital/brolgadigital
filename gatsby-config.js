@@ -36,6 +36,38 @@ module.exports = {
     },
   },
   plugins: [
+    {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+            name: `blog`,
+            path: `${__dirname}/content/blog`,
+        },
+        __key: "blog",
+    },
+    {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+            name: `portfolio`,
+            path: `${__dirname}/content/portfolio`,
+        },
+        __key: "portfolio",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: "./src/images/",
+      },
+      __key: "images",
+    },
+    {
+        resolve: `gatsby-transformer-remark`,
+        options: {
+          footnotes: true,
+          gfm: true,
+          plugins: [],
+        },
+    },
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
@@ -56,13 +88,27 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "images",
-        path: "./src/images/",
+        resolve: `gatsby-transformer-remark`,
+        options: {
+          plugins: [
+            {
+              resolve: `gatsby-remark-images`,
+              options: {
+                maxWidth: 630,
+              },
+            },
+            {
+              resolve: `gatsby-remark-responsive-iframe`,
+              options: {
+                wrapperStyle: `margin-bottom: 1.0725rem`,
+              },
+            },
+            `gatsby-remark-prismjs`,
+            `gatsby-remark-copy-linked-files`,
+            `gatsby-remark-smartypants`,
+          ],
+        },
       },
-      __key: "images",
-    },
     "react-feather",
     "react-slideshow-image",
     {
