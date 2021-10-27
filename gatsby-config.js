@@ -60,27 +60,11 @@ module.exports = {
       },
       __key: "images",
     },
-    "gatsby-plugin-netlify-cms",
-    "gatsby-plugin-sass",
-    "gatsby-plugin-image",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "G-VFZCRFC58Q",
-      },
-    },
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        icon: "src/images/brolga-red-01.png",
-      },
-    },
+
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
-        resolve: `gatsby-transformer-remark`,
+        resolve: 'gatsby-transformer-remark',
         options: {
           plugins: [
             'gatsby-remark-relative-images',
@@ -102,6 +86,25 @@ module.exports = {
           ],
         },
       },
+
+    "gatsby-plugin-netlify-cms",
+    "gatsby-plugin-sass",
+    "gatsby-plugin-image",
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "G-VFZCRFC58Q",
+      },
+    },
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/brolga-red-01.png",
+      },
+    },
+    
     "react-feather",
     "react-slideshow-image",
     {
