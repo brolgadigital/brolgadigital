@@ -1,9 +1,13 @@
 ---
-path: localminidigger
 layout: blog
+path: localminidigger
 date: 2021-10-24T04:54:18.334Z
 title: Local Mini Digger
-thumbnail: /assets/lmd-screen-mockups.png
+description: Starting a new business is tough. Starting a new business during
+  Covid-19 restrictions is even tougher. We helped this small Melbourne business
+  get started with a website, social media, and lots of training.
+thumbnail: lmd-screen-mockups.png
+website: https://localminidigger.com.au
 ---
 I made a change to trigger a rebuild. And another edit for testing!
 
