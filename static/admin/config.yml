@@ -33,13 +33,12 @@ collections:
       - { name: body, label: Body, widget: markdown }
       - { name: thumbnail, label: Featured Image, widget: image, required: false }
   - name: portfolio
-    identifier_field: name
     label: Portfolio
     folder: content/portfolio
     create: true
     slug: '{{fields.path}}'
     preview_path: 'portfolio/{{fields.path}}'
-    path: 'portfolio/{{fields.path}}'
+    path: '{{slug}}/index'
     fields:
       - { name: layout, label: Layout, widget: hidden, default: 'portfolio' }
       - { name: path, label: Path }
