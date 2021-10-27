@@ -13,8 +13,6 @@ export default function index({ data }) {
             <Headers subtitle="Know what you're getting" title='Our Recent Projects' />
 
             {projects.map(project => {
-                const title = project.frontmatter.title || project.frontmatter.path
-
                 return (
                     <ProjectCard 
                         title={project.frontmatter.title}
