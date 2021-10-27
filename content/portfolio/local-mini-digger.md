@@ -1,6 +1,6 @@
 ---
 path: localminidigger
-layout: blog
+layout: portfolio
 date: 2021-10-24T04:54:18.334Z
 title: Local Mini Digger
 thumbnail: /assets/lmd-screen-mockups.png

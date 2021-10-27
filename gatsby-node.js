@@ -18,7 +18,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                             date
                             path
                             title
-                            templateKey
+                            layout
                         }
                     }
                 }
@@ -34,7 +34,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
         createPage({
-            path: node.frontmatter.templateKey + '/' + node.frontmatter.path,
+            path: node.frontmatter.layout + '/' + node.frontmatter.path,
             component: blogPostTemplate,
             context: {
                 pagePath: node.frontmatter.path,
@@ -42,3 +42,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         })
     })
 }
+
+// const { fmImagesToRelative } = require('gatsby-remark-relative-images')
+
+// exports.onCreateNode = ({ node }) => {
+//     fmImagesToRelative(node)
+// }

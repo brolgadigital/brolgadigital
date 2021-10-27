@@ -67,7 +67,7 @@ export const pageQuery = graphql`
   query {
     allMarkdownRemark(
       sort: {fields: frontmatter___date, order: DESC}
-      filter: {frontmatter: { templateKey: { eq: "blog" }}}
+      filter: {frontmatter: { layout: { eq: "blog" }}}
     ) {
       nodes {
         excerpt

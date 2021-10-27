@@ -60,14 +60,6 @@ module.exports = {
       },
       __key: "images",
     },
-    {
-        resolve: `gatsby-transformer-remark`,
-        options: {
-          footnotes: true,
-          gfm: true,
-          plugins: [],
-        },
-    },
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
@@ -91,6 +83,7 @@ module.exports = {
         resolve: `gatsby-transformer-remark`,
         options: {
           plugins: [
+            'gatsby-remark-relative-images',
             {
               resolve: `gatsby-remark-images`,
               options: {

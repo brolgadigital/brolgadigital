@@ -26,7 +26,7 @@ collections:
     preview_path: 'blog/{{fields.path}}'
     path: 'blog/{{fields.path}}'
     fields:
-      - { name: templateKey, label: Template Key, widget: hidden, default: blog }
+      - { name: layout, label: Layout, widget: hidden, default: 'blog' }
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title, widget: string }
@@ -41,9 +41,12 @@ collections:
     preview_path: 'portfolio/{{fields.path}}'
     path: 'portfolio/{{fields.path}}'
     fields:
-      - { name: templateKey, label: Template Key, widget: hidden, default: portfolio }
+      - { name: layout, label: Layout, widget: hidden, default: 'portfolio' }
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title, widget: string }
+      - { name: description, label: Description, widget: string }
+      - { name: thumbnail, label: Featured Image, widget: image, required: false }
+      - { name: website, label: Project Website, widget: string, required: false }
       - { name: body, label: Body, widget: markdown }
-      - { name: thumbnail, label: Featured Image, widget: image } 
+       

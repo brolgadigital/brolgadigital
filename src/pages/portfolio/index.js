@@ -5,34 +5,50 @@ import ProjectCard from '../../components/ProjectCard'
 import { OutboundLink } from 'gatsby-plugin-google-gtag'
 import * as Icon from 'react-feather'
 
-export default function index() {
-  return (
-    <div>
-      <Layout>
-        <Headers subtitle="Know what you're getting" title='Our Recent Projects' />
+export default function index({ data }) {
+    const projects = data.allMarkdownRemark.nodes
 
-        <ProjectCard 
-          title='Joanne Bingham'
-          desc='An artist based in Queensland, Joanne wanted a new website that reflected her personal style. After a branding refesh, she wanted to continue managing her own online shop and social media.'
-          image='Jo Bingham Screen Mockups'
-          case='joannebingham'
-          website='https://joannebingham.com'
-        />
+    return (
+        <Layout>
+            <Headers subtitle="Know what you're getting" title='Our Recent Projects' />
 
-        <ProjectCard 
-          title='Local Mini Digger'
-          desc="Starting a new business is tough. Starting a new business during Covid-19 restrictions is even tougher. We helped this small Melbourne business get started with a website, social media, and lots of training."
-          image='LMD Screen Mockups'
-          case='/'
-          website='https://localminidigger.com.au'
-        />
+            {projects.map(project => {
+                const title = project.frontmatter.title || project.frontmatter.path
 
-        <div>
-          <OutboundLink href="https://instagram.com/brolgadigital" className='button' title="Instagram" aria-label="Instagram"><Icon.Instagram /> See More On Instagram</OutboundLink>
-          <OutboundLink href="https://dribbble.com/brolgadigital" className='button' title="Dribbble" aria-label="Dribbble"><Icon.Dribbble /> See More On Dribbble</OutboundLink>
-        </div>
+                return (
+                    <ProjectCard 
+                        title={project.frontmatter.title}
+                        desc={project.frontmatter.description}
+                        
+                        // 'An artist based in Queensland, Joanne wanted a new website that reflected her personal style. After a branding refesh, she wanted to continue managing her own online shop and social media.'
 
-      </Layout>
-    </div>
-  )
+                        image={project.frontmatter.thumbnail}
+                        case={project.frontmatter.path}
+                        website={project.frontmatter.website}
+                        // 'https://joannebingham.com'
+                    />
+                )
+            })}
+        </Layout>
+    )
 }
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(
+      sort: {fields: frontmatter___date, order: DESC}
+      filter: {frontmatter: { layout: { eq: "portfolio" }}}
+    ) {
+      nodes {
+        excerpt
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          path
+          thumbnail
+          website
+        }
+      }
+    }
+  }
+`
