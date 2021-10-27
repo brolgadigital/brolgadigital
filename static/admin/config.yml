@@ -10,8 +10,8 @@ backend:
     uploadMedia: '[skip ci] Uploaded “{{path}}”'
     deleteMedia: '[skip ci] Deleted “{{path}}”'
 
-media_folder: static/images
-public_folder: /assets
+media_folder: 'static/images' # repo location
+public_folder: '/assets' # gatsby location
 
 site_url: https://brolgadigital.com.au
 display_url: https://brolgadigital.com.au
