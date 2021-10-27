@@ -23,6 +23,8 @@ collections:
     create: true
     slug: '{{fields.path}}'
     path: '{{slug}}/index'
+    media_folder: 'static/images' # repo location
+    public_folder: '/assets' # gatsby location
     fields:
       - { name: layout, label: Layout, widget: hidden, default: 'blog' }
       - { name: path, label: Path }
@@ -37,6 +39,8 @@ collections:
     create: true
     slug: '{{fields.path}}'
     path: '{{slug}}'
+    media_folder: 'static/images' # repo location
+    public_folder: '/assets' # gatsby location
     fields:
       - { name: layout, label: Layout, widget: hidden, default: 'portfolio' }
       - { name: path, label: Path }
