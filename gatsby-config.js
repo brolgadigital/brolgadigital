@@ -77,6 +77,7 @@ module.exports = {
         resolve: 'gatsby-transformer-remark',
         options: {
           plugins: [
+            'gatsby-remark-relative-images-v2',
             //   'gatsby-remark-relative-images',
             // {
             //     resolve: "gatsby-remark-relative-images",
