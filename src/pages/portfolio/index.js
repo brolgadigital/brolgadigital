@@ -41,11 +41,11 @@ export const pageQuery = graphql`
         ) {
             nodes {
                 id
-                excerpt
                 frontmatter {
                     date(formatString: "MMMM DD, YYYY")
                     title
                     path
+                    description
                     thumbnail {
                         childImageSharp {
                             gatsbyImageData

@@ -18,13 +18,12 @@ display_url: https://brolgadigital.com.au
 
 collections:
   - name: blog
-    identifier_field: name
     label: Blog
     folder: content/blog
     create: true
     slug: '{{fields.path}}'
     preview_path: 'blog/{{fields.path}}'
-    path: 'blog/{{fields.path}}'
+    path: '{{slug}}/index'
     fields:
       - { name: layout, label: Layout, widget: hidden, default: 'blog' }
       - { name: path, label: Path }

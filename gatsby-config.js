@@ -36,6 +36,15 @@ module.exports = {
     },
   },
   plugins: [
+    "gatsby-plugin-image",
+    {
+        resolve: "gatsby-source-filesystem",
+        options: {
+          name: "uploads",
+          path: `${__dirname}/static/images/`,
+        },
+        __key: "uploads",
+      },
     {
         resolve: `gatsby-source-filesystem`,
         options: {
@@ -56,17 +65,25 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: "./src/images/",
+        path: `${__dirname}/src/images/`,
       },
       __key: "images",
     },
 
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+
     {
         resolve: 'gatsby-transformer-remark',
         options: {
           plugins: [
+            //   'gatsby-remark-relative-images',
+            // {
+            //     resolve: "gatsby-remark-relative-images",
+            //     options: {
+            //       name: "uploads",
+            //     },
+            //   },
             {
               resolve: `gatsby-remark-images`,
               options: {
@@ -74,13 +91,18 @@ module.exports = {
               },
             },
             {
+                resolve: "gatsby-remark-copy-linked-files",
+                options: {
+                  destinationDir: "assets",
+                },
+              },
+            {
               resolve: `gatsby-remark-responsive-iframe`,
               options: {
                 wrapperStyle: `margin-bottom: 1.0725rem`,
               },
             },
             `gatsby-remark-prismjs`,
-            `gatsby-remark-copy-linked-files`,
             `gatsby-remark-smartypants`,
           ],
         },
@@ -88,7 +110,7 @@ module.exports = {
 
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-sass",
-    "gatsby-plugin-image",
+    
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
