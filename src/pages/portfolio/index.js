@@ -16,12 +16,13 @@ export default function index({ data }) {
             {projects.map(project => {
                 return (
                     <ProjectCard 
+                        key={project.id}
                         title={project.frontmatter.title}
                         desc={project.frontmatter.description}
                         
                         // 'An artist based in Queensland, Joanne wanted a new website that reflected her personal style. After a branding refesh, she wanted to continue managing her own online shop and social media.'
 
-                        image={project.frontmatter.thumbnail}
+                        image={project.frontmatter.thumbnail.childImageSharp.gatsbyImageData}
                         case={project.frontmatter.path}
                         website={project.frontmatter.website}
                         // 'https://joannebingham.com'
@@ -33,23 +34,26 @@ export default function index({ data }) {
 }
 
 export const pageQuery = graphql`
-  query {
-    allMarkdownRemark(
-      sort: {fields: frontmatter___date, order: DESC}
-      filter: {frontmatter: { layout: { eq: "portfolio" }}}
-    ) {
-      nodes {
-        excerpt
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-          path
-          thumbnail {
-              id
-          }
-          website
+    query {
+        allMarkdownRemark(
+            sort: {fields: frontmatter___date, order: DESC}
+            filter: {frontmatter: { layout: { eq: "portfolio" }}}
+        ) {
+            nodes {
+                id
+                excerpt
+                frontmatter {
+                    date(formatString: "MMMM DD, YYYY")
+                    title
+                    path
+                    thumbnail {
+                        childImageSharp {
+                            gatsbyImageData
+                        }
+                    }
+                    website
+                }
+            }
         }
-      }
     }
-  }
 `
