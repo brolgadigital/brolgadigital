@@ -1,4 +1,5 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import Layout from '../../components/Layout'
 import Headers from '../../components/Headers'
 import ProjectCard from '../../components/ProjectCard'
@@ -43,7 +44,9 @@ export const pageQuery = graphql`
           date(formatString: "MMMM DD, YYYY")
           title
           path
-          thumbnail
+          thumbnail {
+              id
+          }
           website
         }
       }

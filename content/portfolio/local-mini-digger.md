@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: portfolio
 path: localminidigger
 date: 2021-10-24T04:54:18.334Z
 title: Local Mini Digger
