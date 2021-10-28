@@ -2,11 +2,12 @@
 layout: portfolio
 path: joannebingham
 date: 2021-10-27T07:56:40.832Z
-title: Joanne Bingham
+title: Joanne Bingham Animal Artist
+subtitle: "From the ground up:"
 description: An artist based in Queensland, Joanne wanted a new website that
   reflected her personal style. After a branding refesh, she wanted to continue
   managing her own online shop and social media.
-thumbnail: 
+thumbnail: jo-bingham-screen-mockups.png
 website: https://joannebingham.com
 ---
 ## What we started with
