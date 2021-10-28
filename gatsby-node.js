@@ -55,6 +55,19 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     })
 }
 
+exports.createSchemaCustomization = ({ actions }) => {
+    const { createTypes } = actions
+  
+    createTypes(`
+        type MarkdownRemark implements Node {
+            frontmatter: Frontmatter
+        }
+        type Frontmatter {
+            thumbnail: File @fileByRelativePath
+        }
+    `)
+}
+
 // const { fmImagesToRelative } = require('gatsby-remark-relative-images-v2')
 
 // exports.onCreateNode = ({ node }) => {
