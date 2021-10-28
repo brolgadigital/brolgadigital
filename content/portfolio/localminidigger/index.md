@@ -6,7 +6,7 @@ title: Local Mini Digger
 description: Starting a new business is tough. Starting a new business during
   Covid-19 restrictions is even tougher. We helped this small Melbourne business
   get started with a website, social media, and lots of training.
-thumbnail: lmd-screen-mockups.png
+thumbnail: 
 website: https://localminidigger.com.au
 ---
 I made a change to trigger a rebuild. And another edit for testing!

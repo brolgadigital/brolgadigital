@@ -1,7 +1,7 @@
 import React from 'react'
-import Layout from '../../components/Layout'
-import Headers from '../../components/Headers'
-import Cards from '../../components/Cards'
+import Layout from '../components/Layout'
+import Headers from '../components/Headers'
+import Cards from '../components/Cards'
 import { OutboundLink } from 'gatsby-plugin-google-gtag'
 import * as Icon from 'react-feather'
 import { StaticImage } from 'gatsby-plugin-image'
@@ -14,7 +14,7 @@ const Template = ({ data }) => {
     return (
         <>
         <Layout>
-            <Headers subtitle={post.frontmatter.subtitle} title={post.frontmatter.title} />
+            <Headers subtitle={project.frontmatter.subtitle} title={project.frontmatter.title} />
             {/* <Headers subtitle="From the ground up:" title="Joanne Bingham Animal Artist" /> */}
 
             <div className="cardwrapper">
@@ -42,7 +42,7 @@ const Template = ({ data }) => {
 
             <div
                 // className="blog-post-content"
-                dangerouslySetInnerHTML={{ __html: post.html }}
+                dangerouslySetInnerHTML={{ __html: project.html }}
             ></div>
 
             <Headers subtitle="We can help you" title="Get Your Project Started" />
@@ -61,7 +61,7 @@ const Template = ({ data }) => {
 export default Template
 
 export const pageQuery = graphql`
-    query BlogPostByPath($pagePath: String) {
+    query ProjectsByPath($pagePath: String) {
         markdownRemark(frontmatter: { path: { eq: $pagePath } }) {
             html
             frontmatter {

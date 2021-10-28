@@ -6,7 +6,7 @@ title: Joanne Bingham
 description: An artist based in Queensland, Joanne wanted a new website that
   reflected her personal style. After a branding refesh, she wanted to continue
   managing her own online shop and social media.
-thumbnail: jo-bingham-screen-mockups.png
+thumbnail: 
 website: https://joannebingham.com
 ---
 ## What we started with
