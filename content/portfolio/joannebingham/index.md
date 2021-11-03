@@ -16,6 +16,7 @@ quote: Shelley from Brolga Digital designed and built a beautiful, easy to
   navigate website to showcase and sell my work. She listened, and incorporated
   or improved my ideas and suggestions and I am delighted with the results, and
   the ongoing help and support.
+quote-attribute: Joanne
 website: https://joannebingham.com
 ---
 ## What we started with
