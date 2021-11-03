@@ -32,9 +32,9 @@ For Joanne, we took a slightly unconventional approach, showing her different co
 
 ![Joanne Bingham Website Concept 1](mockup-1.jpg "Website redesign options we presented to Joanne.")
 
-</div>
-
 ![Website Concept 2](mockup-2.jpg "Website redesign options we presented to Joanne.")
+
+</div>
 
 <figcaption>Website redesign options we presented to Joanne.</figcaption>
 </figure>
