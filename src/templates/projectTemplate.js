@@ -4,7 +4,6 @@ import Headers from '../components/Headers'
 import Cards from '../components/Cards'
 import { OutboundLink } from 'gatsby-plugin-google-gtag'
 import * as Icon from 'react-feather'
-import { StaticImage } from 'gatsby-plugin-image'
 import { Link, graphql } from 'gatsby'
 
 const Template = ({ data }) => {
@@ -15,7 +14,6 @@ const Template = ({ data }) => {
         <>
         <Layout>
             <Headers subtitle={project.frontmatter.subtitle} title={project.frontmatter.title} />
-            {/* <Headers subtitle="From the ground up:" title="Joanne Bingham Animal Artist" /> */}
 
             <div className="cardwrapper">
                 <Cards 
@@ -40,18 +38,14 @@ const Template = ({ data }) => {
                 />
             </div>
 
-            <div
-                // className="blog-post-content"
-                dangerouslySetInnerHTML={{ __html: project.html }}
-            ></div>
+            <div dangerouslySetInnerHTML={{ __html: project.html }}></div>
 
             <Headers subtitle="We can help you" title="Get Your Project Started" />
-            <p>Joanne started with a website that wasn't working for her, and no brand presence or cohesion. If you're in a similar spot, we can help! Read more about our <Link to='../../packages'>design packages</Link> or book a free consultation today.</p>
+            <p dangerouslySetInnerHTML={{ __html: project.frontmatter.summary}}></p>
 
-            <h2>From Joanne</h2>
-            <p className='last'>Shelley from Brolga Digital designed and built a beautiful, easy to navigate website to showcase and sell my work.  She listened, and incorporated or improved my ideas and suggestions and I am delighted with the results, and the ongoing help and support.</p>
-            <OutboundLink href="https://joannebingham.com/" className='button' title="Joanne Bingham Animal Artist" aria-label="Joanne Bingham Animal Artist"><Icon.Instagram /> Joanne's Website</OutboundLink>
-            <OutboundLink href="https://www.instagram.com/jo_bingham_animal_artist/" className='button' title="Instagram" aria-label="Instagram"><Icon.Instagram /> Joanne's Instagram</OutboundLink>
+            <h2>From {project.frontmatter.quoteAttribute}</h2>
+            <p className='last'>{project.frontmatter.quote}</p>
+            <OutboundLink href={project.frontmatter.website} className='button' title={project.frontmatter.name} aria-label={project.frontmatter.name}><Icon.ExternalLink /> View the Live Project</OutboundLink>
 
         </Layout>   
         </>
@@ -68,6 +62,11 @@ export const pageQuery = graphql`
                 date(formatString: "MMMM DD, YYYY")
                 path
                 title
+                subtitle
+                website
+                quoteAttribute
+                quote
+                summary
             }
         }
     }
