@@ -5,8 +5,11 @@ date: 2021-10-27T07:56:40.832Z
 title: Joanne Bingham Animal Artist
 subtitle: "From the ground up:"
 description: An artist based in Queensland, Joanne wanted a new website that
-  reflected her personal style. After a branding refesh, she wanted to continue
+  reflected her personal style. After a branding refresh, she wanted to continue
   managing her own online shop and social media.
+summary: Joanne started with a website that wasn't working for her, and no brand
+  presence or cohesion. If you're in a similar spot, we can help! Read more
+  about our <a>design packages</a> or book a free consultation today.
 thumbnail: jo-bingham-screen-mockups.png
 website: https://joannebingham.com
 ---
