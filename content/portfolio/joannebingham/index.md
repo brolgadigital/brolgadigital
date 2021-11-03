@@ -9,7 +9,8 @@ description: An artist based in Queensland, Joanne wanted a new website that
   managing her own online shop and social media.
 summary: Joanne started with a website that wasn't working for her, and no brand
   presence or cohesion. If you're in a similar spot, we can help! Read more
-  about our <a>design packages</a> or book a free consultation today.
+  about our <a href="https://brolgadigital.com.au/packages">design packages</a>
+  or book a free consultation today.
 thumbnail: jo-bingham-screen-mockups.png
 website: https://joannebingham.com
 ---
