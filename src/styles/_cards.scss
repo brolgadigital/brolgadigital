@@ -41,6 +41,10 @@
         margin-right: calc(100% - 30px);
     }
 
+    p {
+        width: 100% !important;
+    }
+
     svg {
         stroke: $blue2;
         margin-bottom: 10px;

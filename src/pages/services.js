@@ -13,15 +13,17 @@ export default function services() {
                 <p className='last'>Each of our projects is custom tailored to our clients needs. We build bespoke digital solutions to help your brand stand out from the online noise.</p>
                 
                 <h2>Find a solution that's right for you</h2>
-                <AnchorLink to='/services#branding' title='Branding' />
-                <AnchorLink to='/services#support' title='Support and Maintenance' />
-                <AnchorLink to='/services#smallsite' title='Micro Sites' />
-                <AnchorLink to='/services#ecommerce' title='Ecommerce and Online Sales' />
-                <AnchorLink to='/services#strategy' title='Social Media and Marketing Strategies' />
-                <AnchorLink to='/services#seo' title='SEO and Optimisation' />
+                <ul>
+                    <li><AnchorLink to='/services#branding' title='Branding' /></li>
+                    <li><AnchorLink to='/services#support' title='Support and Maintenance' /></li>
+                    <li><AnchorLink to='/services#smallsite' title='Micro Sites' /></li>
+                    <li><AnchorLink to='/services#ecommerce' title='Ecommerce and Online Sales' /></li>
+                    <li><AnchorLink to='/services#strategy' title='Social Media and Marketing Strategies' /></li>
+                    <li><AnchorLink to='/services#seo' title='SEO and Optimisation' /></li>
+                </ul>
 
                 <h2>Not sure where to start?</h2>
-                <p>If you know you need get started in the digital sphere, but all these terms seem made up, book a free online audit and see what we can do for you!</p>
+                <p className='last'>If you know you need get started in the digital sphere, but all these terms seem made up, book a free online audit and see what we can do for you!</p>
 
                 <Headers subtitle='Stand out from the crowd' title='Comprehensive Brand Design' id='branding'/>
                 <p>Our branding services will provide you with everything to create consistency throughout your business. From a brand guide to business cards, social icons to marketing collateral, we'll present your story cohesivly wherever your customers and clients are.</p>
