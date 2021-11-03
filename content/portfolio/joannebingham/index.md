@@ -12,9 +12,7 @@ summary: Joanne started with a website that wasn't working for her, and no brand
   about our <a href="https://brolgadigital.com.au/packages">design packages</a>
   or book a free consultation today.
 quoteAttribute: Joanne
-quote-attribute: Joanne
 thumbnail: jo-bingham-screen-mockups.png
-quote_attribute: Joanne
 quote: Shelley from Brolga Digital designed and built a beautiful, easy to
   navigate website to showcase and sell my work. She listened, and incorporated
   or improved my ideas and suggestions and I am delighted with the results, and
