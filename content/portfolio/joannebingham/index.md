@@ -27,15 +27,25 @@ Joanne also had no brand presence. There was no logo or cohesive fonts or colour
 
 For Joanne, we took a slightly unconventional approach, showing her different combinations of branding options and homepage layouts. Joanne already has design and art experience, and we wanted her to feel creatively involved in the entire process.
 
+<figure>
+
 ![Joanne Bingham Website Concept 1](mockup-1.jpg "Website redesign options we presented to Joanne.")
 
 ![Website Concept 2](mockup-2.jpg "Website redesign options we presented to Joanne.")
+
+<figcaption>Website redesign options we presented to Joanne.</figcaption>
+</figure>
 
 Our initial focus was on her portfolio, so Joanne could showcase her work at markets and festivals. She also needed her instagram account integrated into the homepage, as this is where she was currently sharing a majority of her illustrations.
 
 We chose to build her site on Wordpress as she was somewhat familiar with the platform, and provided one-on-one training so she could add her own blog posts and create custom image galleries. The Wordpress editor is easy to use and provided a clean interface for Joanne to write in.
 
+<figure>
+
 ![Website Concept 3](mockup-3.jpg "The final design for Joanne's new, fresh-feeling website")
+
+<figcaption>The final design for Joanne's new, fresh-feeling website</figcaption>
+</figure>
 
 ## Ongoing Support
 
@@ -44,3 +54,10 @@ With no web management experience, Joanne asked that we provide maintenance and 
 ## Adding a shop
 
 About one year after the initial website rebuild, Joanne requested a custom homepage for her shopfront. She had begun making earrings, and also wanted to sell these in the same online shop. Because we already had strong visual rules for her website, designing a building a new shopfront was a quick task. We also provided Joanne with some additional training on adding multiple types of products into the same WooCommerce shop.
+
+<figure>
+
+![Visual design for the shop page on Joannes Web Shop](shop-update-proposal.jpg "Joanne Bingham Shop Mockup")
+
+<figcaption>Shopfront landing page design, to incorporate her earrings into the online shop</figcaption>
+</figure>
