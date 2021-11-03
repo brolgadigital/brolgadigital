@@ -14,7 +14,10 @@ website: https://joannebingham.com
 
 When Joanne approached us, she was using a default template from Wordpress, set up and managed by her husband. She wasn't a fan of the theme colours, and wanted something fresh and bright.
 
+<figure>
 ![Joanne Bingham Original Website](old-site.png "The original site design for Joanne Bingham, with no branding")
+<figcaption>The original site design for Joanne Bingham, with no branding</figcaption>
+</figure>
 
 Joanne also had no brand presence. There was no logo or cohesive fonts or colours being used across her marketing. We wanted to create a word-logo that better represented her artistic talents.
 
