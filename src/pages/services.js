@@ -3,15 +3,27 @@ import Layout from '../components/Layout'
 import Headers from '../components/Headers'
 import Cards from '../components/Cards'
 import { Link } from 'gatsby'
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
 
 export default function services() {
     return (
         <div>
             <Layout>
                 <p>Just getting started, needing a complete overhaul or just wanting to start afresh? We're here for whatever your business needs. </p>
-                <p className='last'>Each of our projects is custom tailored to our clients needs. We build bespoke digital solutions to help branding stand out from the online noise.</p>
+                <p className='last'>Each of our projects is custom tailored to our clients needs. We build bespoke digital solutions to help your brand stand out from the online noise.</p>
+                
+                <h2>Find a solution that's right for you</h2>
+                <AnchorLink to='/services#branding' title='Branding' />
+                <AnchorLink to='/services#support' title='Support and Maintenance' />
+                <AnchorLink to='/services#smallsite' title='Micro Sites' />
+                <AnchorLink to='/services#ecommerce' title='Ecommerce and Online Sales' />
+                <AnchorLink to='/services#strategy' title='Social Media and Marketing Strategies' />
+                <AnchorLink to='/services#seo' title='SEO and Optimisation' />
 
-                <Headers subtitle='Stand out from the crowd' title='Comprehensive Brand Design'/>
+                <h2>Not sure where to start?</h2>
+                <p>If you know you need get started in the digital sphere, but all these terms seem made up, book a free online audit and see what we can do for you!</p>
+
+                <Headers subtitle='Stand out from the crowd' title='Comprehensive Brand Design' id='branding'/>
                 <p>Our branding services will provide you with everything to create consistency throughout your business. From a brand guide to business cards, social icons to marketing collateral, we'll present your story cohesivly wherever your customers and clients are.</p>
 
                 <div className="cardwrapper">
@@ -27,11 +39,11 @@ export default function services() {
                     />
                 </div>
 
-                <Headers subtitle='Find long term solutions' title='Ongoing Support and Marketing'/>
+                <Headers subtitle='Find long term solutions' title='Ongoing Support and Maintenance' id='support'/>
                 <p className='last'>At Brolga Digital, we promise not to build a something complicated and then abandon you when we're done. We offer a range of services, charged monthly or as used (depending on the package). Check out our <Link to='../subscriptions'>ongoing subscriptions</Link> for more information on how we can support you long term.</p>
 
 
-                <Headers subtitle='Get started with' title='Blogs and Static Sites'/>
+                <Headers subtitle='Get started with' title='Blogs and Static Sites' id='smallsite'/>
 
                 <div className="cardwrapper">
                     <Cards 
@@ -54,7 +66,7 @@ export default function services() {
                 <p className='last'>Our designers and developers are well versed in a number of blogging platform, including Wordpress, Squarespace and Webflow, so no matter your preference, we can build something special. We also have extensive experience with React, and several different frameworks for making lightning fast static sites. Infact, we built the Brolga Digital website using Gatsby for React!</p>
 
 
-                <Headers subtitle='Boost sales with' title='Ecommerce Integration'/>
+                <Headers subtitle='Boost sales with' title='Ecommerce Integration' id='ecommerce'/>
                 <p>Did Covid force you to close a phsyical store? Looking to let international customers in on your amazing products? We can help you find the right ecommerce solution that is easy to use, works with your accounting or stocktaking and looks great on your website.</p>
 
                 <div className="cardwrapper">
@@ -80,7 +92,7 @@ export default function services() {
                     />
                 </div>
 
-                <Headers subtitle='Develop a plan' title='Digital and Social Marketing Strategies'/>
+                <Headers subtitle='Develop a plan' title='Digital and Social Marketing Strategies' id='strategy'/>
                 <p>Have lots of product photos but not sure how to share them? Need an add but can't figure out AdWords? Let us spend the time optimising your plan while you run your business.</p>
                 <p>Even after you have a plan, we can continue to help you with captions, graphics, animations and a whole variety of other digital creations! Check out the <Link to='../subscriptions'>ongoing subscriptions</Link> for more information.</p>
 
@@ -93,7 +105,7 @@ export default function services() {
                 </div>
 
 
-                <Headers subtitle='Get found online' title='Search Engine and Performance Optimisation'/>
+                <Headers subtitle='Get found online' title='Search Engine and Performance Optimisation' id='seo'/>
                 <div className="cardwrapper">
                     <Cards 
                         title='Google and Bing Business Pages'
