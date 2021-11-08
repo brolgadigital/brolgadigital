@@ -9,9 +9,11 @@ export default function services() {
     return (
         <div>
             <Layout>
+                <Headers subtitle='Make it yours with' title='Brolga Digital Services'/>
+
                 <p>Just getting started, needing a complete overhaul or just wanting to start afresh? We're here for whatever your business needs. </p>
-                <p className='last'>Each of our projects is custom tailored to our clients needs. We build bespoke digital solutions to help your brand stand out from the online noise.</p>
-                
+                <p className='last'>Each of our projects is custom tailored to our clients needs. We build bespoke digital solutions to help your brand stand out from the online noise. And with our individualised quotes, you'll only ever pay for the services you actually need. No bulk plans filled with bloat to inflate your costs.</p>
+
                 <h2>Find a solution that's right for you</h2>
                 <ul>
                     <li><AnchorLink to='/services#branding' title='Branding' /></li>
@@ -23,7 +25,7 @@ export default function services() {
                 </ul>
 
                 <h2>Not sure where to start?</h2>
-                <p className='last'>If you know you need get started in the digital sphere, but all these terms seem made up, book a free online audit and see what we can do for you!</p>
+                <p className='last'>If you know you need get started in the digital sphere, but all these terms seem made up, book a free consultation and see what we can do for you!</p>
 
                 <Headers subtitle='Stand out from the crowd' title='Comprehensive Brand Design' id='branding'/>
                 <p>Our branding services will provide you with everything to create consistency throughout your business. From a brand guide to business cards, social icons to marketing collateral, we'll present your story cohesivly wherever your customers and clients are.</p>
