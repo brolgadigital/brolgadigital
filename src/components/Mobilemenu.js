@@ -49,7 +49,7 @@ class Mobilemenu extends React.Component{
             </div>
            
             <ul className="navigation" style={{display: this.state.items}}>
-                <li><Link to='/packages' activeClassName="currentPage">Packages</Link></li>
+                <li><Link to='/services' activeClassName="currentPage">Services</Link></li>
                 <li><Link to='/subscriptions' activeClassName="currentPage">Subscriptions</Link></li>
                 <li><Link to='/about' activeClassName="currentPage">About Us</Link></li>
                 <li><Link to='/portfolio' activeClassName="currentPage">Portfolio</Link></li>
