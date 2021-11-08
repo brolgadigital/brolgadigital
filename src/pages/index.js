@@ -12,9 +12,11 @@ export default function index() {
         <div className='homepage'>
           <div className='titles'>
             <StaticImage class='logo' src='../images/bd-text-paleblue-01.png' alt='Brolga Digital' loading='eager'/>
-            <h2>Hire a Digital Manager</h2>
-            <p>For a fraction of the price</p>
-            <Button text='Find Out How' to='/subscriptions'/>
+            <div className='headliner'>
+                <h2>Get Your Business Online</h2>
+                <p>It starts with just a simple conversation</p>
+                <Button text='Book Now' to='/contact/'/>
+            </div>
           </div>
           <div className='slide-container'>
             <Fade {...fadeProperties}>

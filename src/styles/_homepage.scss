@@ -26,6 +26,12 @@
         .button p {
             margin-bottom: 0;
         }
+
+        .headliner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
     .logo {
         height: auto;
