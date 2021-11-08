@@ -29,6 +29,11 @@ export default function index({ data }) {
                     />
                 )
             })}
+
+            <div>
+                <OutboundLink href="https://instagram.com/brolgadigital" className='button' title="Instagram" aria-label="Instagram"><Icon.Instagram /> See More On Instagram</OutboundLink>
+                <OutboundLink href="https://dribbble.com/brolgadigital" className='button' title="Dribbble" aria-label="Dribbble"><Icon.Dribbble /> See More On Dribbble</OutboundLink>
+            </div>
         </Layout>
     )
 }
