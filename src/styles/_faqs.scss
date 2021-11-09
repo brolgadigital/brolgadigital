@@ -11,9 +11,10 @@
     border: solid 2px $blue2;
     border-radius: 2px;
     padding: 15px;
+    position: relative;
 
     h4 {
-        font-weight: 400;
+        font-weight: 500;
     }
 
     p {
@@ -30,6 +31,8 @@
     grid-row: span 3;
 
     p {
-        display: inline;
+        display: block;
+        margin-top: 20px;
+        width: 100%;
     }
 }
