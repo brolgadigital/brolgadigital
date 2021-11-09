@@ -21,17 +21,17 @@ quoteAttribute: Joanne
 website: https://joannebingham.com
 infobox1:
   display: true
-  icon: gift
+  icon: brand
   boxtitle: Complete Rebranding
   blurb: Cohesive fonts and colours to compliment a new wordmark
 infobox2:
   display: true
-  icon: gift
+  icon: layout
   boxtitle: Custom Wordpress Theme
   blurb: Build from scratch and designed specifically for Joanne's needs
 infobox3:
   display: true
-  icon: gift
+  icon: clipboard
   boxtitle: Ecommerce Integration and Support
   blurb: Custom shopfront and support adding new products
 infobox4:
