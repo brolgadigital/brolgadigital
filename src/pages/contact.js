@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import Headers from '../components/Headers'
-import MailingList from '../components/email/MailingList'
+// import MailingList from '../components/email/MailingList'
 
 export default function contact() {
   const copyEmail = () => {
@@ -28,7 +28,7 @@ export default function contact() {
 
         <Headers subtitle='Find out what we can do for you' title='Book a Consultation' />
         <div className='cal'>
-            <iframe src="http://cal.brolgadigital.com.au/brolgadigital/consult" frameborder="0" allowfullscreen></iframe>
+            <iframe src="http://cal.brolgadigital.com.au/brolgadigital/consult" title='Book a consultation with Brolga Digital' frameborder="0" allowfullscreen></iframe>
         </div>
 
       </Layout>
