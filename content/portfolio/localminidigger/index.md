@@ -16,6 +16,14 @@ quote: Shelley is great and I love everything she does. She takes all the stress
   out of using the internet.
 quoteAttribute: Ed
 website: https://localminidigger.com.au
+infobox1:
+  display: false
+infobox2:
+  display: false
+infobox3:
+  display: false
+infobox4:
+  display: false
 ---
 ## Branding an Idea
 
