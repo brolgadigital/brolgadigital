@@ -19,6 +19,14 @@ quote: Shelley from Brolga Digital designed and built a beautiful, easy to
   the ongoing help and support.
 quoteAttribute: Joanne
 website: https://joannebingham.com
+infobox1:
+  display: false
+infobox2:
+  display: false
+infobox3:
+  display: false
+infobox4:
+  display: false
 ---
 ## What we started with
 
