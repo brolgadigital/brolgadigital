@@ -36,11 +36,11 @@ export default function subscriptions() {
           details={['web basics plan', 'phone and email support', '6 managed social accounts', 'unlimited graphic design assistance', 'unlimited scheduled social posts', '1hr planning call',]}/>
       </div>
 
-      <p className='last'>Need something a little different? We're flexible, just <Link to='./contact'>contact us</Link></p>
+      <p className='last'>Need something a little different? We're flexible, just <Link to='/contact'>contact us</Link></p>
 
       <Headers subtitle='Need help getting something started?' title='Business Booster Packages' />
       <p>Need help with SEO or ecommerce but not looking for ongoing support? Check out our business boosting packages</p>
-      <Button text='Learn More' to='./packages' />
+      <Button text='Learn More' to='/services' />
 
       </Layout>
     </div>
