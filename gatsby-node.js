@@ -64,9 +64,40 @@ exports.createSchemaCustomization = ({ actions }) => {
         }
         type Frontmatter {
             thumbnail: File @fileByRelativePath
+            infobox1: InfoBox1
+            infobox2: InfoBox2
+            infobox3: InfoBox3
+            infobox4: InfoBox4
+        }
+
+
+        type InfoBox1 {
+            display: Boolean!
+            icon: String
+            boxtitle: String
+            blurb: String
+        }
+        type InfoBox2 {
+            display: Boolean!
+            icon: String
+            boxtitle: String
+            blurb: String
+        }
+        type InfoBox3 {
+            display: Boolean!
+            icon: String
+            boxtitle: String
+            blurb: String
+        }
+        type InfoBox4 {
+            display: Boolean!
+            icon: String
+            boxtitle: String
+            blurb: String
         }
     `)
 }
+
 
 // const { fmImagesToRelative } = require('gatsby-remark-relative-images-v2')
 

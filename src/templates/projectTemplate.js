@@ -16,26 +16,10 @@ const Template = ({ data }) => {
             <Headers subtitle={project.frontmatter.subtitle} title={project.frontmatter.title} />
 
             <div className="cardwrapper">
-                <Cards 
-                    title='Complete Rebranding'
-                    icon='gift'
-                    desc="Cohesive fonts and colours to compliment a new wordmark"
-                />
-                <Cards 
-                    title='Custom Wordpress Theme'
-                    icon='gift'
-                    desc="Build from scratch and designed specifically for Joanne's needs"
-                />
-                <Cards 
-                    title='Ecommerce Integration and Support'
-                    icon='gift'
-                    desc="Custom shopfront and support adding new products"
-                />
-                <Cards 
-                    title='Ongoing Hosting, Support, and Security'
-                    icon='gift'
-                    desc="Weekly backups, plugin updates, general security and mainanence at a low monthly cost"
-                />
+                <Cards cardData={project.frontmatter.infobox1} />
+                <Cards cardData={project.frontmatter.infobox2} />
+                <Cards cardData={project.frontmatter.infobox3} />
+                <Cards cardData={project.frontmatter.infobox4} />
             </div>
 
             <div dangerouslySetInnerHTML={{ __html: project.html }}></div>
@@ -67,6 +51,30 @@ export const pageQuery = graphql`
                 quoteAttribute
                 quote
                 summary
+                infobox1 {
+                    display
+                    icon
+                    boxtitle
+                    blurb
+                }
+                infobox2 {
+                    display
+                    icon
+                    boxtitle
+                    blurb
+                }
+                infobox3 {
+                    display
+                    icon
+                    boxtitle
+                    blurb
+                }
+                infobox4 {
+                    display
+                    icon
+                    boxtitle
+                    blurb
+                }
             }
         }
     }
