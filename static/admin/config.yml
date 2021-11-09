@@ -49,5 +49,67 @@ collections:
       - { name: quote, label: Quote, widget: text }
       - { name: quoteAttribute, label: Quote Attribute, widget: string }
       - { name: website, label: Project Website, widget: string, required: false }
+      
+      - name: infobox1
+        label: Info Box 1
+        collapsed: true
+        required: false
+        widget: object
+        fields:
+          - name: icon
+            label: Icon
+            required: false
+            widget: select
+            options:
+              - { label: 'gift', value: 'gift'}
+          - { name: boxtitle, label: Box Title, required: false, widget: string }
+          - { name: blurb, label: Blurb, required: false, widget: text}
+
+      - name: infobox2
+        label: Info Box 2
+        collapsed: true
+        required: false
+        widget: object
+        fields:
+          - name: icon
+            label: Icon,
+            required: false
+            widget: select
+            options:
+              - { label: 'gift', value: 'gift'}
+          - { name: boxtitle, label: Box Title, required: false, widget: string }
+          - { name: blurb, label: Blurb, required: false, widget: text}
+
+      - name: infobox3
+        label: Info Box 3
+        collapsed: true
+        required: false
+        widget: object
+        fields:
+          - name: icon
+            label: Icon,
+            required: false
+            widget: select
+            options:
+              - { label: 'gift', value: 'gift'}
+          - { name: boxtitle, label: Box Title, required: false, widget: string }
+          - { name: blurb, label: Blurb, required: false, widget: text}
+
+      - name: infobox4
+        label: Info Box 4
+        collapsed: true
+        required: false
+        widget: object
+        fields:
+          - name: icon
+            label: Icon,
+            required: false
+            widget: select
+            options:
+              - { label: 'gift', value: 'gift'}
+          - { name: boxtitle, label: Box Title, required: false, widget: string }
+          - { name: blurb, label: Blurb, required: false, widget: text}
+
       - { name: body, label: Body, widget: markdown }
+      
        
