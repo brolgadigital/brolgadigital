@@ -20,13 +20,26 @@ quote: Shelley from Brolga Digital designed and built a beautiful, easy to
 quoteAttribute: Joanne
 website: https://joannebingham.com
 infobox1:
-  display: false
+  display: true
+  icon: gift
+  boxtitle: Complete Rebranding
+  blurb: Cohesive fonts and colours to compliment a new wordmark
 infobox2:
-  display: false
+  display: true
+  icon: gift
+  boxtitle: Custom Wordpress Theme
+  blurb: Build from scratch and designed specifically for Joanne's needs
 infobox3:
-  display: false
+  display: true
+  icon: gift
+  boxtitle: Ecommerce Integration and Support
+  blurb: Custom shopfront and support adding new products
 infobox4:
-  display: false
+  display: true
+  icon: gift
+  boxtitle: Ongoing Hosting, Support, and Security
+  blurb: Weekly backups, plugin updates, general security and maintenance at a low
+    monthly cost
 ---
 ## What we started with
 
