@@ -10,7 +10,7 @@ description: An artist based in Queensland, Joanne wanted a new website that
 summary: Joanne started with a website that wasn't working for her, and no brand
   presence or cohesion. If you're in a similar spot, we can help! Read more
   about our <a href="https://brolgadigital.com.au/services">design services</a>
-  or <a href="https://brolgadigital.com.au/contact>book a free consultation
+  or <a href="https://brolgadigital.com.au/contact">book a free consultation
   today</a>.
 thumbnail: jo-bingham-screen-mockups.png
 quote: Shelley from Brolga Digital designed and built a beautiful, easy to
