@@ -6,21 +6,20 @@ import * as Icon from 'react-feather'
 
 export default function Cards(props) {
 
-    if ( props.cardData.display === false ) {
+    if (props?.cardData?.display === false) {
         return null
     }
 
-    const iconSvg = {'search': <Icon.Search />, 'layout': <Icon.Layout />, 'clipboard': <Icon.Clipboard />, 'brand': <Icon.Loader />, 'gift': <Icon.Gift />};
     // const listItems = props.details.map((detail, index) => <li key={index}>{detail}</li>);
 
     return (
         <div className={props.message ? 'card sale' : 'card'} data-content={props.message}>
             <div>
-                {iconSvg[props.icon]}
-                <h3>{props.cardData.boxtitle ? props.cardData.boxtitle : props.title}</h3>
+                {props?.cardData?.icon ? iconSvg[props?.cardData?.icon] : iconSvg[props.icon]}
+                <h3>{props?.cardData?.boxtitle ? props?.cardData?.boxtitle : props.title}</h3>
                 <hr></hr>
             </div>
-            <p>{props.cardData.blurb ? props.cardData.blurb : props.desc}</p>
+            <p>{props?.cardData?.blurb ? props?.cardData?.blurb : props.desc}</p>
             {/* <p>Starting from ${props.price}</p> */}
             
             {props.info ? <Button text='Learn More' class='tinyButton' to={props.info}/> : <></>}
@@ -35,3 +34,11 @@ Cards.defaultProps = {
     icon: '',
     book: '',
 }
+
+export const iconSvg = {
+    'search': <Icon.Search />, 
+    'layout': <Icon.Layout />, 
+    'clipboard': <Icon.Clipboard />, 
+    'brand': <Icon.Loader />, 
+    'gift': <Icon.Gift />,
+};

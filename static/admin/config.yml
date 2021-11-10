@@ -63,6 +63,10 @@ collections:
             widget: select
             options:
               - { label: 'gift', value: 'gift'}
+              - { label: 'search', value: 'search'}
+              - { label: 'clipboard', value: 'clipboard'}
+              - { label: 'brand', value: 'brand'}
+              - { label: 'layout', value: 'layout'}
           - { name: boxtitle, label: Box Title, required: false, widget: string }
           - { name: blurb, label: Blurb, required: false, widget: text}
 
@@ -79,6 +83,10 @@ collections:
             widget: select
             options:
               - { label: 'gift', value: 'gift'}
+              - { label: 'search', value: 'search'}
+              - { label: 'clipboard', value: 'clipboard'}
+              - { label: 'brand', value: 'brand'}
+              - { label: 'layout', value: 'layout'}
           - { name: boxtitle, label: Box Title, required: false, widget: string }
           - { name: blurb, label: Blurb, required: false, widget: text}
 
@@ -95,6 +103,10 @@ collections:
             widget: select
             options:
               - { label: 'gift', value: 'gift'}
+              - { label: 'search', value: 'search'}
+              - { label: 'clipboard', value: 'clipboard'}
+              - { label: 'brand', value: 'brand'}
+              - { label: 'layout', value: 'layout'}
           - { name: boxtitle, label: Box Title, required: false, widget: string }
           - { name: blurb, label: Blurb, required: false, widget: text}
 
@@ -111,6 +123,10 @@ collections:
             widget: select
             options:
               - { label: 'gift', value: 'gift'}
+              - { label: 'search', value: 'search'}
+              - { label: 'clipboard', value: 'clipboard'}
+              - { label: 'brand', value: 'brand'}
+              - { label: 'layout', value: 'layout'}
           - { name: boxtitle, label: Box Title, required: false, widget: string }
           - { name: blurb, label: Blurb, required: false, widget: text}
 
