@@ -25,7 +25,7 @@ export default function services() {
                 </ul>
 
                 <h2>Not sure where to start?</h2>
-                <p className='last'>If you know you need get started in the digital sphere, but all these terms seem made up, book a free consultation and see what we can do for you!</p>
+                <p className='last'>If you know you need get started in the digital sphere, but all these terms seem made up, <Link to='/contact'>book a consultation</Link> and see what we can do for you!</p>
 
                 <Headers subtitle='Stand out from the crowd' title='Comprehensive Brand Design' id='branding'/>
                 <p>Our branding services will provide you with everything to create consistency throughout your business. From a brand guide to business cards, social icons to marketing collateral, we'll present your story cohesivly wherever your customers and clients are.</p>
@@ -44,7 +44,7 @@ export default function services() {
                 </div>
 
                 <Headers subtitle='Find long term solutions' title='Ongoing Support and Maintenance' id='support'/>
-                <p className='last'>At Brolga Digital, we promise not to build a something complicated and then abandon you when we're done. We offer a range of services, charged monthly or as used (depending on the package). Check out our <Link to='../subscriptions'>ongoing subscriptions</Link> for more information on how we can support you long term.</p>
+                <p className='last'>At Brolga Digital, we promise not to build something complicated and then abandon you when we're done. We offer a range of packages, charged monthly or as used (depending on our agreement). Check out our <Link to='/packages'>packages</Link> for more information on how we can support you long term.</p>
 
 
                 <Headers subtitle='Get started with' title='Blogs and Static Sites' id='smallsite'/>
