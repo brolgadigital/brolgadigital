@@ -2,14 +2,13 @@ import React from 'react'
 import Layout from '../components/Layout'
 import Headers from '../components/Headers'
 import PriceCard from '../components/PriceCard'
-import Button from '../components/Button'
 import { Link } from 'gatsby'
 
 export default function subscriptions() {
   return (
     <div>
       <Layout>
-      <Headers subtitle='What makes Brolga Digital Different?' title='Ongoing Support Subscriptions' />
+      <Headers subtitle='What makes Brolga Digital Different?' title='Ongoing Support Packages' />
       
       <p>It seems like subscription services are everywhere. Streaming, mail boxes, food... We get it. We also know that a lot of these stemmed from the tech industry, where renewing domains and hosting has been standard practice for a long time.</p>
       <p>Ongoing support with Brolga Digital is simple. You own everything. We just manage it. From creating backups to scheduling social media posts, we can handle it for you. We aim to take the stress out of online content by consolodating all your online marketing activities and managing them on your behalf.</p>
@@ -20,27 +19,29 @@ export default function subscriptions() {
       
       <div className="cardwrapper">
         <PriceCard 
-          title='Web Basics Plan'
+          title='Web Basics Package'
           price='50'
-          desc='Perfect for those just getting started, those with minimal updates and those who want to manage social media themselves'
+          desc='Perfect for those who need their website to "just work" with no extra hastle'
           details={['weekly backups', 'domain and hosting', 'email support', 'uptime monitoring', 'plugin and security updates']}/>
         <PriceCard
-          title='Simple Marketing Plan'
+          title='Graphics and Media Package'
           price='120'
           desc='Ideal for growing companies who need a little extra support, but still want to maintain control of their social media accounts'
           details={['web basics plan', 'simple content edits', '2 managed social accounts', 'limited graphic design assistance', '30 scheduled social posts', '30min planning call']}/>
         <PriceCard 
-          title='Premium Plan'
+          title='Premium Marketing Package'
           price='250'
           desc="Not a tech person? We've got your back with support, account management, graphic design and content creation"
           details={['web basics plan', 'phone and email support', '6 managed social accounts', 'unlimited graphic design assistance', 'unlimited scheduled social posts', '1hr planning call',]}/>
       </div>
 
-      <p className='last'>Need something a little different? We're flexible, just <Link to='/contact'>contact us</Link></p>
+      <p className='last'>Need something a little different? We're flexible, just <Link to='/contact'>contact us</Link>. We also offer frequent discounts, including substantial savings if you use several of our packages or services!</p>
 
-      <Headers subtitle='Need help getting something started?' title='Business Booster Packages' />
-      <p>Need help with SEO or ecommerce but not looking for ongoing support? Check out our business boosting packages</p>
-      <Button text='Learn More' to='/services' />
+      <Headers subtitle='It starts with a conversation' title='Book a Consultation' />
+      <p>Ready to dive in or just need some questions answered? <Link to='/contact'>Book a consultation</Link> to find out how we can help your business grow using digital platforms.</p>
+
+      <Headers subtitle='Need help getting something started?' title='Brolga Digital Design Services' />
+      <p>Need help with SEO or ecommerce but not looking for ongoing support? Check out our <Link to='/services'>design services</Link>.</p>
 
       </Layout>
     </div>
