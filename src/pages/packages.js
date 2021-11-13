@@ -24,12 +24,12 @@ export default function subscriptions() {
           title='Graphics and Media Package'
           price='120'
           desc='Ideal if you want to run your own social media, but need some help editing images for posts'
-          details={['proofreading and editing', 'graphics creations', 'photoshop editing', 'email and phone support']}/>
+          details={['proofreading and editing', 'graphics creations', 'photoshop editing', 'email and phone support', 'plus much more']}/>
         <PriceCard 
           title='Premium Marketing Package'
           price='250'
           desc="Let us take the hard work out of digital and online marketing"
-          details={['web basics plan', 'phone and email support', '6 managed social accounts', 'unlimited graphic design assistance', 'unlimited scheduled social posts', '1hr planning call',]}/>
+          details={['web basics plan', 'phone and email support', '6 managed social accounts', 'unlimited graphic design assistance', 'unlimited scheduled social posts', '1hr planning call', 'plus much more']}/>
       </div>
 
       <p className='last'>Need something a little different? We're flexible, just <Link to='/contact'>contact us</Link>. We also offer frequent discounts, including substantial savings if you use several of our packages or services!</p>
