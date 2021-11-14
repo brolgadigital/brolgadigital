@@ -15,7 +15,7 @@ summary: Joanne started with a website that wasn't working for her, and no brand
 thumbnail: jo-bingham-screen-mockups.png
 quote: Shelley from Brolga Digital designed and built a beautiful, easy to
   navigate website to showcase and sell my work. She listened, and incorporated
-  or improved my ideas and suggestions and I am delighted with the results, and
+  or improved my ideas and suggestions, and I am delighted with the results, and
   the ongoing help and support.
 quoteAttribute: Joanne
 website: https://joannebingham.com
@@ -70,7 +70,7 @@ For Joanne, we took a slightly unconventional approach, showing her different co
 <figcaption>Website redesign options we presented to Joanne.</figcaption>
 </figure>
 
-Our initial focus was on her portfolio, so Joanne could showcase her work at markets and festivals. She also needed her instagram account integrated into the homepage, as this is where she was currently sharing a majority of her illustrations.
+Our initial focus was on her portfolio, so Joanne could showcase her work at markets and festivals. She also needed her Instagram account integrated into the homepage, as this is where she was currently sharing a majority of her illustrations.
 
 We chose to build her site on Wordpress as she was somewhat familiar with the platform, and provided one-on-one training so she could add her own blog posts and create custom image galleries. The Wordpress editor is easy to use and provided a clean interface for Joanne to write in.
 
