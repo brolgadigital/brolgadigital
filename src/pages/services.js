@@ -28,7 +28,7 @@ export default function services() {
                 <p className='last'>If you know you need get started in the digital sphere, but all these terms seem made up, <Link to='/contact'>book a consultation</Link> and see what we can do for you!</p>
 
                 <Headers subtitle='Stand out from the crowd' title='Comprehensive Brand Design' id='branding'/>
-                <p>Our branding services will provide you with everything to create consistency throughout your business. From a brand guide to business cards, social icons to marketing collateral, we'll present your story cohesivly wherever your customers and clients are.</p>
+                <p>Our branding services will provide you with everything to create consistency throughout your business. From a brand guide to business cards, social icons to marketing collateral, we'll present your story cohesively wherever your customers and clients are.</p>
 
                 <div className="cardwrapper">
                     <Cards 
@@ -39,7 +39,7 @@ export default function services() {
                     <Cards 
                         title='Blogs and Ecommerce'
                         icon='layout'
-                        desc='Our web expertise streches further than just the homepage. Blogs, ecommerce, apps and custom solutions are no problem!'
+                        desc='Our web expertise stretches further than just the homepage. Blogs, ecommerce, apps and custom solutions are no problem!'
                     />
                 </div>
 
@@ -67,11 +67,11 @@ export default function services() {
                     />
                 </div>
 
-                <p className='last'>Our designers and developers are well versed in a number of blogging platform, including Wordpress, Squarespace and Webflow, so no matter your preference, we can build something special. We also have extensive experience with React, and several different frameworks for making lightning fast static sites. Infact, we built the Brolga Digital website using Gatsby for React!</p>
+                <p className='last'>Our designers and developers are well versed in a number of blogging platforms, including Wordpress, Squarespace and Webflow; so no matter your preference, we can build something special. We also have extensive experience with React, and several different frameworks for making lightning fast static sites. In fact, we built the Brolga Digital website using Gatsby for React!</p>
 
 
                 <Headers subtitle='Boost sales with' title='Ecommerce Integration' id='ecommerce'/>
-                <p>Did Covid force you to close a phsyical store? Looking to let international customers in on your amazing products? We can help you find the right ecommerce solution that is easy to use, works with your accounting or stocktaking and looks great on your website.</p>
+                <p>Did Covid force you to close a physical store? Looking to let international customers in on your amazing products? We can help you find the right ecommerce solution that is easy to use, works with your accounting or stocktaking and looks great on your website.</p>
 
                 <div className="cardwrapper">
                     <Cards 
@@ -82,7 +82,7 @@ export default function services() {
                     <Cards 
                         title='Shipping Calculation'
                         icon='layout'
-                        desc='Our web expertise streches further than just the homepage. Blogs, ecommerce, apps and custom solutions are no problem!'
+                        desc='Our web expertise stretches further than just the homepage. Blogs, ecommerce, apps and custom solutions are no problem!'
                     />
                     <Cards 
                         title='Credit Card Processing'
@@ -97,7 +97,7 @@ export default function services() {
                 </div>
 
                 <Headers subtitle='Develop a plan' title='Digital and Social Marketing Strategies' id='strategy'/>
-                <p>Have lots of product photos but not sure how to share them? Need an add but can't figure out AdWords? Let us spend the time optimising your plan while you run your business.</p>
+                <p>Have lots of product photos but not sure how to share them? Need an ad but can't figure out AdWords? Let us spend the time optimising your plan while you run your business.</p>
                 <p>Even after you have a plan, we can continue to help you with captions, graphics, animations and a whole variety of other digital creations! Check out the <Link to='../subscriptions'>ongoing subscriptions</Link> for more information.</p>
 
                 <div className="cardwrapper">
@@ -119,7 +119,7 @@ export default function services() {
                     <Cards 
                         title='Sitemap Submission and Management'
                         icon='layout'
-                        desc='Sitemaps are an important piece of website architecture. We can build yours and get it submitted to search engines so they can index you quickly.'
+                        desc='Sitemaps are an important piece of website architecture. We can build yours and get it submitted to search engines, so they can index you quickly.'
                     />
                     <Cards 
                         title='Website Optimisation'
@@ -129,7 +129,7 @@ export default function services() {
                     <Cards 
                         title='Content and Keyword Audits'
                         icon='layout'
-                        desc='We can go through your website and suggest optomised keywords and edits that will make your website more search engine friendly.'
+                        desc='We can go through your website and suggest optimised keywords and edits that will make your website more search engine friendly.'
                     />
                 </div>
 
