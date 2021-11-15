@@ -65,10 +65,13 @@ class Mobilemenu extends React.Component{
                     <li><OutboundLink href="https://dribbble.com/brolgadigital" title="Dribbble" aria-label="Dribbble"><Icon.Dribbble /></OutboundLink></li>
                     <li><Link to='/faqs' title="FAQ's" aria-label="FAQ's"><Icon.HelpCircle /></Link></li>
                 </ul>
+                <p>&#169; {year}, Brolga Digital</p>
             </div>
         </div>
     )
     }
 }
+
+export var year = new Date().getFullYear()
 
 export default Mobilemenu

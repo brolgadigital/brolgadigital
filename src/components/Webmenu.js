@@ -6,6 +6,8 @@ import * as Icon from 'react-feather'
 import '../styles/style.scss'
 
 export default function Webmenu() {
+
+    var year = new Date().getFullYear()
     return (
         <>
             <Link to='/'><StaticImage src='../images/bd-text-paleblue-01.png' alt='Brolga Digital' loading='eager'/></Link>
@@ -26,6 +28,7 @@ export default function Webmenu() {
                     <li><OutboundLink href="https://dribbble.com/brolgadigital" title="Dribbble" aria-label="Dribbble"><Icon.Dribbble /></OutboundLink></li>
                     <li><Link to='/faqs' title="FAQ's" aria-label="FAQ's"><Icon.HelpCircle /></Link></li>
                 </ul>
+                <p>&#169; {year}, Brolga Digital</p>
             </div>
         </>
     )
