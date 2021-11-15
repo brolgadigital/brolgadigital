@@ -16,20 +16,20 @@ export default function subscriptions() {
       
       <div className="cardwrapper">
         <PriceCard 
-          title='Web Basics Package'
+          title='Website Support Package'
           price='50'
           desc='Perfect for those who need their website to "just work" with no extra hassle'
           details={['weekly backups', 'domain and hosting', 'email and phone support', 'uptime monitoring', 'plugin and security updates']}/>
         <PriceCard
-          title='Graphics and Media Package'
+          title='Graphics Package'
           price='120'
           desc='Ideal if you want to run your own social media, but need some help editing images for posts'
-          details={['proofreading and editing', 'graphics creations', 'photoshop editing', 'email and phone support', 'plus much more']}/>
+          details={['graphics creations', 'photoshop editing', 'simple animations', 'stock image sourcing']}/>
         <PriceCard 
-          title='Premium Marketing Package'
+          title='Marketing Package'
           price='250'
           desc="Let us take the hard work out of digital and online marketing"
-          details={['web basics plan', 'phone and email support', '6 managed social accounts', 'unlimited graphic design assistance', 'unlimited scheduled social posts', '1hr planning call', 'plus much more']}/>
+          details={['post and blog proofreading', 'graphic design assistance', 'scheduled social posts', 'monthly planning and advice call', 'analytics monitoring and advice']}/>
       </div>
 
       <p className='last'>Need something a little different? We're flexible, just <Link to='/contact'>contact us</Link>. We also offer frequent discounts, including substantial savings if you use several of our packages or services!</p>
