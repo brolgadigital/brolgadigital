@@ -12,9 +12,15 @@ summary: Local Mini Digger started with nothing but an idea. If you're also
   href="https://brolgadigital.com.au/packages">design packages</a> or book a
   free consultation today.
 thumbnail: lmd-screen-mockups.png
-quote: Shelley is great and I love everything she does. She takes all the stress
-  out of using the internet.
-quoteAttribute: Ed
+quote: >-
+  A big thank you to Shelley from Brolga digital.  She held our hand as we
+  navigated the unknown world of building a website.  Not knowing what we wanted
+  or needed, she patiently asked questions about how we use the internet and our
+  expectations of a website and responded with a product.  She encouraged us to
+  use other media, including Facebook, to reach a wider audience.  
+
+  She set all of this up for us. Highly recommend this business.
+quoteAttribute: Judy and Ed
 website: https://localminidigger.com.au
 infobox1:
   display: false
