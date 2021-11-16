@@ -13,7 +13,7 @@ export default function index() {
           <div className='titles'>
             <StaticImage class='logo' src='../images/bd-text-paleblue-01.png' alt='Brolga Digital' loading='eager'/>
             <div className='headliner'>
-                <h2>Get Your Business Online</h2>
+                <h2>The Digital Agency for Small Bussiness</h2>
                 <p>It starts with just a simple conversation</p>
                 <Button text='Book Now' to='/contact/'/>
             </div>
