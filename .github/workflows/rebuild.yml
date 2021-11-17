@@ -65,7 +65,7 @@ jobs:
           name: brolga-build
           path: build
       - name: Upload ftp
-        uses: SamKirkland/FTP-Deploy-Action@4.1.0
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
