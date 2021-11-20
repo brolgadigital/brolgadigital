@@ -19,7 +19,7 @@ export default function Layout({children}) {
   `)
   const {
     site: {
-      siteMetadata,
+    //   siteMetadata,
       siteMetadata: {description: siteDescription},
     },
   } = data

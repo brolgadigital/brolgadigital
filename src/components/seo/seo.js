@@ -4,14 +4,14 @@ import { useStaticQuery, graphql } from 'gatsby'
 import PropTypes from 'prop-types'
 import SchemaOrg from './schema-org'
 import config from '../../../brolga-config'
-import defaultMetaImage from '../../../static/images/metaImage.jpg'
+import defaultMetaImage from '../../../static/images/bd-text-red-solid-01.png'
 
-function SEO({
+function Seo({
   siteMetadata: seo,
   postData,
   metaImage,
   isBlogPost,
-  frontmatter: postMeta = postData.childMarkdownRemark.frontmatter || {},
+  frontmatter: postMeta = postData.frontmatter || {},
   title = postMeta.title || config.siteTitle,
   description = postMeta.plainTextDescription ||
     postMeta.description ||
@@ -30,7 +30,7 @@ function SEO({
         {/* General tags */}
         <title>{title}</title>
         <meta name="description" content={description} />
-        <meta name="image" content={altLogo} />
+        <meta name="image" content={image} />
 
         {/* OpenGraph tags */}
         <meta property="og:url" content={url} />
@@ -39,19 +39,12 @@ function SEO({
         <meta property="og:description" content={description} />
         <meta property="og:image" content={image} />
         <meta property="fb:app_id" content={seo.social.fbAppID} />
-
-        {/* Twitter Card tags */}
-        {/* <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content={seo.social.twitter} />
-        <meta name="twitter:title" content={title} />
-        <meta name="twitter:description" content={description} />
-        <meta name="twitter:image" content={image} /> */}
       </Helmet>
       <SchemaOrg
         isBlogPost={isBlogPost}
         url={url}
         title={title}
-        altLogo={altLogo}
+        image={image}
         description={description}
         datePublished={datePublished}
         author={seo.author}
@@ -62,10 +55,8 @@ function SEO({
   )
 }
 
-function SEOWithQuery(props) {
-  const {
-    site: {siteMetadata},
-  } = useStaticQuery(graphql`
+function SeoWithQuery(props) {
+  const { site: {siteMetadata}, } = useStaticQuery(graphql`
     {
       site {
         siteMetadata {
@@ -84,24 +75,24 @@ function SEOWithQuery(props) {
       }
     }
   `)
-  return <SEO siteMetadata={siteMetadata} {...props} />
+  return <Seo siteMetadata={siteMetadata} {...props} />
 }
 
-SEOWithQuery.propTypes = {
-  isBlogPost: PropTypes.bool,
-  postData: PropTypes.shape({
-    childMarkdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.any,
-      excerpt: PropTypes.any,
+SeoWithQuery.propTypes = {
+    isBlogPost: PropTypes.bool,
+    postData: PropTypes.shape({
+        markdownRemark: PropTypes.shape({
+            frontmatter: PropTypes.any,
+            excerpt: PropTypes.any,
+        }),
     }),
-  }),
-  metaImage: PropTypes.string,
+    metaImage: PropTypes.string,
 }
 
-SEOWithQuery.defaultProps = {
-  isBlogPost: false,
-  postData: {childMarkdownRemark: {}},
-  metaImage: null,
+SeoWithQuery.defaultProps = {
+    isBlogPost: false,
+    postData: {markdownRemark: {}},
+    metaImage: null,
 }
 
-export default SEOWithQuery
+export default SeoWithQuery

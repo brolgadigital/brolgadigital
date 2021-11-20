@@ -8,7 +8,7 @@ export default React.memo(
     datePublished,
     defaultTitle,
     description,
-    altLogo,
+    logo,
     isBlogPost,
     organization,
     title,
@@ -37,7 +37,7 @@ export default React.memo(
                 item: {
                   '@id': url,
                   name: title,
-                  altLogo,
+                  logo,
                 },
               },
             ],
@@ -51,19 +51,9 @@ export default React.memo(
             headline: title,
             image: {
               '@type': 'ImageObject',
-              url: image,
+              url: organization.url,
             },
             description,
-            author: {
-              '@type': 'Person',
-              name: author.name,
-            },
-            publisher: {
-              '@type': 'Organization',
-              url: organization.url,
-              logo: organization.logo,
-              name: organization.name,
-            },
             mainEntityOfPage: {
               '@type': 'WebSite',
               '@id': canonicalUrl,
