@@ -12,7 +12,7 @@ export default function services() {
                 <Headers subtitle='Make it yours with' title='Brolga Digital Services'/>
 
                 <p>Just getting started, needing a complete overhaul or just wanting to start afresh? We're here for whatever your business needs. </p>
-                <p className='last'>Each of our projects is custom tailored to our clients needs. We build bespoke digital solutions to help your brand stand out from the online noise. And with our individualised quotes, you'll only ever pay for the services you actually need. No bulk plans filled with bloat to inflate your costs.</p>
+                <p className='last'>Each of our projects is tailored to our clients needs. We design and build bespoke digital solutions to help your brand stand out from the online noise. And with our individualised quotes, you'll only ever pay for the services you actually need. No generic plans designed inflate your costs, you only pay for what you need.</p>
 
                 <h2>Find a solution that's right for you</h2>
                 <ul>

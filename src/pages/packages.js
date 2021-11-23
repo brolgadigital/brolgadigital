@@ -8,17 +8,17 @@ export default function subscriptions() {
   return (
     <div>
       <Layout>
-      <Headers subtitle='What makes Brolga Digital Different?' title='Ongoing Support Packages' />
+      <Headers subtitle='What makes Brolga Digital different?' title='Ongoing Support Packages' />
       
       <p>Ongoing support with Brolga Digital is simple. You own everything. We just manage it. From creating backups to scheduling social media posts, we can handle it for you. We aim to take the stress out of online content by consolidating all your online marketing activities and managing them on your behalf.</p>
       
-      <p className='last'>We know it’s stressful to choose a web designer, only to have them deliver files and not offer ongoing support. We promise to be different, and support you and our products. It’s like having an in-house media manager, at a fraction of the cost.</p>
+      <p className='last'>We know it’s stressful to choose a web designer, only to have them deliver files and not offer ongoing support. We promise to be different, and support you and our products. It’s like having an in-house media and web manager, at a fraction of the cost.</p>
       
       <div className="cardwrapper">
         <PriceCard 
           title='Website Support Package'
           price='50'
-          desc='Perfect for those who need their website to "just work" with no extra hassle'
+          desc='Perfect for those who need their website to just work with no extra hassle'
           details={['weekly backups', 'domain and hosting', 'email and phone support', 'uptime monitoring', 'plugin and security updates']}/>
         <PriceCard
           title='Graphics Package'

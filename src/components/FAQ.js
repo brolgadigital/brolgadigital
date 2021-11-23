@@ -34,7 +34,7 @@ export default function FAQ() {
                 />
                 <Questions 
                     q='Do you offer payment plans?'
-                    a='We split the payment for every project into 3 parts: 30% deposit to ensure your place in the production schedule, 35% after the initial design and concpeting phases, and 35% when the project is complete.'
+                    a='We split the payment for every project into 3 parts: 30% deposit to ensure your place in our production schedule, 35% after the initial design and concepting phases, and 35% when the project is complete.'
                 />
                 <Questions 
                     q='Where are you based?'
