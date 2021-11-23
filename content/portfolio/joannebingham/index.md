@@ -28,7 +28,7 @@ infobox2:
   display: true
   icon: layout
   boxtitle: Custom Wordpress Theme
-  blurb: Build from scratch and designed specifically for Joanne's needs
+  blurb: Built from scratch and designed specifically for Joanne's needs
 infobox3:
   display: true
   icon: clipboard
@@ -52,7 +52,7 @@ When Joanne approached us, she was using a default template from Wordpress, set 
 <figcaption>The original site design for Joanne Bingham, with no branding</figcaption>
 </figure>
 
-Joanne also had no brand presence. There was no logo or cohesive fonts or colours being used across her marketing. We wanted to create a word-logo that better represented her artistic talents.
+Joanne also had no brand presence. There was no logo or cohesive fonts or colours being used across her marketing. We wanted to create a wordmark logo that better represented her artistic talents.
 
 ## Branding and Web Presence
 
@@ -87,7 +87,7 @@ With no web management experience, Joanne asked that we provide maintenance and 
 
 ## Adding a shop
 
-About one year after the initial website rebuild, Joanne requested a custom homepage for her shopfront. She had begun making earrings, and also wanted to sell these in the same online shop. Because we already had strong visual rules for her website, designing a building a new shopfront was a quick task. We also provided Joanne with some additional training on adding multiple types of products into the same WooCommerce shop.
+About one year after the initial website rebuild, Joanne requested a custom homepage for her shopfront. She had begun making earrings and also wanted to sell these in the same online shop. Because we already had strong visual rules for her website, designing and building a new shopfront was a quick task. We also provided Joanne with some additional training on adding multiple types of products into the same WooCommerce shop.
 
 <figure>
 
