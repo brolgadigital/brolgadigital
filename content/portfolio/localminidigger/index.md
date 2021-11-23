@@ -35,7 +35,14 @@ infobox4:
 
 When Local Mini Digger approached us, they had been doing some small scale trading with nothing more than the name. When the Covid-19 pandemic threw many of their business plans into chaos, Ed and Judy decided to focus on creating an identity for their business.
 
-The only aspect of branding they had decided (besides the name), was to use a set of logos that feature different diggers that are used. We listened to their input and developed two interchangeable logos, font rules and a set of brand colours. All this was packaged with an easy to use guide, so they could immediately begin creating cohesion across their invoices and marketing. 
+The only aspect of branding they had decided (besides the name), was to use a set of logos that feature different diggers that are used. We listened to their input and developed two interchangeable logos, font rules and a set of brand colours. All this was packaged with an easy to use guide, so they could immediately begin creating cohesion across their invoices and marketing.
+
+<figure> 
+
+![Local Mini Digger branding printed on a large sticker for use on the side of a truck](img_4376.jpg "Large scale print of the Local Mini Digger branding")
+
+<figcaption>Large scale print of the Local Mini Digger branding</figcaption>
+<figure>
 
 Big or small, Brolga Digital can design for any scale. We supplied the logos in full colour in addition to black and white. We can also edit our work to suit any supplier or printer. The Local Mini Digger logos are being used on the side of a truck!
 
@@ -50,6 +57,12 @@ Ed is happy to take photos, and Judy now knows how to share them on their Facebo
 The final steps for Local Mini Digger's digital overhaul were to create a website with blazing fast loading times, add a clear call-to-action, and an overview of services they provide. We opted to use React and Gatsby, as they didn't want to edit the site themselves, and this framework provides a solid foundation for SEO.
 
 Being easily found meant that the website needed to be built for both human users, and the search engine bots that crawl and rank the entire internet. Using Gatsby meant that the Local Mini Digger website only serves static pages, that load fast and rank well. We also took the time to submit the sitemaps to both Google and Bing, another step that helps with ranking.
+
+<figure>
+
+![The Local Mini Digger Website as it would appear on a mobile phone](lmd-phone-screen.png "Local Mini Digger Mobile Site")
+
+<figure>
 
 Finally, we added the site to business pages that appear alongside search results. This will help instil confidence in anyone who turns up the Local Mini Digger website in their search results. This search engine page, social media and the website all have a unified call-to-action: asking visitors to make a phone call. 
 
