@@ -10,7 +10,7 @@ export default function Webmenu() {
     var year = new Date().getFullYear()
     return (
         <>
-            <Link to='/'><StaticImage src='../images/bd-text-paleblue-01.png' alt='Brolga Digital' loading='eager'/></Link>
+            <Link to='/'><StaticImage src='../images/bd-text-paleblue-01.png' alt='Brolga Digital' loading='eager' placeholder='tracedSVG' /></Link>
             <ul className="navigation">
                 <li><Link to='/services' activeClassName="currentPage">Services</Link></li>
                 <li><Link to='/packages' activeClassName="currentPage">Packages</Link></li>

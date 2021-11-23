@@ -41,7 +41,7 @@ class Mobilemenu extends React.Component{
     return (
         <div className='topmenu' style={{height: this.state.menu}} >
             <div>
-                <Link to='/' className='homebutton'><StaticImage src='../images/bd-text-paleblue-01.png' alt='Brolga Digital' loading='eager'/></Link>
+                <Link to='/' className='homebutton'><StaticImage src='../images/bd-text-paleblue-01.png' alt='Brolga Digital' loading='eager' placeholder='tracedSVG'/></Link>
                 <div className='drawer'>
                     <button id='menu' onClick={this.open} aria-label='Open Menu' style={{display: this.state.burger}}><Icon.Menu /></button>
                     <button id='close' onClick={this.close} aria-label='Close Menu' style={{display: this.state.cross}}><Icon.X /></button>

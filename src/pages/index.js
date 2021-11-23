@@ -11,7 +11,7 @@ export default function index() {
       <Layout>
         <div className='homepage'>
           <div className='titles'>
-            <StaticImage class='logo' src='../images/bd-text-paleblue-01.png' alt='Brolga Digital' loading='eager'/>
+            <StaticImage class='logo' src='../images/bd-text-paleblue-01.png' alt='Brolga Digital' loading='eager' placeholder='tracedSVG'/>
             <div className='headliner'>
                 <h2>The Digital Agency for Small Bussiness</h2>
                 <p>It starts with just a simple conversation</p>
