@@ -15,7 +15,7 @@ Rebuilding a website with existing content is a great challenge. Before we can s
 
 A current [sitemap](https://www.sitemaps.org/index.html) is a really easy way to see what's happening. Their main purpose is for search engine crawlers to identify all pages on a site, but they're also a valuable source of information about the sites structure. The [sitemap for shelleybassett.com](https://www.shelleybassett.com/sitemap_index.xml) has information on post types, URLs, images, links, creation dates and products.
 
-If we can't find an automatically generated sitemap, we'll take the time to manually follow links on a site, noting down every URL we find. Luckily, we don't have to do this very often as there are a number of tools to create a visualise sitemaps.
+If we can't find an automatically generated sitemap, we'll take the time to manually follow links on a site, noting down every URL we find. Luckily, we don't have to do this very often as there are a number of tools to create and visualise sitemaps.
 
 ### Look at content categories
 
@@ -29,7 +29,11 @@ It can also be beneficial to note the number of posts or products in each catego
 
 If the website is equipped with analytics from a tracing program like Google or Amazon, we take care to delve into them and see what is performing well. It's also important to note if the high traffic URLs are converting into sales or providing other value to the business.
 
+<figure>
+
 ![Sample Google Analytics Graphs](screen-shot-2017-07-17-at-8.58.36-am.png "Sample Google Analytics Graphs")
+
+</figure>
 
 For businesses without tracking on their websites, we install and monitor it during the redesign process. This data isn't quite as valuable as being able to observe trends over a longer period, but it will provide a baseline to see how our redevelopment is performing.
 
