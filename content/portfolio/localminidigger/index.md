@@ -35,7 +35,14 @@ infobox4:
 
 When Local Mini Digger approached us, they had been doing some small scale trading with nothing more than the name. When the Covid-19 pandemic threw many of their business plans into chaos, Ed and Judy decided to focus on creating an identity for their business.
 
-The only aspect of branding they had decided (besides the name), was to use a set of logos that feature different diggers that are used. We listened to their input and developed two interchangeable logos, font rules and a set of brand colours. All this was packaged with an easy to use guide, so they could immediately begin creating cohesion across their invoices and marketing. 
+The only aspect of branding they had decided (besides the name), was to use a set of logos that feature different diggers that are used. We listened to their input and developed two interchangeable logos, font rules and a set of brand colours. All this was packaged with an easy to use guide, so they could immediately begin creating cohesion across their invoices and marketing.
+
+<figure> 
+
+![Local Mini Digger branding printed on a large sticker for use on the side of a truck](img_4376.jpg "Large scale print of the Local Mini Digger branding")
+
+<figcaption>Large scale print of the Local Mini Digger branding</figcaption>
+<figure>
 
 Big or small, Brolga Digital can design for any scale. We supplied the logos in full colour in addition to black and white. We can also edit our work to suit any supplier or printer. The Local Mini Digger logos are being used on the side of a truck!
 
