@@ -16,15 +16,30 @@ According to VanDusen, the only reasons that you should consider a rebrand is if
 
 Personal branding is its own special challenge as it focuses more on the feeling and emotions of an individual. The *Shelley Bassett* brand went through several iterations over its lifetime. Very few people would recognise its original version, with black and white images, a bold yellow accent and a serifed typeface.
 
-The original branding of Shelley Bassett circa 2015
+<figure>
+
+![The original website branding for Shelley Bassett](original-shelley-bassett-branding.png "The original website branding for Shelley Bassett")
+
+<figcaption>The original branding of Shelley Bassett circa 2015</figcaption>
+</figure>
 
 The next design of Shelley Bassett was a total overhaul from the original design. Rather than a hash black and white scheme, the website used a soft grey and complimentary teal. All the typography moved to sans-serif, and clean iconography was introduced.
 
-First Rebranding of Shelley Bassett circa 2017
+<figure>
+
+![First Rebranding of Shelley Bassett](first-rebranding-of-shelley-bassett.png "First Rebranding of Shelley Bassett")
+
+<figcaption>First Rebranding of Shelley Bassett circa 2017</figcaption>
+</figure>
 
 The next iteration for *Shelley Bassett* was a small refresh, introducing a cursive typeface and more imagery. Rather than a rebrand, this was a website redesign to refine the existing palette. It also helped to take into account new features like a blog and shop, with a bold new banner added to the top of the home page.
 
-Second and Third rebranding of Shelley Bassett circa 2018 and 2020
+<figure>
+
+![Second rebranding of Shelley Bassett](second-rebranding-of-shelley-bassett-1.png "Second rebranding of Shelley Bassett")
+
+<figcaption>Second and Third rebranding of Shelley Bassett circa 2018 and 2020</figcaption>
+<figure>
 
 Finally, the cursive typeface was dropped in favour of a bold, serif font. Shelley still uses this branding as her personal design, however, in 2021 she wanted to move the business in a new direction, restructuring and rebranding entirely as Brolga Digital.
 
@@ -33,6 +48,13 @@ Finally, the cursive typeface was dropped in favour of a bold, serif font. Shell
 So, how to determine whether to rebrand, refresh or retain what you already have? Philip VanDusen's video at the beginning of this post is a good place to start evaluating what you have and where you're going.
 
 The main reasons to change or refresh involve a change in brand direction. If you (or your company) are still working toward the same goals as when the brand identity was created, it's probably best to leave the design alone or use small, subtle tweaks to refine the existing design.
+
+<figure>
+
+![Brolga Digital's Branding](artboard-1-100.jpg "Brolga Digital's Branding")
+
+<figcaption>The finalised branding for Brolga Digital</figcaption>
+</figure>
 
 When you take a major step or change the direction of the business, rebranding can be a great way to differentiate the new from the old. It's a chance for a fresh start, and to create some guides that can tell a single, unified story anywhere someone comes into contact with the company.
 
