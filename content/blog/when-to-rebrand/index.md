@@ -8,6 +8,8 @@ Brolga Digital might seem like a new agency, but did you know we've actually bee
 
 Rebranding was a massive undertaking, both for us as a company, and for our customers. The decision was not taken lightly, and a lot of thought and consideration went into choosing a rebrand over simply repurposing the existing *Shelley Bassett* brand into something new. Philip VanDusen, a branding expert, and has a short video that outlines 4 key reasons to help you decide when to rebrand.
 
+
+
 [](https://www.youtube.com/watch?v=XKfn17vVyRo)<https://www.youtube.com/watch?v=XKfn17vVyRo>
 
 According to VanDusen, the only reasons that you should consider a rebrand is if you're out of style, don't match your product (or service), are undergoing a transformation, or no longer feel attached to the existing branding. Notice, time is not necessarily a factor into rebranding consideration. In fact, long standing branding might be a reason to avoid change.
