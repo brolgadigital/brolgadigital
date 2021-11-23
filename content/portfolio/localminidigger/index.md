@@ -37,6 +37,12 @@ When Local Mini Digger approached us, they had been doing some small scale tradi
 
 The only aspect of branding they had decided (besides the name), was to use a set of logos that feature different diggers that are used. We listened to their input and developed two interchangeable logos, font rules and a set of brand colours. All this was packaged with an easy to use guide, so they could immediately begin creating cohesion across their invoices and marketing. 
 
+<figure>
+
+![The Local Mini Digger Website as it would appear on a mobile phone](lmd-phone-screen.png "Local Mini Digger Mobile Site")
+
+<figure>
+
 Big or small, Brolga Digital can design for any scale. We supplied the logos in full colour in addition to black and white. We can also edit our work to suit any supplier or printer. The Local Mini Digger logos are being used on the side of a truck!
 
 ## Getting Social with Training
