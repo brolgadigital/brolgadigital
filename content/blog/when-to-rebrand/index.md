@@ -3,6 +3,7 @@ layout: blog
 path: when-to-rebrand
 date: 2021-11-24T00:49:03.761Z
 title: When should you rebrand a business?
+thumbnail: adobestock_288906272.jpeg
 ---
 Brolga Digital might seem like a new agency, but did you know we've been in business for 6 years? Initially, we were a one-person operation, a sole-trader operation under [shelleybassett.com](https://www.shelleybassett.com/) and a lot has changed since those days.
 
