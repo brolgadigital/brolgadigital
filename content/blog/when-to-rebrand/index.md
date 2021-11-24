@@ -42,7 +42,7 @@ The next iteration for *Shelley Bassett* was a small refresh, introducing a curs
 ![Current Shelley Bassett Branding](header-jun-2020.jpg "Current Shelley Bassett Branding")
 
 <figcaption>Second and Third rebranding of Shelley Bassett circa 2018 and 2020</figcaption>
-<figure>
+</figure>
 
 Finally, the cursive typeface was dropped in favour of a bold, serif font. Shelley still uses this branding as her personal design, however, in 2021 she wanted to move the business in a new direction, restructuring and rebranding entirely as Brolga Digital.
 
