@@ -59,7 +59,7 @@ Joanne also had no brand presence. There was no logo or cohesive fonts or colour
 For Joanne, we took a slightly unconventional approach, showing her different combinations of branding options and homepage layouts. Joanne already has design and art experience, and we wanted her to feel creatively involved in the entire process.
 
 <figure>
-<div>
+<div class="row">
 
 ![Joanne Bingham Website Concept 1](mockup-1.jpg "Website redesign options we presented to Joanne.")
 
