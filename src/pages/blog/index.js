@@ -1,5 +1,7 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
+import Headers from '../../components/Headers'
+import Button from '../../components/Button'
 
 // import Bio from "../components/bio"
 import Layout from '../../components/Layout'
@@ -10,6 +12,7 @@ const BlogIndex = ({ data, location }) => {
   if (posts.length === 0) {
     return (
       <Layout>
+          <Headers subtitle='What Brolga Digital has to say' title='Blog Posts' />
         {/* <Seo title="All posts" /> */}
         {/* <Bio /> */}
         <p>
@@ -23,6 +26,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout>
+                  <Headers subtitle='Stay Informed' title='Blog Posts' />
       {/* <Seo title="All posts" /> */}
       {/* <Bio /> */}
       <ol style={{ listStyle: `none` }}>
@@ -37,11 +41,7 @@ const BlogIndex = ({ data, location }) => {
                 itemType="http://schema.org/Article"
               >
                 <header>
-                  <h2>
-                    <Link to={post.frontmatter.path} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </h2>
+                  <h2>{title}</h2>
                   <small>{post.frontmatter.date}</small>
                 </header>
                 <section>
@@ -51,6 +51,8 @@ const BlogIndex = ({ data, location }) => {
                     }}
                     itemProp="description"
                   />
+                  {/* <Button text='Read More' to={post.frontmatter.path} /> */}
+                  <h4><Link to={post.frontmatter.path}>Read More {'>'}</Link></h4>
                 </section>
               </article>
             </li>

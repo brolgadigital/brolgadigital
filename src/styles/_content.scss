@@ -14,17 +14,33 @@ figure {
 
     &> p {
         flex-basis: 66%;
+        margin-bottom: 0 !important;
     }
 
     &> div {
         flex-basis: 66%;
         display: flex;
-        flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
 
+    }
+
+    .col {
+        flex-direction: column;
+        &> p {
+            flex-basis: 100%;
+            width: 100%;
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .row {
+        flex-direction: row;
+
         &> p {
             flex-basis: 49%;
+            width: 100%;
+            margin-bottom: 0 !important;
         }
     }
 
