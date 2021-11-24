@@ -37,9 +37,13 @@ The next iteration for *Shelley Bassett* was a small refresh, introducing a curs
 
 <figure>
 
+<div class='col'>
+
 ![Second rebranding of Shelley Bassett](second-rebranding-of-shelley-bassett-1.png "Second rebranding of Shelley Bassett")
 
 ![Current Shelley Bassett Branding](header-jun-2020.jpg "Current Shelley Bassett Branding")
+
+</div>
 
 <figcaption>Second and Third rebranding of Shelley Bassett circa 2018 and 2020</figcaption>
 </figure>
