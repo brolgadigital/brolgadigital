@@ -42,7 +42,7 @@ The only aspect of branding they had decided (besides the name), was to use a se
 ![Local Mini Digger branding printed on a large sticker for use on the side of a truck](img_4376.jpg "Large scale print of the Local Mini Digger branding")
 
 <figcaption>Large scale print of the Local Mini Digger branding</figcaption>
-<figure>
+</figure>
 
 Big or small, Brolga Digital can design for any scale. We supplied the logos in full colour in addition to black and white. We can also edit our work to suit any supplier or printer. The Local Mini Digger logos are being used on the side of a truck!
 
@@ -62,7 +62,9 @@ Being easily found meant that the website needed to be built for both human user
 
 ![The Local Mini Digger Website as it would appear on a mobile phone](lmd-phone-screen.png "Local Mini Digger Mobile Site")
 
-<figure>
+<figcaption></figcaption>
+
+</figure>
 
 Finally, we added the site to business pages that appear alongside search results. This will help instil confidence in anyone who turns up the Local Mini Digger website in their search results. This search engine page, social media and the website all have a unified call-to-action: asking visitors to make a phone call. 
 
