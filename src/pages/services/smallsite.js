@@ -3,11 +3,13 @@ import Layout from '../../components/Layout'
 import Headers from '../../components/Headers'
 import Cards from '../../components/Cards'
 // import { Link } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
 
 const smallsite = () => {
     return (
         <Layout>
             <Headers subtitle='Get started with' title='Blogs and Static Sites' id='smallsite'/>
+            <StaticImage src='../../images/graphics/smallsite.png' className='brand-image' />
 
             <div className="cardwrapper">
                 <Cards 

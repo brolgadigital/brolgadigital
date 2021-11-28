@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import Headers from '../components/Headers'
 // import MailingList from '../components/email/MailingList'
+import { StaticImage } from 'gatsby-plugin-image'
 
 export default function contact() {
   const copyEmail = () => {
@@ -21,6 +22,7 @@ export default function contact() {
     <div>
       <Layout>
         <Headers subtitle='Reach out and say hello' title='Contact Us' />
+        <StaticImage src='../images/graphics/contact.png' className='brand-image' />
         <p className='last'>For more information about our business packages or ongoing support subscriptions, email <button onClick={copyEmail} id='brolga-email'>hello@brolgadigital.com.au</button> or book a free consult</p>
 
         {/* <Headers subtitle='Keep up to date with us' title='Mailing List' />
