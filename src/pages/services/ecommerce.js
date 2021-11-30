@@ -16,22 +16,22 @@ const ecommerce = () => {
                 <Cards 
                     title='Inventory and Stock Management'
                     icon='gift'
-                    desc="Your business is unique, and your web presence should be too. We don't use cookie cutter templates, everything is custom designed and built with you in mind"
+                    desc="Bring your own inventory system or let us help you find the best one to suit your needs. Whatever you've got, we'll make it work."
                 />
                 <Cards 
                     title='Shipping Calculation'
                     icon='layout'
-                    desc='Our web expertise stretches further than just the homepage. Blogs, ecommerce, apps and custom solutions are no problem!'
+                    desc='Calculating shipping and arrival times can be hard. But we know the ins and outs to get your customers accurate information.'
                 />
                 <Cards 
-                    title='Credit Card Processing'
+                    title='Payment Processing'
                     icon='layout'
-                    desc='Our web expertise streches further than just the homepage. Blogs, ecommerce, apps and custom solutions are no problem!'
+                    desc='Not sure how to let customers check out? We can get the whole ecommerce system running smoothly, so you can focus on your products.'
                 />
                 <Cards 
                     title='Social Media And Web Shopping'
                     icon='layout'
-                    desc='We can also link your online store to platforms like Instagram, Facebook and Google. Get found and sell in more places!'
+                    desc="Did you know you need to submit your product catlogue for it to show in search results? We did, and we can automate the process for you. Update a product, it'll update everywhere!"
                 />
             </div>
         </Layout>

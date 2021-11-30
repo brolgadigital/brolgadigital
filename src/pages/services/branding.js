@@ -8,7 +8,9 @@ const branding = () => {
     return (
         <Layout>
             <Headers subtitle='Stand out from the crowd' title='Comprehensive Brand Design' id='branding'/>
-            
+            <StaticImage src='../../images/graphics/branding.png' className='brand-image' />
+            <p>Our branding services will provide you with everything to create consistency throughout your business. From a brand guide to business cards, social icons to marketing collateral, we'll present your story cohesively wherever your customers and clients are.</p>
+
             <div className="cardwrapper">
                 <Cards 
                     title='Bespoke Custom Solutions'
@@ -21,9 +23,6 @@ const branding = () => {
                     desc='Our web expertise stretches further than just the homepage. Blogs, ecommerce, apps and custom solutions are no problem!'
                 />
             </div>
-
-            <StaticImage src='../../images/graphics/branding.png' className='brand-image' />
-            <p>Our branding services will provide you with everything to create consistency throughout your business. From a brand guide to business cards, social icons to marketing collateral, we'll present your story cohesively wherever your customers and clients are.</p>
 
         </Layout>
     )

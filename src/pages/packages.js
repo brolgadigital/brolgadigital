@@ -32,7 +32,7 @@ export default function subscriptions() {
           details={['post and blog proofreading', 'graphic design assistance', 'scheduled social posts', 'monthly planning and advice call', 'analytics monitoring and advice']}/>
       </div>
 
-      <p className='last'>Need something a little different? We're flexible, just <Link to='/contact'>contact us</Link>. We also offer frequent discounts, including substantial savings if you use several of our packages or services!</p>
+      <p className='last'>Need something a little different, or just a one off? We're flexible, just <Link to='/contact'>contact us</Link>. We also offer frequent discounts, including substantial savings if you use several of our packages or services!</p>
 
       <Headers subtitle='It starts with a conversation' title='Book a Consultation' />
       <p className='last'>Ready to dive in or just need some questions answered? <Link to='/contact'>Book a consultation</Link> to find out how we can help your business grow using digital platforms.</p>

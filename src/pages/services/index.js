@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../../components/Layout'
 import Headers from '../../components/Headers'
-// import Cards from '../../components/Cards'
+import Cards from '../../components/Cards'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
 // import { AnchorLink } from 'gatsby-plugin-anchor-links'
@@ -26,6 +26,22 @@ export default function services() {
                     <li><Link to='/services/strategy'>Social Media and Marketing Strategies</Link></li>
                     <li><Link to='/services/seo'>SEO and Optimisation</Link></li>
                 </ul>
+
+                
+                <h2>Our most popular services</h2>
+
+                <div className="cardwrapper">
+                    <Cards 
+                        title='Bespoke Custom Solutions'
+                        icon='gift'
+                        desc="Your business is unique, and your web presence should be too. We don't use cookie cutter templates, everything is custom designed and built with you in mind"
+                    />
+                    <Cards 
+                        title='Blogs and Ecommerce'
+                        icon='layout'
+                        desc='Our web expertise stretches further than just the homepage. Blogs, ecommerce, apps and custom solutions are no problem!'
+                    />
+                </div>
 
                 <h2>Not sure where to start?</h2>
                 <p className='last'>If you know you need get started in the digital sphere, but all these terms seem made up, <Link to='/contact'>book a consultation</Link> and see what we can do for you!</p>
