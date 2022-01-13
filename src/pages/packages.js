@@ -1,5 +1,4 @@
 import React from 'react'
-import Layout from '../components/Layout'
 import Headers from '../components/Headers'
 import PriceCard from '../components/PriceCard'
 import { Link } from 'gatsby'
@@ -7,7 +6,7 @@ import { Link } from 'gatsby'
 export default function subscriptions() {
   return (
     <div>
-      <Layout>
+      <>
       <Headers subtitle='What makes Brolga Digital different?' title='Ongoing Support Packages' />
       
       <p>Ongoing support with Brolga Digital is simple. You own everything. We just manage it. From creating backups to scheduling social media posts, we can handle it for you. We aim to take the stress out of online content by consolidating all your online marketing activities and managing them on your behalf.</p>
@@ -40,7 +39,7 @@ export default function subscriptions() {
       <Headers subtitle='Need help getting something started?' title='Brolga Digital Design Services' />
       <p>Need help with SEO or ecommerce but not looking for ongoing support? Check out our <Link to='/services'>design services</Link>.</p>
 
-      </Layout>
+      </>
     </div>
   )
 }

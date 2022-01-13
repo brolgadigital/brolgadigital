@@ -1,5 +1,4 @@
 import React from 'react'
-import Layout from '../../components/Layout'
 import Headers from '../../components/Headers'
 import Cards from '../../components/Cards'
 import { Link } from 'gatsby'
@@ -9,7 +8,6 @@ import { StaticImage } from 'gatsby-plugin-image'
 export default function services() {
     return (
         <div>
-            <Layout>
                 <Headers subtitle='Make it yours with' title='Brolga Digital Services'/>
 
                 <StaticImage src='../../images/graphics/faq.png' className='brand-image' />
@@ -45,7 +43,6 @@ export default function services() {
 
                 <h2>Not sure where to start?</h2>
                 <p className='last'>If you know you need get started in the digital sphere, but all these terms seem made up, <Link to='/contact'>book a consultation</Link> and see what we can do for you!</p>
-            </Layout>
         </div>
     )
 }

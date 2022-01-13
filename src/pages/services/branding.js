@@ -1,12 +1,11 @@
 import React from 'react'
-import Layout from '../../components/Layout'
 import Headers from '../../components/Headers'
 import Cards from '../../components/Cards'
 import { StaticImage } from 'gatsby-plugin-image'
 
 const branding = () => {
     return (
-        <Layout>
+        <>
             <Headers subtitle='Stand out from the crowd' title='Comprehensive Brand Design' id='branding'/>
             <StaticImage src='../../images/graphics/branding.png' className='brand-image' />
             <p>Our branding services will provide you with everything to create consistency throughout your business. From a brand guide to business cards, social icons to marketing collateral, we'll present your story cohesively wherever your customers and clients are.</p>
@@ -24,7 +23,7 @@ const branding = () => {
                 />
             </div>
 
-        </Layout>
+        </>
     )
 }
 

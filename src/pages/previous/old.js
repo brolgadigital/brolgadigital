@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Layout from '../../components/Layout'
 import Headers from '../../components/Headers'
 import Cards from '../../components/Cards'
 import Button from '../../components/Button'
@@ -9,7 +8,6 @@ import Button from '../../components/Button'
 export default function oldIndex() {
   return (
     <div>
-        <Layout>
             
             <Headers subtitle='Get started with' title='The Complete Design Package'/>
             <div className='cardwrapper'>
@@ -52,7 +50,6 @@ export default function oldIndex() {
             <Headers subtitle='Make it your own with' title='DIY Templates and Instructionals'/>
             <p>Want to DIY a marketing refresh? We've got some simple tools to help. </p>
             <Link to='/resources'><Button text='Shop Now' /></Link>
-        </Layout>
     </div>
   )
 }

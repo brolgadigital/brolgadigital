@@ -1,5 +1,4 @@
 import React from 'react'
-import Layout from '../../components/Layout'
 import Headers from '../../components/Headers'
 import Cards from '../../components/Cards'
 // import { Link } from 'gatsby'
@@ -7,7 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 const ecommerce = () => {
     return (
-        <Layout>
+        <>
             <Headers subtitle='Boost sales with' title='Ecommerce Integration' id='ecommerce'/>
             <StaticImage src='../../images/graphics/ecommerce.png' className='brand-image' />
             <p>Did Covid force you to close a physical store? Looking to let international customers in on your amazing products? We can help you find the right ecommerce solution that is easy to use, works with your accounting or stocktaking and looks great on your website.</p>
@@ -34,7 +33,7 @@ const ecommerce = () => {
                     desc="Did you know you need to submit your product catlogue for it to show in search results? We did, and we can automate the process for you. Update a product, it'll update everywhere!"
                 />
             </div>
-        </Layout>
+        </>
     )
 }
 

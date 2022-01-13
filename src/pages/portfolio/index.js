@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../../components/Layout'
 import Headers from '../../components/Headers'
 import ProjectCard from '../../components/ProjectCard'
 import { OutboundLink } from 'gatsby-plugin-google-gtag'
@@ -10,7 +9,7 @@ export default function index({ data }) {
     const projects = data.allMarkdownRemark.nodes
 
     return (
-        <Layout>
+        <>
             <Headers subtitle="Know what you're getting" title='Our Recent Projects' />
 
             {projects.map(project => {
@@ -34,7 +33,7 @@ export default function index({ data }) {
                 <OutboundLink href="https://instagram.com/brolgadigital" className='button' title="Instagram" aria-label="Instagram"><Icon.Instagram /> See More On Instagram</OutboundLink>
                 <OutboundLink href="https://dribbble.com/brolgadigital" className='button' title="Dribbble" aria-label="Dribbble"><Icon.Dribbble /> See More On Dribbble</OutboundLink>
             </div>
-        </Layout>
+        </>
     )
 }
 

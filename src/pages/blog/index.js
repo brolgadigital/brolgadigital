@@ -4,14 +4,13 @@ import Headers from '../../components/Headers'
 import Button from '../../components/Button'
 
 // import Bio from "../components/bio"
-import Layout from '../../components/Layout'
 
 const BlogIndex = ({ data, location }) => {
   const posts = data.allMarkdownRemark.nodes
 
   if (posts.length === 0) {
     return (
-      <Layout>
+      <>
           <Headers subtitle='What Brolga Digital has to say' title='Blog Posts' />
         {/* <Seo title="All posts" /> */}
         {/* <Bio /> */}
@@ -20,13 +19,13 @@ const BlogIndex = ({ data, location }) => {
           directory you specified for the "gatsby-source-filesystem" plugin in
           gatsby-config.js).
         </p>
-      </Layout>
+      </>
     )
   }
 
   return (
-    <Layout>
-                  <Headers subtitle='Stay Informed' title='Blog Posts' />
+    <>
+        <Headers subtitle='Stay Informed' title='Blog Posts' />
       {/* <Seo title="All posts" /> */}
       {/* <Bio /> */}
       <ol style={{ listStyle: `none` }}>
@@ -59,7 +58,7 @@ const BlogIndex = ({ data, location }) => {
           )
         })}
       </ol>
-    </Layout>
+    </>
   )
 }
 

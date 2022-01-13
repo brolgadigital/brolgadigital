@@ -1,5 +1,4 @@
 import React from 'react'
-import Layout from '../../components/Layout'
 import Headers from '../../components/Headers'
 import Cards from '../../components/Cards'
 import Faqs from '../../components/FAQ'
@@ -8,7 +7,6 @@ import { Link } from 'gatsby'
 export default function index() {
     return (
         <div>
-            <Layout>
                 <Headers subtitle='Get started with' title='The Complete Design Package'/>
 
                 <p>Just getting started, needing a complete overhaul or just wanting to start afresh? We're here for whatever your business needs. </p>
@@ -65,7 +63,6 @@ export default function index() {
 
                 <Faqs />
 
-            </Layout>
         </div>
     )
 }

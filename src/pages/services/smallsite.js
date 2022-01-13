@@ -1,5 +1,4 @@
 import React from 'react'
-import Layout from '../../components/Layout'
 import Headers from '../../components/Headers'
 import Cards from '../../components/Cards'
 // import { Link } from 'gatsby'
@@ -7,7 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 const smallsite = () => {
     return (
-        <Layout>
+        <>
             <Headers subtitle='Get started with' title='Blogs and Static Sites' id='smallsite'/>
             <StaticImage src='../../images/graphics/smallsite.png' className='brand-image' />
             <p className='last'>Our designers and developers are well versed in a number of blogging platforms, including Wordpress, Squarespace and Webflow; so no matter your preference, we can build something special. We also have extensive experience with React, and several different frameworks for making lightning fast static sites. In fact, we built the Brolga Digital website using Gatsby for React!</p>
@@ -30,7 +29,7 @@ const smallsite = () => {
                 />
             </div>
 
-        </Layout>
+        </>
     )
 }
 

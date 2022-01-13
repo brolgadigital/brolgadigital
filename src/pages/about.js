@@ -1,5 +1,4 @@
 import React from 'react'
-import Layout from '../components/Layout'
 import Headers from '../components/Headers'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
@@ -7,7 +6,6 @@ import { StaticImage } from 'gatsby-plugin-image'
 export default function about() {
   return (
     <div>
-      <Layout>
         <Headers title='About Brolga Digital' />
         <StaticImage src='../images/graphics/about.png' className='brand-image' />
         <p>Brolga Digital was founded by Shelley Bassett, who has been managing websites and social media accounts for family, friends and local businesses since 2017. Striking out on her own, she began working with freelance designers, developers and marketers to create the best solutions for her clients.</p>
@@ -22,8 +20,6 @@ export default function about() {
         <h4>Owner, Lead Designer</h4> */}
 
         <p className='last'>Still have questions? Check out our <Link to='/faqs'>FAQ's</Link></p>
-
-      </Layout>
     </div>
   )
 }

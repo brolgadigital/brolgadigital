@@ -1,5 +1,4 @@
 import React from 'react'
-import Layout from '../../components/Layout'
 import Headers from '../../components/Headers'
 import Cards from '../../components/Cards'
 // import { Link } from 'gatsby'
@@ -7,7 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 const seo = () => {
     return (
-        <Layout>
+        <>
             <Headers subtitle='Get found online' title='Search Engine and Performance Optimisation' id='seo'/>
             <StaticImage src='../../images/graphics/seo.png' className='brand-image' />
 
@@ -33,7 +32,7 @@ const seo = () => {
                     desc='We can go through your website and suggest optimised keywords and edits that will make your website more search engine friendly.'
                 />
             </div>
-        </Layout>
+        </>
     )
 }
 

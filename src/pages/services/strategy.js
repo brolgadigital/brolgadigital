@@ -1,5 +1,4 @@
 import React from 'react'
-import Layout from '../../components/Layout'
 import Headers from '../../components/Headers'
 import Cards from '../../components/Cards'
 import { Link } from 'gatsby'
@@ -7,7 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 
 const strategy = () => {
     return (
-        <Layout>
+        <>
             <Headers subtitle='Develop a plan' title='Digital and Social Marketing Strategies' id='strategy'/>
             <StaticImage src='../../images/graphics/strategy.png' className='brand-image' />
             <p>Have lots of product photos but not sure how to share them? Need an ad but can't figure out AdWords? Let us spend the time optimising your plan while you run your business.</p>
@@ -20,7 +19,7 @@ const strategy = () => {
                     desc="A well documented business page will show up on the search engine site and has incredible click through rates. Let us help you make yours stand out!"
                 />
             </div>
-        </Layout>
+        </>
     )
 }
 

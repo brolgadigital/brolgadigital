@@ -4,9 +4,9 @@ const MessengerChat = require ("./src/components/MessengerChat").default
 
 exports.wrapPageElement = ({ element, props }) => {
     return (
-        <>
+        <Layout {...props}>
             {element}
             <MessengerChat />
-        </>
+        </Layout>
     )
 }
