@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 
 const MessengerChat = () => {
     useEffect(() => {
+        let FB
         window.fbAsyncInit = function() {
             FB.init({
                 xfbml            : true,
