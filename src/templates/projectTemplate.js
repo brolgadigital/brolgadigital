@@ -1,5 +1,4 @@
 import React from 'react'
-import Layout from '../components/Layout'
 import Headers from '../components/Headers'
 import Cards from '../components/Cards'
 import { OutboundLink } from 'gatsby-plugin-google-gtag'
@@ -12,7 +11,6 @@ const Template = ({ data }) => {
 
     return (
         <>
-        <Layout>
             <Headers subtitle={project.frontmatter.subtitle} title={project.frontmatter.title} />
 
             <div className="cardwrapper">
@@ -30,8 +28,6 @@ const Template = ({ data }) => {
             <h2>From {project.frontmatter.quoteAttribute}</h2>
             <p className='last'>{project.frontmatter.quote}</p>
             <OutboundLink href={project.frontmatter.website} className='button' title={project.frontmatter.name} aria-label={project.frontmatter.name}><Icon.ExternalLink /> View the Live Project</OutboundLink>
-
-        </Layout>   
         </>
     )
 }

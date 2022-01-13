@@ -4,8 +4,6 @@ import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import Headers from '../components/Headers'
 
-import Layout from '../components/Layout'
-
 const Template = ({ data }) => {
 
     const post = data.markdownRemark
@@ -14,7 +12,7 @@ const Template = ({ data }) => {
     const pageTitle = post.frontmatter.title + ' || ' + page.title
 
     return (
-        <Layout>
+        <>
             <Helmet 
                 title={pageTitle}
                 isBlogPost={true}
@@ -36,7 +34,7 @@ const Template = ({ data }) => {
                     ></div>
                 </div>
             </div>
-        </Layout>
+        </>
     )
 }
 
