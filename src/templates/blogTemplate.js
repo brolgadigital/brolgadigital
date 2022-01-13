@@ -7,7 +7,7 @@ import Headers from '../components/Headers'
 const Template = ({ data }) => {
 
     const post = data.markdownRemark
-    const page = data.site
+    const page = data.site.siteMetadata
 
     const pageTitle = post.frontmatter.title + ' || ' + page.title
 
