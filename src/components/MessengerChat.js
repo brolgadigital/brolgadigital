@@ -2,9 +2,8 @@ import React, { useEffect } from 'react'
 
 const MessengerChat = () => {
     useEffect(() => {
-        // let FB
         window.fbAsyncInit = function() {
-            FB.init({
+            FB.init({ // eslint-disable-line no-undef
                 xfbml            : true,
                 version          : 'v12.0'
             });
