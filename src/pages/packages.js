@@ -20,10 +20,11 @@ export default function subscriptions() {
           desc='Perfect for those who need their website to just work with no extra hassle'
           details={['weekly backups', 'domain and hosting', 'email and phone support', 'uptime monitoring', 'plugin and security updates']}/>
         <PriceCard
-          title='Graphics Package'
-          price='120'
-          desc='Ideal if you want to run your own social media, but need some help editing images for posts'
-          details={['graphics creations', 'photoshop editing', 'simple animations', 'stock image sourcing']}/>
+          title='Small Business Starter Package'
+          price='1200'
+          desc='Ideal for those just getting started online'
+          details={['website design', 'social media setup', 'brand development', 'marketing strategies']}
+          single='true'/>
         <PriceCard 
           title='Marketing Package'
           price='250'

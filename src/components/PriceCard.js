@@ -9,7 +9,7 @@ export default function PriceCard(props) {
         <div className="pricecard card">
             <div className='cost'>
                 <h3>{props.title}</h3>
-                <p>starting from<span className="price">{props.price}</span>per month</p>
+                <p>starting from<span className="price">{props.price}</span>{props.single ? "​" : "per month"}</p>
                 <hr></hr>
             </div>
 
