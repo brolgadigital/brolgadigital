@@ -49,12 +49,12 @@ class Mobilemenu extends React.Component{
             </div>
            
             <ul className="navigation" style={{display: this.state.items}}>
-                <li><Link to='/services' activeClassName="currentPage">Services</Link></li>
-                <li><Link to='/packages' activeClassName="currentPage">Packages</Link></li>
-                <li><Link to='/about' activeClassName="currentPage">About Us</Link></li>
-                <li><Link to='/portfolio' activeClassName="currentPage">Portfolio</Link></li>
-                <li><Link to='/contact' activeClassName="currentPage">Contact</Link></li>
-                <li><Link to='/blog' activeClassName="currentPage">Blog</Link></li>
+                <li><Link to='/services' activeClassName="currentPage" onClick={this.close}>Services</Link></li>
+                <li><Link to='/packages' activeClassName="currentPage" onClick={this.close}>Packages</Link></li>
+                <li><Link to='/about' activeClassName="currentPage" onClick={this.close}>About Us</Link></li>
+                <li><Link to='/portfolio' activeClassName="currentPage" onClick={this.close}>Portfolio</Link></li>
+                <li><Link to='/contact' activeClassName="currentPage" onClick={this.close}>Contact</Link></li>
+                <li><Link to='/blog' activeClassName="currentPage" onClick={this.close}>Blog</Link></li>
             </ul>
 
             <div className="psudoFooter" style={{display: this.state.items}}>
