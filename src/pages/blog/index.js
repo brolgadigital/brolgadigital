@@ -1,4 +1,5 @@
 import * as React from "react"
+import Head from "../../components/Head"
 import { Link, graphql } from "gatsby"
 import Headers from '../../components/Headers'
 import Button from '../../components/Button'
@@ -11,6 +12,8 @@ const BlogIndex = ({ data, location }) => {
   if (posts.length === 0) {
     return (
       <>
+                      <Head title='Blog' />
+
           <Headers subtitle='What Brolga Digital has to say' title='Blog Posts' />
         {/* <Seo title="All posts" /> */}
         {/* <Bio /> */}
@@ -25,6 +28,8 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <>
+                    <Head title='Blog' />
+
         <Headers subtitle='Stay Informed' title='Blog Posts' />
       {/* <Seo title="All posts" /> */}
       {/* <Bio /> */}

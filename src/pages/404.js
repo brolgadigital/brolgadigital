@@ -1,4 +1,5 @@
 import * as React from "react"
+import Head from '../components/Head'
 import { Link } from "gatsby"
 import Headers from '../components/Headers'
 import { StaticImage } from "gatsby-plugin-image"
@@ -7,6 +8,8 @@ import { StaticImage } from "gatsby-plugin-image"
 const NotFoundPage = () => {
   return (
     <>
+                    <Head title='404' />
+
       <Headers subtitle='Thats a 404...' title='Page Not Found' />
       <StaticImage src='../images/graphics/404.png' className='brand-image'/>
       <p>

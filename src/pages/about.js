@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from '../components/Head'
 import Headers from '../components/Headers'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
@@ -6,6 +7,8 @@ import { StaticImage } from 'gatsby-plugin-image'
 export default function about() {
   return (
     <div>
+                        <Head title='About Us' />
+
         <Headers title='About Brolga Digital' />
         <StaticImage src='../images/graphics/about.png' className='brand-image' />
         <p>Brolga Digital was founded by Shelley Bassett, who has been managing websites and social media accounts for family, friends and local businesses since 2017. Striking out on her own, she began working with freelance designers, developers and marketers to create the best solutions for her clients.</p>

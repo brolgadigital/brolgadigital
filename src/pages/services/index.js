@@ -1,13 +1,14 @@
 import React from 'react'
+import Head from '../../components/Head'
 import Headers from '../../components/Headers'
 import Cards from '../../components/Cards'
 import { Link } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
-// import { AnchorLink } from 'gatsby-plugin-anchor-links'
 
-export default function services() {
+export default function services(){
     return (
         <div>
+                <Head title='Services' />
                 <Headers subtitle='Make it yours with' title='Brolga Digital Services'/>
 
                 <StaticImage src='../../images/graphics/faq.png' className='brand-image' />

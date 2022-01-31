@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from '../../components/Head'
 import { graphql } from 'gatsby'
 import Headers from '../../components/Headers'
 import ProjectCard from '../../components/ProjectCard'
@@ -10,6 +11,8 @@ export default function index({ data }) {
 
     return (
         <>
+                        <Head title='Our Work' />
+
             <Headers subtitle="Know what you're getting" title='Our Recent Projects' />
 
             {projects.map(project => {

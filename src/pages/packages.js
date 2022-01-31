@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from '../components/Head'
 import Headers from '../components/Headers'
 import PriceCard from '../components/PriceCard'
 import { Link } from 'gatsby'
@@ -7,6 +8,8 @@ export default function subscriptions() {
   return (
     <div>
       <>
+      <Head title='Packages' />
+
       <Headers subtitle='What makes Brolga Digital different?' title='Ongoing Support Packages' />
       
       <p>Ongoing support with Brolga Digital is simple. You own everything. We just manage it. From creating backups to scheduling social media posts, we can handle it for you. We aim to take the stress out of online content by consolidating all your online marketing activities and managing them on your behalf.</p>
