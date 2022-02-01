@@ -114,12 +114,12 @@ module.exports = {
         "gatsby-plugin-netlify-cms",
         "gatsby-plugin-sass",
 
-        {
-            resolve: "gatsby-plugin-google-analytics",
-            options: {
-                trackingId: "G-VFZCRFC58Q",
-            },
-        },
+        // {
+        //     resolve: "gatsby-plugin-google-analytics",
+        //     options: {
+        //         trackingId: "G-VFZCRFC58Q",
+        //     },
+        // },
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-sitemap",
         {
@@ -136,7 +136,7 @@ module.exports = {
             options: {
                 trackingIds: [
                     "G-VFZCRFC58Q",
-                    // "AW-CONVERSION_ID", 
+                    "UA-201801796-1", 
                     // "DC-FLOODIGHT_ID", 
                 ],
                 gtagConfig: {
