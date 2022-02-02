@@ -17,14 +17,44 @@ export default function services(){
                 <p className='last'>Each of our projects is tailored to our clients needs. We design and build bespoke digital solutions to help your brand stand out from the online noise. And with our individualised quotes, you'll only ever pay for the services you actually need. No generic plans that inflate your costs, you only pay for what you need.</p>
 
                 <h2>Find a solution that's right for you</h2>
-                <ul>
-                    <li><Link to='/services/branding'>Branding</Link></li>
-                    <li><Link to='/services/support'>Support and Maintenance</Link></li>
-                    <li><Link to='/services/smallsite'>Micro Sites</Link></li>
-                    <li><Link to='/services/ecommerce'>Ecommerce and Online Sales</Link></li>
-                    <li><Link to='/services/strategy'>Social Media and Marketing Strategies</Link></li>
-                    <li><Link to='/services/seo'>SEO and Optimisation</Link></li>
-                </ul>
+                <div className='cardwrapper'>
+                    <Cards 
+                        title='Branding'
+                        icon='gift'
+                        desc="Your business is unique, and your web presence should be too. We don't use cookie cutter templates, everything is custom designed and built with you in mind"
+                        info='/services/branding'
+                    />
+                    <Cards 
+                        title='Support and Maintenance'
+                        icon='gift'
+                        desc="Your business is unique, and your web presence should be too. We don't use cookie cutter templates, everything is custom designed and built with you in mind"
+                        info='/services/support'
+                    />
+                    <Cards 
+                        title='Micro and Static Sites'
+                        icon='gift'
+                        desc="Your business is unique, and your web presence should be too. We don't use cookie cutter templates, everything is custom designed and built with you in mind"
+                        info='/services/smallsite'
+                    />
+                    <Cards 
+                        title='Ecommerce and Online Shopping'
+                        icon='gift'
+                        desc="Your business is unique, and your web presence should be too. We don't use cookie cutter templates, everything is custom designed and built with you in mind"
+                        info='/services/ecommerce'
+                    />
+                    <Cards 
+                        title='Social Media and Marketing Strategies'
+                        icon='gift'
+                        desc="Your business is unique, and your web presence should be too. We don't use cookie cutter templates, everything is custom designed and built with you in mind"
+                        info='/services/strategy'
+                    />
+                    <Cards 
+                        title='Usability, Speed and Search Engine Optimisations'
+                        icon='gift'
+                        desc="Your business is unique, and your web presence should be too. We don't use cookie cutter templates, everything is custom designed and built with you in mind"
+                        info='/services/seo'
+                    />
+                </div>
 
                 
                 <h2>Our most popular services</h2>
