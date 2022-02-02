@@ -21,37 +21,37 @@ export default function services(){
                     <Cards 
                         title='Branding'
                         icon='gift'
-                        desc="Your business is unique, and your web presence should be too. We don't use cookie cutter templates, everything is custom designed and built with you in mind"
+                        desc="From a brand guide to business cards, social icons to marketing collateral, we'll present your story cohesively wherever your customers and clients are."
                         info='/services/branding'
                     />
                     <Cards 
                         title='Support and Maintenance'
                         icon='life-buoy'
-                        desc="Your business is unique, and your web presence should be too. We don't use cookie cutter templates, everything is custom designed and built with you in mind"
+                        desc="Not technically minded? Let us manage the hard parts, and explain things in easy-to-understand language."
                         info='/services/support'
                     />
                     <Cards 
                         title='Micro and Static Sites'
                         icon='layout'
-                        desc="Your business is unique, and your web presence should be too. We don't use cookie cutter templates, everything is custom designed and built with you in mind"
+                        desc="Our websites are built to fit your business. Big our small, we can make something perfectly tailored to you."
                         info='/services/smallsite'
                     />
                     <Cards 
                         title='Ecommerce and Online Shopping'
                         icon='shopping-bag'
-                        desc="Your business is unique, and your web presence should be too. We don't use cookie cutter templates, everything is custom designed and built with you in mind"
+                        desc="Need an online shop or booking system? We can help build one tailored to your business needs."
                         info='/services/ecommerce'
                     />
                     <Cards 
                         title='Social Media and Marketing Strategies'
                         icon='users'
-                        desc="Your business is unique, and your web presence should be too. We don't use cookie cutter templates, everything is custom designed and built with you in mind"
+                        desc="Get help designing marketing plans and campaigns that will boost your business and generate valuable leads."
                         info='/services/strategy'
                     />
                     <Cards 
                         title='Usability, Speed and Search Engine Optimisations'
                         icon='activity'
-                        desc="Your business is unique, and your web presence should be too. We don't use cookie cutter templates, everything is custom designed and built with you in mind"
+                        desc="Organic web traffic is still best lead generator. We can enhance how your website appears in search results."
                         info='/services/seo'
                     />
                 </div>
