@@ -41,4 +41,8 @@ export const iconSvg = {
     'clipboard': <Icon.Clipboard />, 
     'brand': <Icon.Loader />, 
     'gift': <Icon.Gift />,
+    'life-buoy': <Icon.LifeBuoy />,
+    'shopping-bag': <Icon.ShoppingBag />,
+    'users': <Icon.Users />,
+    'activity': <Icon.Activity />,
 };

@@ -26,31 +26,31 @@ export default function services(){
                     />
                     <Cards 
                         title='Support and Maintenance'
-                        icon='gift'
+                        icon='life-buoy'
                         desc="Your business is unique, and your web presence should be too. We don't use cookie cutter templates, everything is custom designed and built with you in mind"
                         info='/services/support'
                     />
                     <Cards 
                         title='Micro and Static Sites'
-                        icon='gift'
+                        icon='layout'
                         desc="Your business is unique, and your web presence should be too. We don't use cookie cutter templates, everything is custom designed and built with you in mind"
                         info='/services/smallsite'
                     />
                     <Cards 
                         title='Ecommerce and Online Shopping'
-                        icon='gift'
+                        icon='shopping-bag'
                         desc="Your business is unique, and your web presence should be too. We don't use cookie cutter templates, everything is custom designed and built with you in mind"
                         info='/services/ecommerce'
                     />
                     <Cards 
                         title='Social Media and Marketing Strategies'
-                        icon='gift'
+                        icon='users'
                         desc="Your business is unique, and your web presence should be too. We don't use cookie cutter templates, everything is custom designed and built with you in mind"
                         info='/services/strategy'
                     />
                     <Cards 
                         title='Usability, Speed and Search Engine Optimisations'
-                        icon='gift'
+                        icon='activity'
                         desc="Your business is unique, and your web presence should be too. We don't use cookie cutter templates, everything is custom designed and built with you in mind"
                         info='/services/seo'
                     />
