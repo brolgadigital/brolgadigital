@@ -7,94 +7,96 @@ import config from "../../../brolga-config";
 import defaultMetaImage from "../../../static/images/bd-text-red-solid-01.png";
 
 function Seo({
-  siteMetadata: seo,
-  postData,
-  metaImage,
-  isBlogPost,
-  frontmatter: postMeta = postData.frontmatter || {},
-  title = postMeta.title || config.siteTitle,
-  description = postMeta.plainTextDescription ||
-    postMeta.description ||
-    seo.description,
-  image = metaImage?.startsWith("http:") || metaImage?.startsWith("https:")
-    ? metaImage
-    : `${seo.canonicalUrl}${metaImage || defaultMetaImage}`,
-  url = postMeta.slug
-    ? `${seo.canonicalUrl}${postMeta.slug}`
-    : seo.canonicalUrl,
-  datePublished = isBlogPost ? postMeta.datePublished : false,
+    siteMetadata: seo,
+    postData,
+    metaImage,
+    isBlogPost,
+    frontmatter: postMeta = postData.frontmatter || {},
+    title = postMeta.title || config.siteTitle,
+    description = postMeta.plainTextDescription ||
+        postMeta.description ||
+        seo.description,
+    image = metaImage?.startsWith("http:") || metaImage?.startsWith("https:")
+        ? metaImage
+        : `${seo.canonicalUrl}${metaImage || defaultMetaImage}`,
+    url = postMeta.slug
+        ? `${seo.canonicalUrl}${postMeta.slug}`
+        : seo.canonicalUrl,
+    datePublished = isBlogPost ? postMeta.datePublished : false,
 }) {
-  return (
-    <>
-      <Helmet>
-        {/* General tags */}
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <meta name="image" content={image} />
+    return (
+        <>
+            <Helmet>
+                {/* General tags */}
+                <title>{title}</title>
+                <meta name="description" content={description} />
+                <meta name="image" content={image} />
 
-        {/* OpenGraph tags */}
-        <meta property="og:url" content={url} />
-        {isBlogPost ? <meta property="og:type" content="article" /> : null}
-        <meta property="og:title" content={title} />
-        <meta property="og:description" content={description} />
-        <meta property="og:image" content={image} />
-        <meta property="fb:app_id" content={seo.social.fbAppID} />
-      </Helmet>
-      <SchemaOrg
-        isBlogPost={isBlogPost}
-        url={url}
-        title={title}
-        image={image}
-        description={description}
-        datePublished={datePublished}
-        author={seo.author}
-        organization={seo.organization}
-        defaultTitle={seo.title}
-      />
-    </>
-  );
+                {/* OpenGraph tags */}
+                <meta property="og:url" content={url} />
+                {isBlogPost ? (
+                    <meta property="og:type" content="article" />
+                ) : null}
+                <meta property="og:title" content={title} />
+                <meta property="og:description" content={description} />
+                <meta property="og:image" content={image} />
+                <meta property="fb:app_id" content={seo.social.fbAppID} />
+            </Helmet>
+            <SchemaOrg
+                isBlogPost={isBlogPost}
+                url={url}
+                title={title}
+                image={image}
+                description={description}
+                datePublished={datePublished}
+                author={seo.author}
+                organization={seo.organization}
+                defaultTitle={seo.title}
+            />
+        </>
+    );
 }
 
 function SeoWithQuery(props) {
-  const {
-    site: { siteMetadata },
-  } = useStaticQuery(graphql`
-    {
-      site {
-        siteMetadata {
-          title
-          description
-          organization {
-            name
-            url
-            logo
-            altLogo
-          }
-          social {
-            fbAppID
-          }
+    const {
+        site: { siteMetadata },
+    } = useStaticQuery(graphql`
+        {
+            site {
+                siteMetadata {
+                    title
+                    description
+                    organization {
+                        name
+                        url
+                        logo
+                        altLogo
+                    }
+                    social {
+                        fbAppID
+                    }
+                }
+            }
         }
-      }
-    }
-  `);
-  return <Seo siteMetadata={siteMetadata} {...props} />;
+    `);
+    return <Seo siteMetadata={siteMetadata} {...props} />;
 }
 
 SeoWithQuery.propTypes = {
-  isBlogPost: PropTypes.bool,
-  postData: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.any,
-      excerpt: PropTypes.any,
+    isBlogPost: PropTypes.bool,
+    postData: PropTypes.shape({
+        markdownRemark: PropTypes.shape({
+            frontmatter: PropTypes.any,
+            excerpt: PropTypes.any,
+        }),
     }),
-  }),
-  metaImage: PropTypes.string,
+    metaImage: PropTypes.string,
 };
 
 SeoWithQuery.defaultProps = {
-  isBlogPost: false,
-  postData: { markdownRemark: {} },
-  metaImage: null,
+    isBlogPost: false,
+    postData: { markdownRemark: {} },
+    metaImage: null,
 };
 
 export default SeoWithQuery;

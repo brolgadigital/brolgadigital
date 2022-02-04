@@ -5,42 +5,42 @@ date: 2021-10-27T07:56:40.832Z
 title: Joanne Bingham Animal Artist
 subtitle: "From the ground up:"
 description: An artist based in Queensland, Joanne wanted a new website that
-  reflected her personal style. After a branding refresh, she wanted to continue
-  managing her own online shop and social media.
+    reflected her personal style. After a branding refresh, she wanted to continue
+    managing her own online shop and social media.
 summary: Joanne started with a website that wasn't working for her, and no brand
-  presence or cohesion. If you're in a similar spot, we can help! Read more
-  about our <a href="https://brolgadigital.com.au/services">design services</a>
-  or <a href="https://brolgadigital.com.au/contact">book a free consultation
-  today</a>.
+    presence or cohesion. If you're in a similar spot, we can help! Read more
+    about our <a href="https://brolgadigital.com.au/services">design services</a>
+    or <a href="https://brolgadigital.com.au/contact">book a free consultation
+    today</a>.
 thumbnail: jo-bingham-screen-mockups.png
 quote: Shelley from Brolga Digital designed and built a beautiful, easy to
-  navigate website to showcase and sell my work. She listened, and incorporated
-  or improved my ideas and suggestions, and I am delighted with the results, and
-  the ongoing help and support.
+    navigate website to showcase and sell my work. She listened, and incorporated
+    or improved my ideas and suggestions, and I am delighted with the results, and
+    the ongoing help and support.
 quoteAttribute: Joanne
 website: https://joannebingham.com
 infobox1:
-  display: true
-  icon: brand
-  boxtitle: Complete Rebranding
-  blurb: Cohesive fonts and colours to compliment a new wordmark
+    display: true
+    icon: brand
+    boxtitle: Complete Rebranding
+    blurb: Cohesive fonts and colours to compliment a new wordmark
 infobox2:
-  display: true
-  icon: layout
-  boxtitle: Custom Wordpress Theme
-  blurb: Built from scratch and designed specifically for Joanne's needs
+    display: true
+    icon: layout
+    boxtitle: Custom Wordpress Theme
+    blurb: Built from scratch and designed specifically for Joanne's needs
 infobox3:
-  display: true
-  icon: clipboard
-  boxtitle: Ecommerce Integration and Support
-  blurb: Custom shopfront and support adding new products
+    display: true
+    icon: clipboard
+    boxtitle: Ecommerce Integration and Support
+    blurb: Custom shopfront and support adding new products
 infobox4:
-  display: true
-  icon: gift
-  boxtitle: Ongoing Hosting, Support, and Security
-  blurb:
-    Weekly backups, plugin updates, general security and maintenance at a low
-    monthly cost
+    display: true
+    icon: gift
+    boxtitle: Ongoing Hosting, Support, and Security
+    blurb:
+        Weekly backups, plugin updates, general security and maintenance at a low
+        monthly cost
 ---
 
 ## What we started with

@@ -12,18 +12,18 @@ $serif: "Marcellus", serif;
 $barlow: "Barlow Condensed", sans-serif;
 
 * {
-  border: 0;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: $barlow;
-  color: $blue4;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $barlow;
+    color: $blue4;
 }
 
 .clearfix {
-  overflow: auto;
-  clear: both;
-  margin-bottom: 60px;
+    overflow: auto;
+    clear: both;
+    margin-bottom: 60px;
 }
 
 // Imports

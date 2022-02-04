@@ -1,134 +1,134 @@
 html {
-  font-size: 1.25rem;
+    font-size: 1.25rem;
 }
 
 h2,
 h3 {
-  color: $blue3;
-  margin: 30px 0 15px 0;
-  clear: both;
+    color: $blue3;
+    margin: 30px 0 15px 0;
+    clear: both;
 }
 
 b {
-  color: $blue3;
+    color: $blue3;
 }
 
 a {
-  color: $blue2;
-  font-weight: 400;
-  text-decoration: none;
+    color: $blue2;
+    font-weight: 400;
+    text-decoration: none;
 
-  &:hover {
-    color: $red;
-    cursor: pointer;
-  }
+    &:hover {
+        color: $red;
+        cursor: pointer;
+    }
 }
 
 .button {
-  display: inline-block;
-  border: 2px solid $blue2;
-  padding: 10px 20px;
-  background: inherit;
-  margin: 5px;
-  color: $blue3;
-  border-radius: 2px;
-  font-size: 1em;
-  text-decoration: none;
+    display: inline-block;
+    border: 2px solid $blue2;
+    padding: 10px 20px;
+    background: inherit;
+    margin: 5px;
+    color: $blue3;
+    border-radius: 2px;
+    font-size: 1em;
+    text-decoration: none;
 
-  &:hover {
-    cursor: pointer;
-    background-color: $blue2;
-    color: $blue1;
+    &:hover {
+        cursor: pointer;
+        background-color: $blue2;
+        color: $blue1;
+
+        svg {
+            stroke: $blue1;
+        }
+    }
 
     svg {
-      stroke: $blue1;
+        stroke: $blue3;
+        height: 1.1em;
+        margin-bottom: -3px;
+        margin-left: -5px;
     }
-  }
 
-  svg {
-    stroke: $blue3;
-    height: 1.1em;
-    margin-bottom: -3px;
-    margin-left: -5px;
-  }
+    p {
+        width: 100% !important;
+    }
 
-  p {
-    width: 100% !important;
-  }
-
-  &:first-of-type {
-    margin-left: 0;
-  }
+    &:first-of-type {
+        margin-left: 0;
+    }
 }
 
 .boldButton {
-  border: 2px solid $blue3;
-  // background-color: lighten($red, 40%);
-  background-color: $blue1;
-  color: $blue4;
-  font-weight: 500;
+    border: 2px solid $blue3;
+    // background-color: lighten($red, 40%);
+    background-color: $blue1;
+    color: $blue4;
+    font-weight: 500;
 
-  &:hover {
-    // background-color: lighten($red, 10%);
-    background-color: $blue3;
-  }
+    &:hover {
+        // background-color: lighten($red, 10%);
+        background-color: $blue3;
+    }
 }
 
 .lessButton {
-  border: 2px solid $blue1;
-  color: $blue2;
+    border: 2px solid $blue1;
+    color: $blue2;
 
-  &:hover {
-    background-color: $blue1;
-    color: $blue3;
-  }
+    &:hover {
+        background-color: $blue1;
+        color: $blue3;
+    }
 }
 
 .tinyButton {
-  padding: 0;
-  border: 0;
+    padding: 0;
+    border: 0;
 
-  font-size: 0.8em;
+    font-size: 0.8em;
 
-  p {
-    color: $blue2;
-    &:hover {
-      color: $blue3;
+    p {
+        color: $blue2;
+        &:hover {
+            color: $blue3;
+        }
     }
-  }
 
-  &:hover {
-    background-color: initial;
-  }
+    &:hover {
+        background-color: initial;
+    }
 }
 
 #brolga-email {
-  font-size: 1em;
-  background-color: inherit;
-  color: $blue2;
-  font-weight: 500;
+    font-size: 1em;
+    background-color: inherit;
+    color: $blue2;
+    font-weight: 500;
 
-  &:hover {
-    color: $red;
-    cursor: pointer;
-  }
+    &:hover {
+        color: $red;
+        cursor: pointer;
+    }
 }
 
 .content {
-  p {
-    width: 60%;
-    margin-bottom: 15px;
+    p {
+        width: 60%;
+        margin-bottom: 15px;
 
-    &.last {
-      margin-bottom: 30px;
+        &.last {
+            margin-bottom: 30px;
+        }
     }
-  }
 }
 
 @media (max-width: 900px) {
-  .content {
-    p {
-      width: 100%;
+    .content {
+        p {
+            width: 100%;
+        }
     }
-  }
 }

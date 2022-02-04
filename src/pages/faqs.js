@@ -4,12 +4,12 @@ import Faqs from "../components/FAQ";
 import Footer from "../components/Footer";
 
 export default function faqs() {
-  return (
-    <div>
-      <Head title="FAQ's" />
+    return (
+        <div>
+            <Head title="FAQ's" />
 
-      <Faqs />
-      <Footer />
-    </div>
-  );
+            <Faqs />
+            <Footer />
+        </div>
+    );
 }

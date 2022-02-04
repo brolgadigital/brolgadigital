@@ -5,31 +5,31 @@ date: 2021-10-24T04:54:18.334Z
 title: Local Mini Digger
 subtitle: "Breaking ground during a global pandemic:"
 description: Starting a new business is tough. Starting a new business during
-  Covid-19 restrictions is even tougher. We helped this small Melbourne business
-  get started with a website, social media, and lots of training.
+    Covid-19 restrictions is even tougher. We helped this small Melbourne business
+    get started with a website, social media, and lots of training.
 summary: Local Mini Digger started with nothing but an idea. If you're also
-  getting started, Brolga Digital can help! Read more about our <a
-  href="https://brolgadigital.com.au/packages">design packages</a> or book a
-  free consultation today.
+    getting started, Brolga Digital can help! Read more about our <a
+    href="https://brolgadigital.com.au/packages">design packages</a> or book a
+    free consultation today.
 thumbnail: lmd-screen-mockups.png
 quote: >-
-  A big thank you to Shelley from Brolga digital.  She held our hand as we
-  navigated the unknown world of building a website.  Not knowing what we wanted
-  or needed, she patiently asked questions about how we use the internet and our
-  expectations of a website and responded with a product.  She encouraged us to
-  use other media, including Facebook, to reach a wider audience.  
+    A big thank you to Shelley from Brolga digital.  She held our hand as we
+    navigated the unknown world of building a website.  Not knowing what we wanted
+    or needed, she patiently asked questions about how we use the internet and our
+    expectations of a website and responded with a product.  She encouraged us to
+    use other media, including Facebook, to reach a wider audience.  
 
-  She set all of this up for us. Highly recommend this business.
+    She set all of this up for us. Highly recommend this business.
 quoteAttribute: Judy and Ed
 website: https://localminidigger.com.au
 infobox1:
-  display: false
+    display: false
 infobox2:
-  display: false
+    display: false
 infobox3:
-  display: false
+    display: false
 infobox4:
-  display: false
+    display: false
 ---
 
 ## Branding an Idea

@@ -1,83 +1,83 @@
 figure {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-right: 0;
-  margin-bottom: 30px;
-  background-color: #e2eaed;
-  padding: 20px;
-  position: relative;
-  flex: 1 1;
-  margin-top: 30px;
-
-  & > p {
-    flex-basis: 66%;
-    margin-bottom: 0 !important;
-  }
-
-  & > div {
-    flex-basis: 66%;
     display: flex;
+    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-  }
-
-  .col {
-    flex-direction: column;
-    & > p {
-      flex-basis: 100%;
-      width: 100%;
-      margin-bottom: 0 !important;
-    }
-  }
-
-  .row {
-    flex-direction: row;
+    align-items: flex-end;
+    margin-right: 0;
+    margin-bottom: 30px;
+    background-color: #e2eaed;
+    padding: 20px;
+    position: relative;
+    flex: 1 1;
+    margin-top: 30px;
 
     & > p {
-      flex-basis: 49%;
-      width: 100%;
-      margin-bottom: 0 !important;
+        flex-basis: 66%;
+        margin-bottom: 0 !important;
     }
-  }
 
-  figcaption {
-    flex-basis: 30%;
-  }
+    & > div {
+        flex-basis: 66%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .col {
+        flex-direction: column;
+        & > p {
+            flex-basis: 100%;
+            width: 100%;
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .row {
+        flex-direction: row;
+
+        & > p {
+            flex-basis: 49%;
+            width: 100%;
+            margin-bottom: 0 !important;
+        }
+    }
+
+    figcaption {
+        flex-basis: 30%;
+    }
 }
 
 .content {
-  .brand-image {
-    width: 38%;
-    float: right;
-    margin-bottom: 20px;
+    .brand-image {
+        width: 38%;
+        float: right;
+        margin-bottom: 20px;
 
-    img {
-      max-height: 300px;
-      height: 40vh;
-      width: auto;
-      margin: auto;
+        img {
+            max-height: 300px;
+            height: 40vh;
+            width: auto;
+            margin: auto;
+        }
     }
-  }
 
-  ul {
-    margin-left: 1em;
-  }
+    ul {
+        margin-left: 1em;
+    }
 }
 
 .cal {
-  iframe {
-    width: 100%;
-    min-height: 500px;
-  }
+    iframe {
+        width: 100%;
+        min-height: 500px;
+    }
 }
 
 @media (max-width: 900px) {
-  .content {
-    .brand-image {
-      width: 100%;
+    .content {
+        .brand-image {
+            width: 100%;
+        }
     }
-  }
 }

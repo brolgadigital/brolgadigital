@@ -1,21 +1,21 @@
 .heading {
-  margin-bottom: 30px;
-  display: inline-block;
-  min-width: 50%;
-
-  p {
-    color: $blue4;
-    margin: 0 !important;
-    font-weight: 400;
-    font-size: 1em;
-  }
-
-  h1 {
-    font-family: $serif;
-    color: $blue3;
-    font-weight: 400;
-    border-bottom: 3px solid $red;
+    margin-bottom: 30px;
     display: inline-block;
-    padding-bottom: 5px;
-  }
+    min-width: 50%;
+
+    p {
+        color: $blue4;
+        margin: 0 !important;
+        font-weight: 400;
+        font-size: 1em;
+    }
+
+    h1 {
+        font-family: $serif;
+        color: $blue3;
+        font-weight: 400;
+        border-bottom: 3px solid $red;
+        display: inline-block;
+        padding-bottom: 5px;
+    }
 }

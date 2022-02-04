@@ -1,49 +1,49 @@
 .homepage {
-  background-color: $red;
-  height: 100vh;
-  padding: 0 !important;
-  overflow: hidden;
+    background-color: $red;
+    height: 100vh;
+    padding: 0 !important;
+    overflow: hidden;
 
-  .titles {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: auto;
-    z-index: 5;
+    .titles {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: auto;
+        z-index: 5;
 
-    h2,
-    h3,
-    p {
-      color: $blue1;
-      margin-bottom: 15px;
+        h2,
+        h3,
+        p {
+            color: $blue1;
+            margin-bottom: 15px;
+        }
+
+        .button p {
+            margin-bottom: 0;
+        }
+
+        .headliner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     }
-
-    .button p {
-      margin-bottom: 0;
+    .logo {
+        height: auto;
+        margin-bottom: 60px;
+        max-width: 600px;
     }
-
-    .headliner {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
-  .logo {
-    height: auto;
-    margin-bottom: 60px;
-    max-width: 600px;
-  }
 }
 
 .home-gallery {
-  filter: blur(3px);
-  mix-blend-mode: multiply;
+    filter: blur(3px);
+    mix-blend-mode: multiply;
 
-  img {
-    min-height: 100vh;
-    width: 100%;
-  }
+    img {
+        min-height: 100vh;
+        width: 100%;
+    }
 }
