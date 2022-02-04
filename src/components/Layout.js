@@ -4,8 +4,9 @@ import {graphql, useStaticQuery} from 'gatsby'
 import Webmenu from '../components/Webmenu'
 import Mobilemenu from '../components/Mobilemenu'
 import config from '../../brolga-config'
+import SplashScreen from './SplashScreen'
 
-export default function Layout({children}) {
+export default function Layout({children, path}) {
 
   const data = useStaticQuery(graphql`
     {
@@ -48,7 +49,7 @@ export default function Layout({children}) {
 
       
         <Mobilemenu />
-      
+      {path === '/' ? <SplashScreen/> : ''}
 
       <div className="content">{children}</div>
     </div>
