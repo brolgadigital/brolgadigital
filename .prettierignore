@@ -1,0 +1,7 @@
+# Ignore artifacts:
+node_modules/
+.cache/
+public
+.env.*
+.DS_Store
+npm-debug.log

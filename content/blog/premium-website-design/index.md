@@ -5,17 +5,18 @@ date: 2021-12-07T22:35:00.052Z
 title: Paying premium for Web Design
 thumbnail: pexels-tranmautritam-251225.jpg
 ---
+
 There are so many options for getting a website started. You could take a DIY approach, and use a service like WordPress or Squarespace. You could also buy an HTML template and upload it to your own hosting. Or you could pay a developer to do these things for you. But why pay a premium when there are so many cheaper options?
 
 ## Best Practices
 
-The internet is a vast, rapidly changing place, and keeping up to date with what works best, which devices are supported and how users interact with websites can be a daunting task. It's the agencies job to stay on top of this information and determine what will perform the best for your specific circumstances. They will also know how to make your website accessible for people with disabilities,  or those who need extra help navigating web spaces.
+The internet is a vast, rapidly changing place, and keeping up to date with what works best, which devices are supported and how users interact with websites can be a daunting task. It's the agencies job to stay on top of this information and determine what will perform the best for your specific circumstances. They will also know how to make your website accessible for people with disabilities, or those who need extra help navigating web spaces.
 
-An agency that offers ongoing support will also keep you up to date with the best security practices, something that is especially important if you're running an online shop or collecting sensitive data. 
+An agency that offers ongoing support will also keep you up to date with the best security practices, something that is especially important if you're running an online shop or collecting sensitive data.
 
 ## (almost) Nothing to Learn
 
-Nothing new comes without a learning curve, but a good agency will help you understand the pieces you need to know and hide the pieces you don't. Take running an online shop for instance. At Brolga Digital, we'll take you through adding products and making sure all the data (including prices!) is correct and matches your point of sale system. But we won't wear you down with the minutia of how the systems are linked, or what the code looks like. 
+Nothing new comes without a learning curve, but a good agency will help you understand the pieces you need to know and hide the pieces you don't. Take running an online shop for instance. At Brolga Digital, we'll take you through adding products and making sure all the data (including prices!) is correct and matches your point of sale system. But we won't wear you down with the minutia of how the systems are linked, or what the code looks like.
 
 As a client, you should be confident that the system will work, and know how to use it. But you shouldn't need to know how to set everything up or troubleshoot difficult errors. That knowledge is handled by the developers.
 
@@ -27,7 +28,7 @@ It doesn't matter if the developers have used a template or framework, as long a
 
 ## Support and Advice
 
-You can identify a good agency by how much support they offer both during and after the building process. You should feel included and listened to throughout the entire process. And after the website is finished, there should be support for maintenance and future edits. 
+You can identify a good agency by how much support they offer both during and after the building process. You should feel included and listened to throughout the entire process. And after the website is finished, there should be support for maintenance and future edits.
 
 ## Value for Money
 

@@ -31,13 +31,14 @@ infobox3:
 infobox4:
   display: false
 ---
+
 ## Branding an Idea
 
 When Local Mini Digger approached us, they had been doing some small scale trading with nothing more than the name. When the Covid-19 pandemic threw many of their business plans into chaos, Ed and Judy decided to focus on creating an identity for their business.
 
 The only aspect of branding they had decided (besides the name), was to use a set of logos that feature different diggers that are used. We listened to their input and developed two interchangeable logos, font rules and a set of brand colours. All this was packaged with an easy to use guide, so they could immediately begin creating cohesion across their invoices and marketing.
 
-<figure> 
+<figure>
 
 ![Local Mini Digger branding printed on a large sticker for use on the side of a truck](img_4376.jpg "Large scale print of the Local Mini Digger branding")
 
@@ -66,7 +67,7 @@ Being easily found meant that the website needed to be built for both human user
 
 </figure>
 
-Finally, we added the site to business pages that appear alongside search results. This will help instil confidence in anyone who turns up the Local Mini Digger website in their search results. This search engine page, social media and the website all have a unified call-to-action: asking visitors to make a phone call. 
+Finally, we added the site to business pages that appear alongside search results. This will help instil confidence in anyone who turns up the Local Mini Digger website in their search results. This search engine page, social media and the website all have a unified call-to-action: asking visitors to make a phone call.
 
 ## Managing the Maintenance
 

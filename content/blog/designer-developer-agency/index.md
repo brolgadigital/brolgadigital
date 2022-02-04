@@ -5,6 +5,7 @@ date: 2021-12-18T22:21:14.577Z
 title: The difference between Designers, Developers and Agencies
 thumbnail: pexels-flo-dahm-699459.jpg
 ---
+
 Knowing the difference between designers, developers and agencies is important when choosing someone to work on your website or online shop. Here are just some common terms, and what they mean, so you can make the best decision for your business.
 
 ## Solo Workers
@@ -13,7 +14,7 @@ Many website creatives choose to work alone or in small teams. Here are some com
 
 ### Designers
 
-A designer does just that, designs. They are skilled in knowing what looks good and making layouts work across varying screen sizes so your site looks great on mobile or desktop. 
+A designer does just that, designs. They are skilled in knowing what looks good and making layouts work across varying screen sizes so your site looks great on mobile or desktop.
 
 ### Developers
 

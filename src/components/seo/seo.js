@@ -1,10 +1,10 @@
-import * as React from 'react'
-import { Helmet } from 'react-helmet'
-import { useStaticQuery, graphql } from 'gatsby'
-import PropTypes from 'prop-types'
-import SchemaOrg from './schema-org'
-import config from '../../../brolga-config'
-import defaultMetaImage from '../../../static/images/bd-text-red-solid-01.png'
+import * as React from "react";
+import { Helmet } from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby";
+import PropTypes from "prop-types";
+import SchemaOrg from "./schema-org";
+import config from "../../../brolga-config";
+import defaultMetaImage from "../../../static/images/bd-text-red-solid-01.png";
 
 function Seo({
   siteMetadata: seo,
@@ -16,7 +16,7 @@ function Seo({
   description = postMeta.plainTextDescription ||
     postMeta.description ||
     seo.description,
-  image = metaImage?.startsWith('http:') || metaImage?.startsWith('https:')
+  image = metaImage?.startsWith("http:") || metaImage?.startsWith("https:")
     ? metaImage
     : `${seo.canonicalUrl}${metaImage || defaultMetaImage}`,
   url = postMeta.slug
@@ -52,11 +52,13 @@ function Seo({
         defaultTitle={seo.title}
       />
     </>
-  )
+  );
 }
 
 function SeoWithQuery(props) {
-  const { site: {siteMetadata}, } = useStaticQuery(graphql`
+  const {
+    site: { siteMetadata },
+  } = useStaticQuery(graphql`
     {
       site {
         siteMetadata {
@@ -74,25 +76,25 @@ function SeoWithQuery(props) {
         }
       }
     }
-  `)
-  return <Seo siteMetadata={siteMetadata} {...props} />
+  `);
+  return <Seo siteMetadata={siteMetadata} {...props} />;
 }
 
 SeoWithQuery.propTypes = {
-    isBlogPost: PropTypes.bool,
-    postData: PropTypes.shape({
-        markdownRemark: PropTypes.shape({
-            frontmatter: PropTypes.any,
-            excerpt: PropTypes.any,
-        }),
+  isBlogPost: PropTypes.bool,
+  postData: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.any,
+      excerpt: PropTypes.any,
     }),
-    metaImage: PropTypes.string,
-}
+  }),
+  metaImage: PropTypes.string,
+};
 
 SeoWithQuery.defaultProps = {
-    isBlogPost: false,
-    postData: {markdownRemark: {}},
-    metaImage: null,
-}
+  isBlogPost: false,
+  postData: { markdownRemark: {} },
+  metaImage: null,
+};
 
-export default SeoWithQuery
+export default SeoWithQuery;

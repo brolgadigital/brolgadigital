@@ -4,14 +4,14 @@ backend:
   repo: brolgadigital/brolgadigital
   base_url: https://brolgadigital-cms.herokuapp.com/
   commit_messages:
-    create: 'Created {{collection}} “{{slug}}”'
-    update: 'Updated {{collection}} “{{slug}}”'
-    delete: 'Deleted {{collection}} “{{slug}}”'
-    uploadMedia: '[skip ci] Uploaded “{{path}}”'
-    deleteMedia: '[skip ci] Deleted “{{path}}”'
+    create: "Created {{collection}} “{{slug}}”"
+    update: "Updated {{collection}} “{{slug}}”"
+    delete: "Deleted {{collection}} “{{slug}}”"
+    uploadMedia: "[skip ci] Uploaded “{{path}}”"
+    deleteMedia: "[skip ci] Deleted “{{path}}”"
 
-media_folder: 'static/images' # repo location
-public_folder: '/assets' # gatsby location
+media_folder: "static/images" # repo location
+public_folder: "/assets" # gatsby location
 
 publish_mode: editorial_workflow
 
@@ -23,54 +23,74 @@ collections:
     label: Blog
     folder: content/blog
     create: true
-    slug: '{{fields.path}}'
-    path: '{{slug}}/index'
+    slug: "{{fields.path}}"
+    path: "{{slug}}/index"
     fields:
-      - { name: layout, label: Layout, widget: hidden, default: 'blog' }
+      - { name: layout, label: Layout, widget: hidden, default: "blog" }
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title, widget: string }
       - { name: body, label: Body, widget: markdown }
-      - { name: thumbnail, label: Featured Image, widget: image, required: false }
+      - {
+          name: thumbnail,
+          label: Featured Image,
+          widget: image,
+          required: false,
+        }
 
   - name: portfolio
     label: Portfolio
     folder: content/portfolio
     create: true
-    slug: '{{fields.path}}'
-    path: '{{slug}}/index'
+    slug: "{{fields.path}}"
+    path: "{{slug}}/index"
     fields:
-      - { name: layout, label: Layout, widget: hidden, default: 'portfolio' }
+      - { name: layout, label: Layout, widget: hidden, default: "portfolio" }
       - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title, widget: string }
       - { name: subtitle, label: Subtitle, widget: string }
       - { name: description, label: Description, widget: text }
       - { name: summary, label: Summary, widget: text }
-      - { name: thumbnail, label: Featured Image, widget: image, required: false }
+      - {
+          name: thumbnail,
+          label: Featured Image,
+          widget: image,
+          required: false,
+        }
       - { name: quote, label: Quote, widget: text }
       - { name: quoteAttribute, label: Quote Attribute, widget: string }
-      - { name: website, label: Project Website, widget: string, required: false }
-      
+      - {
+          name: website,
+          label: Project Website,
+          widget: string,
+          required: false,
+        }
+
       - name: infobox1
         label: Info Box 1
         collapsed: true
         required: false
         widget: object
         fields:
-          - { name: display, label: Display, widget: boolean, default: false}
+          - { name: display, label: Display, widget: boolean, default: false }
           - name: icon
             label: Icon
             required: false
             widget: select
             options:
-              - { label: 'gift', value: 'gift'}
-              - { label: 'search', value: 'search'}
-              - { label: 'clipboard', value: 'clipboard'}
-              - { label: 'brand', value: 'brand'}
-              - { label: 'layout', value: 'layout'}
-          - { name: boxtitle, label: Box Title, required: false, widget: string }
-          - { name: blurb, label: Blurb, required: false, widget: text}
+              - { label: "gift", value: "gift" }
+              - { label: "search", value: "search" }
+              - { label: "clipboard", value: "clipboard" }
+              - { label: "brand", value: "brand" }
+              - { label: "layout", value: "layout" }
+          - {
+              name: boxtitle,
+              label: Box Title,
+              required: false,
+              widget: string,
+            }
+          - { name: blurb, label: Blurb, required: false, widget: text }
 
       - name: infobox2
         label: Info Box 2
@@ -78,19 +98,24 @@ collections:
         required: false
         widget: object
         fields:
-          - { name: display, label: Display, widget: boolean, default: false}
+          - { name: display, label: Display, widget: boolean, default: false }
           - name: icon
             label: Icon,
             required: false
             widget: select
             options:
-              - { label: 'gift', value: 'gift'}
-              - { label: 'search', value: 'search'}
-              - { label: 'clipboard', value: 'clipboard'}
-              - { label: 'brand', value: 'brand'}
-              - { label: 'layout', value: 'layout'}
-          - { name: boxtitle, label: Box Title, required: false, widget: string }
-          - { name: blurb, label: Blurb, required: false, widget: text}
+              - { label: "gift", value: "gift" }
+              - { label: "search", value: "search" }
+              - { label: "clipboard", value: "clipboard" }
+              - { label: "brand", value: "brand" }
+              - { label: "layout", value: "layout" }
+          - {
+              name: boxtitle,
+              label: Box Title,
+              required: false,
+              widget: string,
+            }
+          - { name: blurb, label: Blurb, required: false, widget: text }
 
       - name: infobox3
         label: Info Box 3
@@ -98,19 +123,24 @@ collections:
         required: false
         widget: object
         fields:
-          - { name: display, label: Display, widget: boolean, default: false}
+          - { name: display, label: Display, widget: boolean, default: false }
           - name: icon
             label: Icon,
             required: false
             widget: select
             options:
-              - { label: 'gift', value: 'gift'}
-              - { label: 'search', value: 'search'}
-              - { label: 'clipboard', value: 'clipboard'}
-              - { label: 'brand', value: 'brand'}
-              - { label: 'layout', value: 'layout'}
-          - { name: boxtitle, label: Box Title, required: false, widget: string }
-          - { name: blurb, label: Blurb, required: false, widget: text}
+              - { label: "gift", value: "gift" }
+              - { label: "search", value: "search" }
+              - { label: "clipboard", value: "clipboard" }
+              - { label: "brand", value: "brand" }
+              - { label: "layout", value: "layout" }
+          - {
+              name: boxtitle,
+              label: Box Title,
+              required: false,
+              widget: string,
+            }
+          - { name: blurb, label: Blurb, required: false, widget: text }
 
       - name: infobox4
         label: Info Box 4
@@ -118,20 +148,23 @@ collections:
         required: false
         widget: object
         fields:
-          - { name: display, label: Display, widget: boolean, default: false}
+          - { name: display, label: Display, widget: boolean, default: false }
           - name: icon
             label: Icon,
             required: false
             widget: select
             options:
-              - { label: 'gift', value: 'gift'}
-              - { label: 'search', value: 'search'}
-              - { label: 'clipboard', value: 'clipboard'}
-              - { label: 'brand', value: 'brand'}
-              - { label: 'layout', value: 'layout'}
-          - { name: boxtitle, label: Box Title, required: false, widget: string }
-          - { name: blurb, label: Blurb, required: false, widget: text}
+              - { label: "gift", value: "gift" }
+              - { label: "search", value: "search" }
+              - { label: "clipboard", value: "clipboard" }
+              - { label: "brand", value: "brand" }
+              - { label: "layout", value: "layout" }
+          - {
+              name: boxtitle,
+              label: Box Title,
+              required: false,
+              widget: string,
+            }
+          - { name: blurb, label: Blurb, required: false, widget: text }
 
       - { name: body, label: Body, widget: markdown }
-      
-       

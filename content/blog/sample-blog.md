@@ -5,6 +5,7 @@ date: 2021-11-17T02:06:53.549Z
 title: Auditing Your Website
 thumbnail: pexels-vojtech-okenka-392018.jpeg
 ---
+
 Redesigning a website isn't an easy task. When confronted with an existing website that has an overwhelming amount of content, or just a small amount of poor content, finding a starting point can be a daunting task. No matter how big or small, the first step is conducting a website audit.
 
 A website audit is just the evaluation of a website and its content. We look at what you currently have; the good, the bad and the ugly. Everything is looked at, and we're careful not to let anything sneak under the radar. Now is the time for us and the client to determine what is valuable, and what needs to go.

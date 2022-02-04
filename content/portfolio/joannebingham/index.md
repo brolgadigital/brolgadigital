@@ -38,9 +38,11 @@ infobox4:
   display: true
   icon: gift
   boxtitle: Ongoing Hosting, Support, and Security
-  blurb: Weekly backups, plugin updates, general security and maintenance at a low
+  blurb:
+    Weekly backups, plugin updates, general security and maintenance at a low
     monthly cost
 ---
+
 ## What we started with
 
 When Joanne approached us, she was using a default template from Wordpress, set up and managed by her husband. She wasn't a fan of the theme colours, and wanted something fresh and bright.

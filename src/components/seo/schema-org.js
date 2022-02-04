@@ -1,5 +1,5 @@
-import * as React from 'react'
-import {Helmet} from 'react-helmet'
+import * as React from "react";
+import { Helmet } from "react-helmet";
 
 export default React.memo(
   ({
@@ -16,26 +16,26 @@ export default React.memo(
   }) => {
     const baseSchema = [
       {
-        '@context': 'http://schema.org',
-        '@type': 'WebSite',
+        "@context": "http://schema.org",
+        "@type": "WebSite",
         url,
         name: title,
         alternateName: defaultTitle,
       },
-    ]
+    ];
 
     const schema = isBlogPost
       ? [
           ...baseSchema,
           {
-            '@context': 'http://schema.org',
-            '@type': 'BreadcrumbList',
+            "@context": "http://schema.org",
+            "@type": "BreadcrumbList",
             itemListElement: [
               {
-                '@type': 'ListItem',
+                "@type": "ListItem",
                 position: 1,
                 item: {
-                  '@id': url,
+                  "@id": url,
                   name: title,
                   logo,
                 },
@@ -43,31 +43,31 @@ export default React.memo(
             ],
           },
           {
-            '@context': 'http://schema.org',
-            '@type': 'BlogPosting',
+            "@context": "http://schema.org",
+            "@type": "BlogPosting",
             url,
             name: title,
             alternateName: defaultTitle,
             headline: title,
             image: {
-              '@type': 'ImageObject',
+              "@type": "ImageObject",
               url: organization.url,
             },
             description,
             mainEntityOfPage: {
-              '@type': 'WebSite',
-              '@id': canonicalUrl,
+              "@type": "WebSite",
+              "@id": canonicalUrl,
             },
             datePublished,
           },
         ]
-      : baseSchema
+      : baseSchema;
 
     return (
       <Helmet>
         {/* Schema.org tags */}
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
-    )
-  },
-)
+    );
+  }
+);

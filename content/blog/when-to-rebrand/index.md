@@ -5,9 +5,10 @@ date: 2021-11-24T00:49:03.761Z
 title: When should you rebrand a business?
 thumbnail: adobestock_288906272.jpeg
 ---
+
 Brolga Digital might seem like a new agency, but did you know we've been in business for 6 years? Initially, we were a one-person operation, a sole-trader operation under [shelleybassett.com](https://www.shelleybassett.com/) and a lot has changed since those days.
 
-Rebranding was a massive undertaking, both for us as a company, and for our customers. The decision was not taken lightly, and a lot of thought and consideration went into choosing a rebrand over simply repurposing the existing *Shelley Bassett* brand into something new. Philip VanDusen, a branding expert, and has a short video that outlines 4 key reasons to help you decide when to rebrand.
+Rebranding was a massive undertaking, both for us as a company, and for our customers. The decision was not taken lightly, and a lot of thought and consideration went into choosing a rebrand over simply repurposing the existing _Shelley Bassett_ brand into something new. Philip VanDusen, a branding expert, and has a short video that outlines 4 key reasons to help you decide when to rebrand.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XKfn17vVyRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -15,7 +16,7 @@ According to VanDusen, the only reasons that you should consider a rebrand is if
 
 ### A case study in brand evolution
 
-Personal branding is its own special challenge as it focuses more on the feeling and emotions of an individual. The *Shelley Bassett* brand went through several iterations over its lifetime. Very few people would recognise its original version, with black and white images, a bold yellow accent and a serifed typeface.
+Personal branding is its own special challenge as it focuses more on the feeling and emotions of an individual. The _Shelley Bassett_ brand went through several iterations over its lifetime. Very few people would recognise its original version, with black and white images, a bold yellow accent and a serifed typeface.
 
 <figure>
 
@@ -33,7 +34,7 @@ The next design of Shelley Bassett was a total overhaul from the original design
 <figcaption>First Rebranding of Shelley Bassett circa 2017</figcaption>
 </figure>
 
-The next iteration for *Shelley Bassett* was a small refresh, introducing a cursive typeface and more imagery. Rather than a rebrand, this was a website redesign to refine the existing palette. It also helped to take into account new features like a blog and shop, with a bold new banner added to the top of the home page.
+The next iteration for _Shelley Bassett_ was a small refresh, introducing a cursive typeface and more imagery. Rather than a rebrand, this was a website redesign to refine the existing palette. It also helped to take into account new features like a blog and shop, with a bold new banner added to the top of the home page.
 
 <figure>
 

@@ -1,12 +1,12 @@
-const React = require("react")
-const Layout = require("./src/components/Layout").default
-const MessengerChat = require ("./src/components/MessengerChat").default
+const React = require("react");
+const Layout = require("./src/components/Layout").default;
+const MessengerChat = require("./src/components/MessengerChat").default;
 
 exports.wrapPageElement = ({ element, props }) => {
-    return (
-        <Layout {...props}>
-            {element}
-            <MessengerChat />
-        </Layout>
-    )
-}
+  return (
+    <Layout {...props}>
+      {element}
+      <MessengerChat />
+    </Layout>
+  );
+};
