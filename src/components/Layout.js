@@ -5,8 +5,10 @@ import Webmenu from '../components/Webmenu'
 import Mobilemenu from '../components/Mobilemenu'
 import config from '../../brolga-config'
 import SplashScreen from './SplashScreen'
+import { globalHistory } from "@reach/router"
 
-export default function Layout({children, path}) {
+export default function Layout({children}) {
+    const path = globalHistory.location.pathname
 
   const data = useStaticQuery(graphql`
     {
