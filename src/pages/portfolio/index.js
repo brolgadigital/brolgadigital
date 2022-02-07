@@ -24,15 +24,12 @@ export default function index({ data }) {
                         key={project.id}
                         title={project.frontmatter.title}
                         desc={project.frontmatter.description}
-                        // 'An artist based in Queensland, Joanne wanted a new website that reflected her personal style. After a branding refesh, she wanted to continue managing her own online shop and social media.'
-
                         image={
                             project.frontmatter.thumbnail.childImageSharp
                                 .gatsbyImageData
                         }
                         case={project.frontmatter.path}
                         website={project.frontmatter.website}
-                        // 'https://joannebingham.com'
                     />
                 );
             })}

@@ -1,3 +1,7 @@
+require("dotenv").config({
+    path: ".env.${process.env.NODE_ENV}",
+});
+
 export default function SenderList(props) {
     const url = new URL("https://api.sender.net/v2/subscribers");
 
