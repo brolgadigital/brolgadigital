@@ -48,7 +48,7 @@ export default function Layout({ children }) {
             </div>
 
             <Mobilemenu />
-            {path === "/" ? <SplashScreen /> : ""}
+            {path === "/" ? <SplashScreen /> : <></>}
 
             <div className="content">{children}</div>
         </div>
