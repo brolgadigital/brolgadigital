@@ -5,7 +5,6 @@ import Webmenu from "../components/Webmenu";
 import Mobilemenu from "../components/Mobilemenu";
 import config from "../../brolga-config";
 import SplashScreen from "./SplashScreen";
-import { globalHistory } from "@reach/router";
 
 export default function Layout({ location, children }) {
     const path = location.pathname;
@@ -22,7 +21,6 @@ export default function Layout({ location, children }) {
     `);
     const {
         site: {
-            //   siteMetadata,
             siteMetadata: { description: siteDescription },
         },
     } = data;
