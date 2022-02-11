@@ -8,7 +8,6 @@ export default function contact() {
     const copyEmail = () => {
         let range = document.createRange();
         let selection = document.getSelection();
-
         let copyText = document.getElementById("brolga-email");
 
         range.selectNode(copyText);
@@ -16,6 +15,11 @@ export default function contact() {
         selection.addRange(range);
         document.execCommand("copy");
         selection.removeAllRanges();
+
+        copyText.classList.toggle('copied')
+        setTimeout(function() {
+            copyText.classList.toggle('copied')
+        }, 1000);
     };
 
     return (
