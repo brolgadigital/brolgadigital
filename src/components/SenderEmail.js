@@ -8,30 +8,29 @@ const SenderEmail = () => {
     const handleSubmit = async (event) => {
         event.preventDefault()
 
-        const url = new URL(
-            "https://api.sender.net/v2/subscribers"
-        );
+        const myHeaders = new Headers()
 
-        let headers = {
-            "Authorization": `Bearer ${process.env.GATSBY_SENDER_TOKEN}`,
-            "Content-Type": "application/json",
-            "Accept": "application/json",
-        };
+        myHeaders.append("Authorization", `Bearer ${process.env.GATSBY_SENDER_TOKEN}`)
+        myHeaders.append("Content-Type", "application/json")
+        myHeaders.append("Accept", "application/json")
 
-        let data = {
+        const data = {
             "email": email,
             "firstname": fName,
             "lastname": lName,
             "groups": ["boQ4Ej"]
         };
+
+        const options = {
+            method: 'POST',
+            headers: myHeaders,
+            body: JSON.stringify( data )
+        }
         try {
-            fetch(url, {
-            method: "POST",
-            headers,body: JSON.stringify(data)
-        }).then(response => response.json());
+            fetch( 'https://api.sender.net/v2/subscribers', options)
+            .then(response => response.json());
         } catch (e) {
-        
-        console.log('Error occurred during authentication');
+            console.log('Error occurred during authentication');
         }
     }
 
