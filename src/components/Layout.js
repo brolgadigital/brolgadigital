@@ -39,6 +39,7 @@ export default function Layout({ location, children }) {
                 <noscript>
                     This site runs best with JavaScript enabled.
                 </noscript>
+                <script src="https://www.googleoptimize.com/optimize.js?id=OPT-P5MZWCD"></script>
             </Helmet>
 
             <div className="sidemenu">
