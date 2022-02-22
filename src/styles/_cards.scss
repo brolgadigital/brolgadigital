@@ -75,6 +75,25 @@
     }
 }
 
+.home-test {
+    border: 2px solid;
+    font-size: .8rem;
+    color: $blue3;
+    flex: 1 1 30%;
+
+    p {
+        color: $blue3 !important;
+        text-align: left;
+    }
+
+    h3 {
+        margin: 0 !important;
+        text-align: left;
+        color: $blue3 !important;
+        height: auto;
+    }
+}
+
 .sale {
     &::before {
         content: attr(data-content);
@@ -177,6 +196,10 @@
         }
     }
 
+    .home-test {
+        flex: 1 1 30%;
+    }
+
     .project-card {
         flex-direction: column;
 
@@ -204,6 +227,10 @@
         }
     }
 
+    .home-test {
+        flex: 1 1 30%;
+    }
+
     .project-card {
         flex-direction: column;
 
@@ -214,6 +241,17 @@
 
         .project-outline {
             margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .titles {
+        .cardwrapper{
+            flex-direction: column;
+            .card {
+                margin-right: 0;
+            }
         }
     }
 }
@@ -230,5 +268,8 @@
         &:nth-of-type(even) {
             margin-right: 0;
         }
+    }
+    .home-test {
+        flex: 1 1 30%;
     }
 }

@@ -4,7 +4,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import Webmenu from "../components/Webmenu";
 import Mobilemenu from "../components/Mobilemenu";
 import config from "../../brolga-config";
-import SplashScreen from "./SplashScreen";
+import {SplashScreen, SplashScreen2} from "./SplashScreen";
 
 export default function Layout({ location, children }) {
     const path = location.pathname;
@@ -47,6 +47,7 @@ export default function Layout({ location, children }) {
 
             <Mobilemenu />
             {path === "/" ? <SplashScreen /> : <></>}
+            {path === "/main" ? <SplashScreen2 /> : <></>}
 
             <div className="content">{children}</div>
         </div>

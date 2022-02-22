@@ -7,7 +7,7 @@ import { StaticImage } from "gatsby-plugin-image";
 // markup
 const NotFoundPage = () => {
     return (
-        <>
+        <div>
             <Head title="404" />
 
             <Headers subtitle="Thats a 404..." title="Page Not Found" />
@@ -20,7 +20,7 @@ const NotFoundPage = () => {
                 <Link to="/contact">contact us</Link> if you think it should be
                 here.
             </p>
-        </>
+        </div>
     );
 };
 
