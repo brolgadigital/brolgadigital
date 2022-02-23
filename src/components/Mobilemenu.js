@@ -76,6 +76,7 @@ class Mobilemenu extends React.Component {
                             to="/services"
                             activeClassName="currentPage"
                             onClick={this.close}
+                            partiallyActive={true}
                         >
                             Services
                         </Link>
@@ -85,6 +86,7 @@ class Mobilemenu extends React.Component {
                             to="/packages"
                             activeClassName="currentPage"
                             onClick={this.close}
+                            partiallyActive={true}
                         >
                             Packages
                         </Link>
@@ -94,6 +96,7 @@ class Mobilemenu extends React.Component {
                             to="/about"
                             activeClassName="currentPage"
                             onClick={this.close}
+                            partiallyActive={true}
                         >
                             About Us
                         </Link>
@@ -103,6 +106,7 @@ class Mobilemenu extends React.Component {
                             to="/portfolio"
                             activeClassName="currentPage"
                             onClick={this.close}
+                            partiallyActive={true}
                         >
                             Portfolio
                         </Link>
@@ -112,6 +116,7 @@ class Mobilemenu extends React.Component {
                             to="/contact"
                             activeClassName="currentPage"
                             onClick={this.close}
+                            partiallyActive={true}
                         >
                             Contact
                         </Link>
@@ -121,6 +126,7 @@ class Mobilemenu extends React.Component {
                             to="/blog"
                             activeClassName="currentPage"
                             onClick={this.close}
+                            partiallyActive={true}
                         >
                             Blog
                         </Link>

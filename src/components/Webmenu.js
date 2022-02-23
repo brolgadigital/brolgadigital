@@ -19,32 +19,32 @@ export default function Webmenu() {
             </Link>
             <ul className="navigation">
                 <li>
-                    <Link to="/services" activeClassName="currentPage">
+                    <Link to="/services" activeClassName="currentPage" partiallyActive={true}>
                         Services
                     </Link>
                 </li>
                 <li>
-                    <Link to="/packages" activeClassName="currentPage">
+                    <Link to="/packages" activeClassName="currentPage" partiallyActive={true}>
                         Packages
                     </Link>
                 </li>
                 <li>
-                    <Link to="/about" activeClassName="currentPage">
+                    <Link to="/about" activeClassName="currentPage" partiallyActive={true}>
                         About Us
                     </Link>
                 </li>
                 <li>
-                    <Link to="/portfolio" activeClassName="currentPage">
+                    <Link to="/portfolio" activeClassName="currentPage" partiallyActive={true}>
                         Portfolio
                     </Link>
                 </li>
                 <li>
-                    <Link to="/contact" activeClassName="currentPage">
+                    <Link to="/contact" activeClassName="currentPage" partiallyActive={true}>
                         Contact
                     </Link>
                 </li>
                 <li>
-                    <Link to="/blog" activeClassName="currentPage">
+                    <Link to="/blog" activeClassName="currentPage" partiallyActive={true}>
                         Blog
                     </Link>
                 </li>
