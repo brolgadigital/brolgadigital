@@ -11,8 +11,8 @@ export default function PriceCard(props) {
             <div className="cost">
                 <h3>{props.title}</h3>
                 <p>
-                    starting from<span className="price">{props.price}</span>
-                    {props.single ? "​" : "per month"}
+                    {props.minimum ? "starting from" : <></>}<span className="price">{props.price}</span>
+                    {props.single ? <></> : "per month"}
                 </p>
                 <hr></hr>
             </div>
