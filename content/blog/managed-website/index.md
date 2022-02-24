@@ -3,6 +3,7 @@ layout: blog
 path: managed-website
 date: 2022-02-23T22:50:30.197Z
 title: Focus on your business with a Managed Website
+thumbnail: pexels-john-jackson-190364.jpeg
 ---
 Running a business has many complicated tasks. From stock management to tax-time, there’s always something demanding attention. But one aspect of business that doesn’t need to be this way is your website and online presence.
 
