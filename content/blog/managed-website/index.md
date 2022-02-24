@@ -18,6 +18,6 @@ At Brolga Digital, we find most of our clients prefer a managed service, so we d
 
 ### Choosing a Management Agency
 
-It’s not easy to choose an agency to manage a website on your behalf. You want someone trustworthy that will respond to requests in a timely manner. Cost is also a major factor, with some agencies charging huge fees, or hiding their prices.
+It’s not easy to choose an agency to manage a website on your behalf. You want someone trustworthy that will respond to requests quickly. Cost is also a major factor, with some agencies charging huge fees, or hiding their prices.
 
 We aim to communicate clearly with our clients, outlining exactly what they will be paying for at each level of website management. We’re also available for video calls, to work through your needs a find the best solution.
