@@ -2,6 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 // import SeoWithQuery from '../components/seo/seo'
 import { Helmet } from "react-helmet";
+import { Link } from "gatsby";
 import Headers from "../components/Headers";
 
 const Template = ({ data }) => {
@@ -14,23 +15,6 @@ const Template = ({ data }) => {
         <>
             <Helmet
                 title={pageTitle}
-                isBlogPost={true}
-                imageMeta={
-                    post.frontmatter.thumbnail.childImageSharp.original.src
-                }
-                meta={[
-                    {
-                        name: "description",
-                        content: post.frontmatter.description || post.excerpt,
-                    },
-                    {
-                        name: "image",
-                        content:
-                            post.frontmatter.thumbnail.childImageSharp.original
-                                .src,
-                    },
-                    { name: "datePublished", content: post.frontmatter.date },
-                ]}
             ></Helmet>
 
             <div className="blog-post-container">
@@ -43,6 +27,7 @@ const Template = ({ data }) => {
                         className="blog-post-content"
                         dangerouslySetInnerHTML={{ __html: post.html }}
                     ></div>
+                    <a href={post.frontmatter.download.relativePath} download={post.frontmatter.title} className="button">Download</a>
                 </div>
             </div>
         </>
@@ -62,7 +47,7 @@ export const pageQuery = graphql`
                 title
                 description
                 download {
-                    absolutePath
+                    relativePath
                     size
                 }
             }
