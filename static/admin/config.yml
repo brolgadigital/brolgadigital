@@ -38,6 +38,19 @@ collections:
                 required: false,
             }
 
+    - name: downloads
+      label: Downloads
+      folder: content/downloads
+      create: true
+      slug: "{{fields.path}}"
+      path: "{{slug}}/index"
+      fields:
+          - { name: layout, label: Layout, widget: hidden, default: "download" }
+          - { name: path, label: Path }
+          - { name: title, label: Title, widget: string }
+          - { name: description, label: Description, widget: markdown }
+          - { name: download, label: Download, widget: file }
+
     - name: portfolio
       label: Portfolio
       folder: content/portfolio
