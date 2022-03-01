@@ -48,7 +48,7 @@ collections:
           - { name: layout, label: Layout, widget: hidden, default: "download" }
           - { name: path, label: Path }
           - { name: title, label: Title, widget: string }
-          - { name: description, label: Description, widget: markdown }
+          - { name: body, label: Body, widget: markdown }
           - { name: download, label: Download, widget: file }
 
     - name: portfolio
