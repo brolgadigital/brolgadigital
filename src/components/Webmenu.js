@@ -44,6 +44,11 @@ export default function Webmenu() {
                     </Link>
                 </li>
                 <li>
+                    <Link to="/resources" activeClassName="currentPage" partiallyActive={true}>
+                        Resources
+                    </Link>
+                </li>
+                <li>
                     <Link to="/blog" activeClassName="currentPage" partiallyActive={true}>
                         Blog
                     </Link>

@@ -123,6 +123,16 @@ class Mobilemenu extends React.Component {
                     </li>
                     <li>
                         <Link
+                            to="/resources"
+                            activeClassName="currentPage"
+                            onClick={this.close}
+                            partiallyActive={true}
+                        >
+                            Resources
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
                             to="/blog"
                             activeClassName="currentPage"
                             onClick={this.close}

@@ -68,6 +68,11 @@ const Footer = () => {
                     </Link>
                 </li>
                 <li>
+                    <Link to="/resources" activeClassName="currentPage">
+                        Resources
+                    </Link>
+                </li>
+                <li>
                     <Link to="/blog" activeClassName="currentPage">
                         Blog
                     </Link>
