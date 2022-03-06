@@ -164,5 +164,38 @@ module.exports = {
                 offset: -50,
             },
         },
+        {
+            resolve: 'gatsby-plugin-htaccess',
+            options: {
+                https: true,
+                www: false,
+                SymLinksIfOwnerMatch: true,
+                host: 'brolgadigital.com.au',
+                ErrorDocument: `
+                ErrorDocument 401 /error_pages/401.html
+                ErrorDocument 404 /error_pages/404.html
+                ErrorDocument 500 /error_pages/500.html
+                `,
+                custom: `
+                    # BROWSER CACHING USING CACHE-CONTROL HEADERS
+                    <ifModule mod_headers.c> 
+                        # One year for image and video files
+                        <filesMatch ".(flv|gif|ico|jpg|jpeg|mp4|mpeg|png|svg|swf|webp)$">
+                            Header set Cache-Control "max-age=31536000, public"
+                        </filesMatch>
+
+                        # One month for PDF files
+                        <filesMatch ".(pdf)$">
+                            Header set Cache-Control "max-age=2592000, public"
+                        </filesMatch>
+
+                        # One week for CSS and JS files
+                        <filesMatch ".(css|js)$">
+                            Header set Cache-Control "max-age=604800, public"
+                        </filesMatch>
+                    </ifModule>
+                `,
+            },
+        },
     ],
 };
