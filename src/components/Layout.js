@@ -6,6 +6,9 @@ import Mobilemenu from "../components/Mobilemenu";
 import config from "../../brolga-config";
 import {SplashScreen, SplashScreen2} from "./SplashScreen";
 
+import "../styles/style.scss";
+import "../styles/main.scss"
+
 export default function Layout({ location, children }) {
     const path = location.pathname;
 
@@ -39,7 +42,16 @@ export default function Layout({ location, children }) {
                 <noscript>
                     This site runs best with JavaScript enabled.
                 </noscript>
+
+                {/* <!-- Google Optimize --> */}
                 <script src="https://www.googleoptimize.com/optimize.js?id=OPT-P5MZWCD"></script>
+                
+                {/* <!-- UIkit CSS --> */}
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/css/uikit.min.css" />
+
+                {/* <!-- UIkit JS --> */}
+                <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
             </Helmet>
 
             <div className="sidemenu">

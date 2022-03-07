@@ -3,7 +3,6 @@ import { Link } from "gatsby";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
 import { StaticImage } from "gatsby-plugin-image";
 import * as Icon from "react-feather";
-import "../styles/style.scss";
 
 export default function Webmenu() {
     var year = new Date().getFullYear();
