@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
 import { StaticImage } from "gatsby-plugin-image";
+import Navigation from "./Navigation";
 import * as Icon from "react-feather";
 
 class Mobilemenu extends React.Component {

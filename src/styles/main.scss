@@ -21,11 +21,21 @@ $global-inverse-color: $blue1;
 $global-link-color: $blue2;
 $global-link-hover-color: $blue3;
 
+$nav-item-padding-vertical: 15px;
+$nav-default-item-color: $blue1;
+$nav-default-item-hover-color: #fff;
+$nav-default-item-active-color: $blue1;
+
 // 2. Import default variables and available mixins.
 @import "uikit/src/scss/variables.scss";
 @import "uikit/src/scss/mixins.scss";
 
 // 3. Your custom mixin overwrites.
+@mixin hook-nav-default() {
+    .uk-active {
+        font-weight: 600;
+    }
+}
 @mixin hook-base-h1() {
     font-family: $marcellus;
     border-bottom: 3px solid $red;

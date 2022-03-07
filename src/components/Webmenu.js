@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
 import { StaticImage } from "gatsby-plugin-image";
 import * as Icon from "react-feather";
+import Navigation from "./Navigation";
 
 export default function Webmenu() {
     var year = new Date().getFullYear();
@@ -16,43 +17,8 @@ export default function Webmenu() {
                     placeholder="tracedSVG"
                 />
             </Link>
-            <ul className="navigation">
-                <li>
-                    <Link to="/services" activeClassName="currentPage" partiallyActive={true}>
-                        Services
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/packages" activeClassName="currentPage" partiallyActive={true}>
-                        Packages
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/about" activeClassName="currentPage" partiallyActive={true}>
-                        About Us
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/portfolio" activeClassName="currentPage" partiallyActive={true}>
-                        Portfolio
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/contact" activeClassName="currentPage" partiallyActive={true}>
-                        Contact
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/resources" activeClassName="currentPage" partiallyActive={true}>
-                        Resources
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/blog" activeClassName="currentPage" partiallyActive={true}>
-                        Blog
-                    </Link>
-                </li>
-            </ul>
+            
+            <Navigation />
 
             <div className="psudoFooter">
                 <p>hello@brolgadigital.com.au</p>
