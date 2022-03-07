@@ -43,7 +43,7 @@ export default function services() {
                 />
                 <InfoCard
                     title="Support and Maintenance"
-                    icon="life-buoy"
+                    icon="lifesaver"
                     desc="Not technically minded? Let us manage the hard parts, and explain things in easy-to-understand language."
                     info="/services/support"
                 />
@@ -55,7 +55,7 @@ export default function services() {
                 />
                 <InfoCard
                     title="Ecommerce and Online Shopping"
-                    icon="shopping-bag"
+                    icon="bag"
                     desc="Need an online shop or booking system? We can help build one tailored to your business needs."
                     info="/services/ecommerce"
                 />
@@ -67,7 +67,7 @@ export default function services() {
                 />
                 <InfoCard
                     title="Usability, Speed and Search Engine Optimisations"
-                    icon="activity"
+                    icon="search"
                     desc="Organic web traffic is still best lead generator. We can enhance how your website appears in search results."
                     info="/services/seo"
                 />
