@@ -37,13 +37,6 @@ module.exports = {
     },
     plugins: [
         "gatsby-plugin-image",
-        // {
-        //     resolve: `gatsby-source-filesystem`,
-        //     options: {
-        //         name: `uploads`,
-        //         path: `${__dirname}/static/images/`,
-        //     },
-        // },
         {
             resolve: `gatsby-plugin-facebook-pixel`,
             options: {
@@ -120,13 +113,6 @@ module.exports = {
 
         "gatsby-plugin-netlify-cms",
         "gatsby-plugin-sass",
-
-        // {
-        //     resolve: "gatsby-plugin-google-analytics",
-        //     options: {
-        //         trackingId: "G-VFZCRFC58Q",
-        //     },
-        // },
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-sitemap",
         {
