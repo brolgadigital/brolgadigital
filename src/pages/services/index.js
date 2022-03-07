@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "../../components/Head";
 import Headers from "../../components/Headers";
-import Cards from "../../components/Cards";
+import { InfoCard, CardWrapper } from "../../components/Cards";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -18,7 +18,7 @@ export default function services() {
                 src="../../images/graphics/faq.png"
                 className="brand-image"
             />
-
+            
             <p>
                 Just getting started, needing a complete overhaul or just
                 wanting to start afresh? We're here for whatever your business
@@ -34,59 +34,59 @@ export default function services() {
             </p>
 
             <h2>Find a solution that's right for you</h2>
-            <div className="cardwrapper">
-                <Cards
+            <CardWrapper>
+                <InfoCard
                     title="Branding"
                     icon="gift"
                     desc="From a brand guide to business cards, social icons to marketing collateral, we'll present your story cohesively wherever your customers and clients are."
                     info="/services/branding"
                 />
-                <Cards
+                <InfoCard
                     title="Support and Maintenance"
                     icon="life-buoy"
                     desc="Not technically minded? Let us manage the hard parts, and explain things in easy-to-understand language."
                     info="/services/support"
                 />
-                <Cards
+                <InfoCard
                     title="Micro and Static Sites"
                     icon="layout"
                     desc="Our websites are built to fit your business. Big our small, we can make something perfectly tailored to you."
                     info="/services/smallsite"
                 />
-                <Cards
+                <InfoCard
                     title="Ecommerce and Online Shopping"
                     icon="shopping-bag"
                     desc="Need an online shop or booking system? We can help build one tailored to your business needs."
                     info="/services/ecommerce"
                 />
-                <Cards
+                <InfoCard
                     title="Social Media and Marketing Strategies"
                     icon="users"
                     desc="Get help designing marketing plans and campaigns that will boost your business and generate valuable leads."
                     info="/services/strategy"
                 />
-                <Cards
+                <InfoCard
                     title="Usability, Speed and Search Engine Optimisations"
                     icon="activity"
                     desc="Organic web traffic is still best lead generator. We can enhance how your website appears in search results."
                     info="/services/seo"
                 />
-            </div>
+            </CardWrapper>
 
             <h2>Our most popular services</h2>
 
-            <div className="cardwrapper">
-                <Cards
+            <CardWrapper>
+                <InfoCard
                     title="Bespoke Custom Solutions"
                     icon="gift"
                     desc="Your business is unique, and your web presence should be too. We don't use cookie cutter templates, everything is custom designed and built with you in mind"
                 />
-                <Cards
+                <InfoCard
                     title="Blogs and Ecommerce"
                     icon="layout"
                     desc="Our web expertise stretches further than just the homepage. Blogs, ecommerce, apps and custom solutions are no problem!"
                 />
-            </div>
+            </CardWrapper>
 
             <h2>Not sure where to start?</h2>
             <p className="last">

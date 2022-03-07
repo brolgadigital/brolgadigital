@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "../../components/Head";
 import Headers from "../../components/Headers";
-import Cards from "../../components/Cards";
+import { InfoCard, CardWrapper } from "../../components/Cards";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -32,13 +32,13 @@ const strategy = () => {
                 more information.
             </p>
 
-            <div className="cardwrapper">
-                <Cards
+            <CardWrapper>
+                <InfoCard
                     title="Google and Bing Business Pages"
                     icon="gift"
                     desc="A well documented business page will show up on the search engine site and has incredible click through rates. Let us help you make yours stand out!"
                 />
-            </div>
+            </CardWrapper>
         </>
     );
 };

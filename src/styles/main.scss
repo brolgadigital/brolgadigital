@@ -1,0 +1,50 @@
+// Colour
+$blue1: #e2eaed;
+$blue2: #7fa1c4;
+$blue3: #486181;
+$blue4: #202e42;
+$red: #bf3c43;
+
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+$marcellus: "Marcellus", serif;
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600&display=swap");
+$barlow: "Barlow Condensed", sans-serif;
+
+// UiKit Styles
+// 1. Your custom variables and variable overwrites.
+$global-font-family: $barlow;
+
+$global-color: $blue3;
+$global-emphasis-color: $blue3;
+$global-inverse-color: $blue1;
+$global-link-color: $blue2;
+$global-link-hover-color: $blue3;
+
+// 2. Import default variables and available mixins.
+@import "uikit/src/scss/variables.scss";
+@import "uikit/src/scss/mixins.scss";
+
+// 3. Your custom mixin overwrites.
+@mixin hook-base-h1() {
+    font-family: $marcellus;
+    border-bottom: 3px solid $red;
+}
+@mixin hook-card() {
+    background-color: $blue1;
+}
+
+// 4. Import UIkit.
+@import "uikit/src/scss/uikit.scss";
+
+html {
+    font-size: 18px;
+}
+
+.bd-card-hr {
+    width: 30px;
+    height: 3px;
+    background: $red;
+    margin: 15px 0 15px 0;
+    margin-right: calc(100% - 30px);
+}

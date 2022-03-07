@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "../../components/Head";
 import Headers from "../../components/Headers";
-import Cards from "../../components/Cards";
+import { InfoCard, CardWrapper } from "../../components/Cards";
 import { StaticImage } from "gatsby-plugin-image";
 
 const branding = () => {
@@ -26,18 +26,18 @@ const branding = () => {
                 clients are.
             </p>
 
-            <div className="cardwrapper">
-                <Cards
+            <CardWrapper>
+                <InfoCard
                     title="Bespoke Custom Solutions"
                     icon="gift"
                     desc="Your business is unique, and your web presence should be too. We don't use cookie cutter templates, everything is custom designed and built with you in mind"
                 />
-                <Cards
+                <InfoCard
                     title="Blogs and Ecommerce"
                     icon="layout"
                     desc="Our web expertise stretches further than just the homepage. Blogs, ecommerce, apps and custom solutions are no problem!"
                 />
-            </div>
+            </CardWrapper>
         </>
     );
 };
