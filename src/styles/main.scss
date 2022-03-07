@@ -33,12 +33,22 @@ $global-link-hover-color: $blue3;
 @mixin hook-card() {
     background-color: $blue1;
 }
+@mixin hook-card-title() {
+    font-weight: 500;
+    font-size: 1.1em;
+    line-height: 1.1em;
+}
 
 // 4. Import UIkit.
 @import "uikit/src/scss/uikit.scss";
 
 html {
     font-size: 18px;
+}
+
+span[uk-icon] svg * {
+    stroke: $blue2;
+    stroke-width: 1.5;
 }
 
 .bd-card-hr {

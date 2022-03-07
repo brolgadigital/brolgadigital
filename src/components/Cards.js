@@ -8,15 +8,28 @@ const InfoCard = (props) => {
     if (props?.cardData?.display === false) {
         return null;
     }
+    let setIcon = ''
+    if (props?.cardData?.icon) {
+        setIcon = props?.cardData?.icon
+    }
+    else {
+        setIcon = props.icon
+    }
 
     return (
         <div>
         <div className='uk-card'>
             <div className="uk-card-header">
+                <span uk-icon={
+                    'icon: ' + setIcon + 
+                    '; ratio: 2'
+                    }
+                className='uk-margin-small-bottom uk-preserve'
+                ></span>
                 {/* {props?.cardData?.icon
                     ? iconSvg[props?.cardData?.icon]
                     : iconSvg[props.icon]} */}
-                <h3 className="uk-card-title">
+                <h3 className="uk-card-title uk-margin-remove-top">
                     {props?.cardData?.boxtitle
                         ? props?.cardData?.boxtitle
                         : props.title}
