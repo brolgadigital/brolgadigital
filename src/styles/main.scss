@@ -57,8 +57,10 @@ html {
 
 span[uk-icon] svg * {
     color: $blue2;
-    stroke: $blue2;
     stroke-width: 1.5;
+}
+span[uk-icon] svg *[stroke] {
+    stroke: $blue2;
 }
 
 .bd-card-hr {
