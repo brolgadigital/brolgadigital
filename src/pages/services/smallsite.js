@@ -19,7 +19,7 @@ const smallsite = () => {
                 src="../../images/graphics/smallsite.png"
                 className="brand-image"
             />
-            <p className="last">
+            <p>
                 Our designers and developers are well versed in a number of
                 blogging platforms, including Wordpress, Squarespace and
                 Webflow; so no matter your preference, we can build something

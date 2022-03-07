@@ -31,7 +31,7 @@ export default function contact() {
                 src="../images/graphics/contact.png"
                 className="brand-image"
             />
-            <p className="last">
+            <p>
                 For more information about our business packages or ongoing
                 support subscriptions, email{" "}
                 <button onClick={copyEmail} id="brolga-email">

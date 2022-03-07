@@ -8,10 +8,10 @@ export default function home() {
         <>
             <div id="home">
                 <Headers title="Brolga Digital" subtitle="Discover" />
-                <p className="">
+                <p>
                 Brolga Digital is a digital agency specialising in small businesses and sole traders' needs. We design, build and manage every aspect of our client's digital presence, allowing them to choose how much (or little) they want to learn. We'll communicate with you in the way that suits you best: email, face-to-face, phone or instant message. The choice is always yours.
                 </p>
-                <p className="last">We provide training and assistance to our clients, to help them get the most out of their new site. Best of all, we ensure that our products “just work”.</p>
+                <p>We provide training and assistance to our clients, to help them get the most out of their new site. Best of all, we ensure that our products “just work”.</p>
 
                 <h2>Established Businesses Looking to Grow</h2>
                 <CardWrapper>

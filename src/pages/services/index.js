@@ -22,9 +22,9 @@ export default function services() {
             <p>
                 Just getting started, needing a complete overhaul or just
                 wanting to start afresh? We're here for whatever your business
-                needs.{" "}
+                needs.
             </p>
-            <p className="last">
+            <p>
                 Each of our projects is tailored to our clients needs. We design
                 and build bespoke digital solutions to help your brand stand out
                 from the online noise. And with our individualised quotes,
@@ -89,7 +89,7 @@ export default function services() {
             </CardWrapper>
 
             <h2>Not sure where to start?</h2>
-            <p className="last">
+            <p>
                 If you know you need get started in the digital sphere, but all
                 these terms seem made up,{" "}
                 <Link to="/contact">book a consultation</Link> and see what we

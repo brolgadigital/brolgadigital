@@ -19,7 +19,7 @@ const support = () => {
                 src="../../images/graphics/branding.png"
                 className="brand-image"
             />
-            <p className="last">
+            <p>
                 At Brolga Digital, we promise not to build something complicated
                 and then abandon you when we're done. We offer a range of
                 packages, charged monthly or as used (depending on our

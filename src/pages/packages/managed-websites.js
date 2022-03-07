@@ -13,7 +13,7 @@ const managedWebsites = () => {
                     title="Ongoing Support Packages"
                 />
 
-                <p className="last">
+                <p>
                     Not everyone wants to learn the technical side of their website. At Brolga Digital we support you in learning the parts you're interested in, and then manage the parts you're not. The choice is yours.
                 </p>
 
@@ -63,7 +63,7 @@ const managedWebsites = () => {
                     />
                 </div>
 
-                <p className="last">
+                <p>
                     Need something a little different or some help deciding what's right for you? We're flexible, just <Link to="/contact">contact us</Link>.
                 </p>
     </>

@@ -8,7 +8,7 @@ export default function main() {
         <>
             <div id="home">
                 <Headers title="Brolga Digital" subtitle="Discover" />
-                <p className="last">
+                <p>
                     Brolga Digital are online specialists for small businesses
                     of any type.
                 </p>

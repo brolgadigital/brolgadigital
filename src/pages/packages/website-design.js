@@ -13,7 +13,7 @@ const webDesign = () => {
                     title="Website Design and Development"
                 />
 
-                <p className="last">
+                <p>
                     Not sure where to begin with your website? We have a few simple categories to get you started.
                 </p>
 
@@ -49,7 +49,7 @@ const webDesign = () => {
                         ]}
                     />
                 </div>
-                <p className="last">
+                <p>
                     Need something a little different or some help deciding what's right for you? We're flexible, just <Link to="/contact">contact us</Link>.
                 </p>
     </>
