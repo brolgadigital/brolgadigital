@@ -171,11 +171,6 @@ module.exports = {
                 www: false,
                 SymLinksIfOwnerMatch: true,
                 host: 'brolgadigital.com.au',
-                ErrorDocument: `
-                ErrorDocument 401 /error_pages/401.html
-                ErrorDocument 404 /error_pages/404.html
-                ErrorDocument 500 /error_pages/500.html
-                `,
                 custom: `
                     # BROWSER CACHING USING CACHE-CONTROL HEADERS
                     <ifModule mod_headers.c> 
