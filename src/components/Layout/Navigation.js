@@ -12,7 +12,7 @@ const Navigation = ({location}) => {
 
     }
     if (location === 'bd-footer') {
-        locationClass = 'uk-margin bd-footer'
+        locationClass = 'uk-margin uk-width-1-2 bd-footer'
     }
     
 

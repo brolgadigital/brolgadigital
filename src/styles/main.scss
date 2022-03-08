@@ -55,6 +55,16 @@ html {
     font-size: 18px;
 }
 
+.bd-menu {
+    width: 200px;
+    background-color: $blue3;
+    & > div {
+        width: 200px;
+        height: 100vh;
+        justify-content: space-between;
+    }
+}
+
 .bd-sidenav,
 .bd-mobile {
     li > a {
@@ -83,4 +93,8 @@ span[uk-icon] svg *[stroke] {
     background: $red;
     margin: 15px 0 15px 0;
     margin-right: calc(100% - 30px);
+}
+
+.bd-footer {
+    border-top: 2px solid $blue2;
 }

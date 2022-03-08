@@ -1,13 +1,13 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { graphql, useStaticQuery } from "gatsby";
-import Webmenu from "../components/Webmenu";
-import Mobilemenu from "../components/Mobilemenu";
-import config from "../../brolga-config";
-import {SplashScreen, SplashScreen2} from "./SplashScreen";
+import Webmenu from "./Webmenu";
+import Mobilemenu from "./Mobilemenu";
+import config from "../../../brolga-config";
+import {SplashScreen, SplashScreen2} from "../SplashScreen";
 
-import "../styles/style.scss";
-import "../styles/main.scss"
+import "../../styles/style.scss";
+import "../../styles/main.scss"
 
 export default function Layout({ location, children }) {
     const path = location.pathname;
@@ -33,7 +33,7 @@ export default function Layout({ location, children }) {
         frontmatter;
 
     return (
-        <div className="layout">
+        <div className="uk-flex uk-flex-row uk-flex-stretch">
             <Helmet
                 title={title}
                 meta={[{ name: "description", content: description }]}
@@ -51,7 +51,7 @@ export default function Layout({ location, children }) {
                 <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
             </Helmet>
 
-            <div className="sidemenu">
+            <div className="bd-menu">
                 <Webmenu />
             </div>
 
@@ -59,7 +59,7 @@ export default function Layout({ location, children }) {
             {path === "/" ? <SplashScreen /> : <></>}
             {path === "/main/" ? <SplashScreen2 /> : <></>}
 
-            <div className="content">{children}</div>
+            <div className="uk-padding uk-width-expand">{children}</div>
         </div>
     );
 }

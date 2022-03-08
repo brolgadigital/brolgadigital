@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Navigation from './Navigation'
-import SenderEmail from '../components/SenderEmail'
+import SenderEmail from './SenderEmail'
 
 const Footer = () => {
     const copyEmail = () => {
@@ -23,8 +23,8 @@ const Footer = () => {
     };
 
     return (
-        <footer>
-            <address>
+        <footer className="uk-flex uk-flex-between uk-flex-wrap bd-footer">
+            <address className="uk-width-1-2">
                 <StaticImage
                     src="../images/brolga-red-01.png"
                     className="footer-logo"
