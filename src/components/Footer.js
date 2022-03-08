@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
+import Navigation from './Navigation'
 import SenderEmail from '../components/SenderEmail'
 
 const Footer = () => {
@@ -41,43 +42,8 @@ const Footer = () => {
 
             </address>
 
-            <ul>
-                <li>
-                    <Link to="/services" activeClassName="currentPage">
-                        Services
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/packages" activeClassName="currentPage">
-                        Packages
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/about" activeClassName="currentPage">
-                        About Us
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/portfolio" activeClassName="currentPage">
-                        Portfolio
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/contact" activeClassName="currentPage">
-                        Contact
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/resources" activeClassName="currentPage">
-                        Resources
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/blog" activeClassName="currentPage">
-                        Blog
-                    </Link>
-                </li>
-            </ul>
+            <Navigation location='bd-footer' />
+
             <SenderEmail />
         </footer>
     );

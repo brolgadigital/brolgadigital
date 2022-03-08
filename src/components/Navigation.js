@@ -1,9 +1,23 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-const Navigation = () => {
+const Navigation = ({location}) => {
+
+    let locationClass = ''
+    if ( location === 'bd-sidenav') {
+        locationClass = 'uk-nav-center bd-sidenav'
+    }
+    if (location === 'bd-mobile') {
+        locationClass = 'bd-mobile'
+
+    }
+    if (location === 'bd-footer') {
+        locationClass = 'uk-margin bd-footer'
+    }
+    
+
     return (
-        <ul className="uk-nav-default uk-nav-center uk-nav">
+        <ul className={"uk-nav-default uk-nav " + locationClass}>
             <li>
                 <Link to="/services" activeClassName="uk-active" partiallyActive={true}>
                     Services

@@ -67,6 +67,8 @@ class Mobilemenu extends React.Component {
                     </div>
                 </div>
 
+                {/* <Navigation location='bd-mobile' /> */}
+
                 <ul
                     className="navigation"
                     style={{ display: this.state.items }}

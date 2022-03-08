@@ -21,7 +21,7 @@ $global-inverse-color: $blue1;
 $global-link-color: $blue2;
 $global-link-hover-color: $blue3;
 
-$nav-item-padding-vertical: 15px;
+// $nav-item-padding-vertical: 15px;
 $nav-default-item-color: $blue1;
 $nav-default-item-hover-color: #fff;
 $nav-default-item-active-color: $blue1;
@@ -53,6 +53,20 @@ $nav-default-item-active-color: $blue1;
 
 html {
     font-size: 18px;
+}
+
+.bd-sidenav,
+.bd-mobile {
+    li > a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+}
+.bd-footer {
+    li > a {
+        justify-content: flex-end;
+        padding: 0;
+    }
 }
 
 span[uk-icon] svg * {
