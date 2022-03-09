@@ -15,10 +15,14 @@ const marketing = () => {
                 title="Advertising and Marketing"
                 id="seo"
             />
-            <StaticImage
-                src="../../images/graphics/seo.png"
-                className="brand-image"
-            />
+
+            <div className="uk-clearfix">
+                <StaticImage
+                    src="../../images/graphics/seo.png"
+                    className="uk-align-right uk-width-2-5"
+                    alt=''
+                />
+            </div>
 
             <CardWrapper>
                 <InfoCard

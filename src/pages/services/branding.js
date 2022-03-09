@@ -14,13 +14,17 @@ const branding = () => {
                 title="Comprehensive Brand Design"
                 id="branding"
             />
-            <StaticImage
-                src="../../images/graphics/branding.png"
-                className="brand-image"
-            />
-            <p>
-                Our branding services will provide you with everything to create consistency throughout your business. From a brand guide to business cards, social icons to marketing collateral, we'll present your story cohesively wherever your customers and clients are.
-            </p>
+
+            <div className="uk-clearfix">
+                <StaticImage
+                    src="../../images/graphics/branding.png"
+                    className="uk-align-right uk-width-2-5"
+                    alt=''
+                />
+                <p>
+                    Our branding services will provide you with everything to create consistency throughout your business. From a brand guide to business cards, social icons to marketing collateral, we'll present your story cohesively wherever your customers and clients are.
+                </p>
+            </div>
 
             <CardWrapper>
                 <InfoCard

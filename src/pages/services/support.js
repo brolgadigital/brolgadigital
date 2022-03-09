@@ -15,17 +15,21 @@ const support = () => {
                 title="Ongoing Support and Maintenance"
                 id="support"
             />
-            <StaticImage
-                src="../../images/graphics/branding.png"
-                className="brand-image"
-            />
-            <p>
-                At Brolga Digital, we promise not to build something complicated
-                and then abandon you when we're done. We offer a range of
-                packages, charged monthly or as used (depending on our
-                agreement). Check out our <Link to="/packages">packages</Link>{" "}
-                for more information on how we can support you long term.
-            </p>
+
+            <div className="uk-clearfix">
+                <StaticImage
+                    src="../../images/graphics/branding.png"
+                    className="uk-align-right uk-width-2-5"
+                    alt=''
+                />
+                <p>
+                    At Brolga Digital, we promise not to build something complicated
+                    and then abandon you when we're done. We offer a range of
+                    packages, charged monthly or as used (depending on our
+                    agreement). Check out our <Link to="/packages">packages</Link>{" "}
+                    for more information on how we can support you long term.
+                </p>
+            </div>
 
             <CardWrapper>
                 <InfoCard

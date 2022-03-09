@@ -15,13 +15,17 @@ const websites = () => {
                 title="Blogs and Static Sites"
                 id="smallsite"
             />
-            <StaticImage
-                src="../../images/graphics/smallsite.png"
-                className="brand-image"
-            />
-            <p>
-                Our designers and developers are well versed in a number of blogging platforms, including WordPress, Squarespace and Webflow; so no matter your preference, we can build something special. We also have extensive experience with React and several different frameworks for making lightning-fast static sites. In fact, we built the Brolga Digital website using Gatsby for React!
-            </p>
+            
+            <div className="uk-clearfix">
+                <StaticImage
+                    src="../../images/graphics/smallsite.png"
+                    className="uk-align-right uk-width-2-5"
+                    alt=''
+                />
+                <p>
+                    Our designers and developers are well versed in a number of blogging platforms, including WordPress, Squarespace and Webflow; so no matter your preference, we can build something special. We also have extensive experience with React and several different frameworks for making lightning-fast static sites. In fact, we built the Brolga Digital website using Gatsby for React!
+                </p>
+            </div>
 
             <CardWrapper>
                 <InfoCard

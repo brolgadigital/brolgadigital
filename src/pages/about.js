@@ -10,24 +10,28 @@ export default function about() {
             <Head title="About Us" />
 
             <Headers title="About Brolga Digital" />
-            <StaticImage
-                src="../images/graphics/about.png"
-                className="brand-image"
-            />
-            <p>
-                Brolga Digital was founded by Shelley Bassett, who has been
-                managing websites and social media accounts for family, friends
-                and local businesses since 2017. Striking out on her own, she
-                began working with freelance designers, developers and marketers
-                to create the best solutions for her clients.
-            </p>
-            <p>
-                Now, Brolga Digital is a fully fledged agency, ready to take on
-                any digital challenge that might come up. We create products
-                that enable our clients to reach their full potential in the
-                digital space, be it creative, corporate, commercial or just
-                fun!
-            </p>
+
+            <div className="uk-clearfix">
+                <StaticImage
+                    src="../images/graphics/about.png"
+                    className="uk-align-right uk-width-2-5"
+                    alt=''
+                />
+                <p>
+                    Brolga Digital was founded by Shelley Bassett, who has been
+                    managing websites and social media accounts for family, friends
+                    and local businesses since 2017. Striking out on her own, she
+                    began working with freelance designers, developers and marketers
+                    to create the best solutions for her clients.
+                </p>
+                <p>
+                    Now, Brolga Digital is a fully fledged agency, ready to take on
+                    any digital challenge that might come up. We create products
+                    that enable our clients to reach their full potential in the
+                    digital space, be it creative, corporate, commercial or just
+                    fun!
+                </p>
+            </div>
 
             <Headers title="Behind the Name" />
             <p>

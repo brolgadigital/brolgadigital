@@ -7,26 +7,28 @@ import { StaticImage } from "gatsby-plugin-image";
 
 export default function services() {
     return (
-        <div>
+        <>
             <Head title="Services" />
             <Headers
                 subtitle="Make it yours with"
                 title="Brolga Digital Services"
             />
 
-            <StaticImage
-                src="../../images/graphics/faq.png"
-                className="brand-image"
-                alt=''
-            />
+            <div className="uk-clearfix">
+                <StaticImage
+                    src="../../images/graphics/faq.png"
+                    className="uk-align-right uk-width-2-5"
+                    alt=''
+                />
+                
+                <p>
+                    Just getting started, needing a complete overhaul or just wanting to start afresh? We're here for whatever your business needs.
+                    <br />
+                    Each of our projects is tailored to our client's needs. We design and build bespoke digital solutions to help your brand stand out from the online noise. And with our individualised quotes, you'll only ever pay for the services you actually need. No generic plans that inflate your costs, you only pay for what you need.
+
+                </p>
+            </div>
             
-            <p>
-                Just getting started, needing a complete overhaul or just wanting to start afresh? We're here for whatever your business needs.
-                <br />
-                Each of our projects is tailored to our client's needs. We design and build bespoke digital solutions to help your brand stand out from the online noise. And with our individualised quotes, you'll only ever pay for the services you actually need. No generic plans that inflate your costs, you only pay for what you need.
-
-            </p>
-
             <h2>Find a solution that's right for you</h2>
             <CardWrapper>
                 <InfoCard
@@ -94,6 +96,6 @@ export default function services() {
                 <Link to="/contact">book a consultation</Link> and see what we
                 can do for you!
             </p>
-        </div>
+        </>
     );
 }
