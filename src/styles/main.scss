@@ -194,6 +194,16 @@ span[uk-icon] svg *[stroke] {
     stroke: $blue2;
 }
 
+.bd-heading {
+    p {
+        margin: 0;
+    }
+    h1 {
+        margin: 0;
+        padding-bottom: 5px;
+    }
+}
+
 .bd-card-hr {
     width: 30px;
     height: 3px;
