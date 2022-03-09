@@ -16,19 +16,7 @@ export default function resources({data}) {
             />
 
             <div className="uk-clearfix">
-                <StaticImage
-                    src="../images/graphics/contact.png"
-                    className="uk-align-right uk-width-2-5"
-                    alt=''
-                />
-                <p>
-                    For more information about our business packages or ongoing
-                    support subscriptions, email{" "}
-                    <button onClick={copyEmail} id="brolga-email">
-                        hello@brolgadigital.com.au
-                    </button>{" "}
-                    or book a free consult
-                </p>
+                
             </div>
 
             <ul>
