@@ -22,23 +22,28 @@ const seo = () => {
 
             <CardWrapper>
                 <InfoCard
+                    title="Analytics and User Optimisation"
+                    icon="users"
+                    desc="We’re data-driven and use analytics to get the best performance out of your website, making sure your visitors convert!"
+                />
+                <InfoCard
                     title="Google and Bing Business Pages"
-                    icon="gift"
-                    desc="A well documented business page will show up on the search engine site and has incredible click through rates. Let us help you make yours stand out!"
+                    icon="google"
+                    desc="A well-documented business page will show up on the search engine site and has incredible click through rates. Let us help you make yours stand out!"
                 />
                 <InfoCard
                     title="Sitemap Submission and Management"
-                    icon="layout"
+                    icon="social"
                     desc="Sitemaps are an important piece of website architecture. We can build yours and get it submitted to search engines, so they can index you quickly."
                 />
                 <InfoCard
                     title="Website Optimisation"
-                    icon="layout"
+                    icon="bolt"
                     desc="Get loaded fast! Fast websites rank higher, and there are lots of little tricks we have to get you loading quickly in any browser."
                 />
                 <InfoCard
                     title="Content and Keyword Audits"
-                    icon="layout"
+                    icon="file-text"
                     desc="We can go through your website and suggest optimised keywords and edits that will make your website more search engine friendly."
                 />
             </CardWrapper>

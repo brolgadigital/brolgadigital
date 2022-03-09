@@ -19,23 +19,29 @@ const branding = () => {
                 className="brand-image"
             />
             <p>
-                Our branding services will provide you with everything to create
-                consistency throughout your business. From a brand guide to
-                business cards, social icons to marketing collateral, we'll
-                present your story cohesively wherever your customers and
-                clients are.
+                Our branding services will provide you with everything to create consistency throughout your business. From a brand guide to business cards, social icons to marketing collateral, we'll present your story cohesively wherever your customers and clients are.
             </p>
 
             <CardWrapper>
                 <InfoCard
-                    title="Bespoke Custom Solutions"
-                    icon="gift"
-                    desc="Your business is unique, and your web presence should be too. We don't use cookie cutter templates, everything is custom designed and built with you in mind"
+                    title="Logo Design"
+                    icon="image"
+                    desc="Often the core of your brand identity, we’ll create a beautiful, eye-catching vector logo that will look good in any size as well as black and white for any printing."
                 />
                 <InfoCard
-                    title="Blogs and Ecommerce"
-                    icon="layout"
-                    desc="Our web expertise stretches further than just the homepage. Blogs, ecommerce, apps and custom solutions are no problem!"
+                    title="Brand Identity"
+                    icon="album"
+                    desc="Your brand is more than your logo. Our branding encompasses the entire visual identity, including colour and typography presentation."
+                />
+                <InfoCard
+                    title="Document Templating"
+                    icon="file-edit"
+                    desc="Do you need help placing your brand on an invoice? A digital download? Social media posts? We can make templates that will make your life easier."
+                />
+                <InfoCard
+                    title="Print Collateral"
+                    icon="print"
+                    desc="Business cards, marketing materials, flyers, catalogues, menus… Your brand is presented in a lot of different ways on and offline. "
                 />
             </CardWrapper>
         </>

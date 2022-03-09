@@ -21,24 +21,22 @@ export default function services() {
             />
             
             <p>
-                Just getting started, needing a complete overhaul or just
-                wanting to start afresh? We're here for whatever your business
-                needs.
-            </p>
-            <p>
-                Each of our projects is tailored to our clients needs. We design
-                and build bespoke digital solutions to help your brand stand out
-                from the online noise. And with our individualised quotes,
-                you'll only ever pay for the services you actually need. No
-                generic plans that inflate your costs, you only pay for what you
-                need.
+                Just getting started, needing a complete overhaul or just wanting to start afresh? We're here for whatever your business needs.
+                <br />
+                Each of our projects is tailored to our client's needs. We design and build bespoke digital solutions to help your brand stand out from the online noise. And with our individualised quotes, you'll only ever pay for the services you actually need. No generic plans that inflate your costs, you only pay for what you need.
+
             </p>
 
             <h2>Find a solution that's right for you</h2>
             <CardWrapper>
                 <InfoCard
+                    title="Education and Training"
+                    icon="file-edit"
+                    desc="We run training sessions on all our services. Keep an eye on our social media for open sessions, or book a private session for either a group or individual."
+                />
+                <InfoCard
                     title="Branding"
-                    icon="gift"
+                    icon="star"
                     desc="From a brand guide to business cards, social icons to marketing collateral, we'll present your story cohesively wherever your customers and clients are."
                     info="/services/branding"
                 />
@@ -49,28 +47,28 @@ export default function services() {
                     info="/services/support"
                 />
                 <InfoCard
-                    title="Micro and Static Sites"
-                    icon="layout"
+                    title="Website Design and Development"
+                    icon="thumbnails"
                     desc="Our websites are built to fit your business. Big our small, we can make something perfectly tailored to you."
-                    info="/services/smallsite"
-                />
-                <InfoCard
-                    title="Ecommerce and Online Shopping"
-                    icon="bag"
-                    desc="Need an online shop or booking system? We can help build one tailored to your business needs."
-                    info="/services/ecommerce"
-                />
-                <InfoCard
-                    title="Social Media and Marketing Strategies"
-                    icon="users"
-                    desc="Get help designing marketing plans and campaigns that will boost your business and generate valuable leads."
-                    info="/services/strategy"
+                    info="/services/websites"
                 />
                 <InfoCard
                     title="Usability, Speed and Search Engine Optimisations"
                     icon="search"
                     desc="Organic web traffic is still best lead generator. We can enhance how your website appears in search results."
                     info="/services/seo"
+                />
+                <InfoCard
+                    title="Content Management"
+                    icon="image"
+                    desc="We can write and design your content to be presented across all your marketing channels."
+                    info="/services/content"
+                />
+                <InfoCard
+                    title="Advertising and Marketing"
+                    icon="comments"
+                    desc="Get help designing marketing plans and campaigns that will boost your business and generate valuable leads."
+                    info="/services/marketing"
                 />
             </CardWrapper>
 
