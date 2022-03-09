@@ -2,9 +2,8 @@ import React from "react";
 import Head from "../../components/Head";
 import { graphql } from "gatsby";
 import Headers from "../../components/Headers";
-import ProjectCard from "../../components/ProjectCard";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
-import * as Icon from "react-feather";
+import { ProjectCard } from "../../components/Cards";
 
 export default function index({ data }) {
     const projects = data.allMarkdownRemark.nodes;
@@ -17,6 +16,33 @@ export default function index({ data }) {
                 subtitle="Know what you're getting"
                 title="Our Recent Projects"
             />
+
+            <ul className="uk-list">
+                <li><OutboundLink
+                    href="https://instagram.com/brolgadigital"
+                    className="uk-button uk-button-default uk-margin-small-bottom"
+                    title="Instagram"
+                    aria-label="Instagram"
+                >
+                    <span className='uk-margin-small-right' uk-icon='icon: instagram; ratio: 1'></span> See More On Instagram
+                </OutboundLink></li>
+                <li><OutboundLink
+                    href="https://dribbble.com/brolgadigital"
+                    className="uk-button uk-button-default uk-margin-small-bottom"
+                    title="Dribbble"
+                    aria-label="Dribbble"
+                >
+                    <span className='uk-margin-small-right' uk-icon='icon: dribbble; ratio: 1'></span> See More On Dribbble
+                </OutboundLink></li>
+                <li><OutboundLink
+                    href="https://www.behance.net/BrolgaDigital"
+                    className="uk-button uk-button-default uk-margin-small-bottom"
+                    title="Behance"
+                    aria-label="Behance"
+                >
+                    <span className='uk-margin-small-right' uk-icon='icon: behance; ratio: 1'></span> See More On Behance
+                </OutboundLink></li>
+            </ul>
 
             {projects.map((project) => {
                 return (
@@ -33,25 +59,6 @@ export default function index({ data }) {
                     />
                 );
             })}
-
-            <div>
-                <OutboundLink
-                    href="https://instagram.com/brolgadigital"
-                    className="button"
-                    title="Instagram"
-                    aria-label="Instagram"
-                >
-                    <Icon.Instagram /> See More On Instagram
-                </OutboundLink>
-                <OutboundLink
-                    href="https://dribbble.com/brolgadigital"
-                    className="button"
-                    title="Dribbble"
-                    aria-label="Dribbble"
-                >
-                    <Icon.Dribbble /> See More On Dribbble
-                </OutboundLink>
-            </div>
         </>
     );
 }

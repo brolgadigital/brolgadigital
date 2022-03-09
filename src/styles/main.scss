@@ -78,12 +78,26 @@ $nav-default-item-active-color: $blue1;
     .uk-input:focus,
     .uk-select:focus,
     .uk-textarea:focus {
-        background-color: #e2eaed;
+        background-color: #fff;
     }
 }
 @mixin hook-form-label() {
     color: $blue2;
     font-size: 0.8em;
+}
+@mixin hook-button-default() {
+    border: 1px solid $blue3;
+    background-color: #f4f6f8;
+
+    .uk-icon {
+        top: -2px;
+        position: relative;
+    }
+}
+@mixin hook-button-default-hover() {
+    background-color: #fff;
+}
+@mixin hook-button-default-active() {
 }
 
 // 4. Import UIkit.
@@ -136,17 +150,13 @@ html {
     }
 }
 .bd-footer {
-    li {
-        // text-align: right;
-
-        & > a {
-            display: inline;
-            justify-content: flex-end;
-            padding: 0;
-            color: #7fa1c4;
-            &:hover {
-                color: #486181;
-            }
+    & > a {
+        display: inline;
+        justify-content: flex-end;
+        padding: 0;
+        color: #7fa1c4;
+        &:hover {
+            color: #486181;
         }
     }
 }
@@ -188,7 +198,7 @@ html {
 
 span[uk-icon] svg * {
     color: $blue2;
-    stroke-width: 1.5;
+    stroke-width: 1.3;
 }
 span[uk-icon] svg *[stroke] {
     stroke: $blue2;
@@ -238,4 +248,40 @@ footer.bd-footer {
 .bd-calendar > iframe {
     min-height: 500px;
     width: 100%;
+}
+
+figure {
+    align-items: flex-end;
+    background-color: #e2eaed;
+    display: flex;
+    flex: 1 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-right: 0;
+    margin-top: 30px;
+    padding: 20px;
+    position: relative;
+
+    & p {
+        flex-basis: 66%;
+        margin-bottom: 0 !important;
+    }
+    & div.row {
+        display: flex;
+        flex-basis: 66%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        & p {
+            flex-basis: 49%;
+            margin: 0;
+            width: 100%;
+        }
+    }
+
+    figcaption {
+        flex-basis: 30%;
+    }
 }

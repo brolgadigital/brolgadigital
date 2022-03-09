@@ -2,8 +2,7 @@ import React from "react";
 import Headers from "../components/Headers";
 import { InfoCard, CardWrapper } from "../components/Cards";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
-import * as Icon from "react-feather";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 
 const Template = ({ data }) => {
     const project = data.markdownRemark;
@@ -42,7 +41,7 @@ const Template = ({ data }) => {
                 title={project.frontmatter.name}
                 aria-label={project.frontmatter.name}
             >
-                <Icon.ExternalLink /> View the Live Project
+                <span uk-icon="push"></span> View the Live Project
             </OutboundLink>
         </>
     );

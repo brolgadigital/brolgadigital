@@ -1,6 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
-import Button from "./Button";
+import { GatsbyImage } from "gatsby-plugin-image";
+import { OutboundLink } from "gatsby-plugin-google-gtag";
 
 const InfoCard = (props) => {
     
@@ -77,12 +78,43 @@ const PriceCard = (props) => {
     )
 }
 
+const ProjectCard = (props) => {
+    return (
+        <div className="uk-margin-medium-bottom">
+        <div className="uk-card uk-padding-small uk-padding-remove-horizontal">
+            <div className="uk-card-header">
+            <GatsbyImage image={props.image} className="project-image" alt="" />
+            </div>
+            <div className="uk-card-body uk-padding-remove-bottom">
+            <div className="project-outline">
+                <h3>{props.title}</h3>
+                <hr></hr>
+                <p>{props.desc}</p>
+            </div>
+            </div>
+            <div className="uk-card-footer uk-flex uk-flex-between">
+
+                <Link className='uk-button uk-button-default' to={props.case}>
+                    <span className='uk-margin-small-right' uk-icon='icon: info; ratio: 1'></span>
+                    How We Helped
+                </Link>
+                <OutboundLink className="uk-button uk-button-default" href={props.website}>
+                    <span className='uk-margin-small-right' uk-icon='icon: upload; ratio: 1'></span>
+                    View Live Project
+                </OutboundLink>
+            
+            </div>
+        </div>
+        </div>
+    )
+}
+
 const CardWrapper = ({children}) => {
     return (
-        <div className='uk-grid-small uk-grid-match uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l' uk-grid=''>
+        <div className='uk-grid-small uk-grid-match uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-margin-bottom' uk-grid=''>
             {children}
         </div>
     )
 }
 
-export { InfoCard, PriceCard, CardWrapper }
+export { InfoCard, PriceCard, ProjectCard, CardWrapper }

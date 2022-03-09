@@ -10,7 +10,6 @@ import UIkit from 'uikit';
 import uikitIcons from "uikit/dist/js/uikit-icons";
 UIkit.use(uikitIcons);
 
-// import "../../styles/style.scss";
 import "../../styles/main.scss"
 
 export default function Layout({ location, children }) {
@@ -65,7 +64,7 @@ export default function Layout({ location, children }) {
                 {path === "/" ? <SplashScreen /> : <></>}
                 {path === "/main/" ? <SplashScreen2 /> : <></>}
 
-                <div className="uk-padding" >
+                <div className="uk-padding uk-container uk-container-small" >
                     {children}
                 </div>
             </div>
