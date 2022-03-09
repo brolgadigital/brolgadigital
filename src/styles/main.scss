@@ -155,6 +155,37 @@ html {
     height: 50px;
 }
 
+.bd-splashscreen {
+    background-color: #bf3c43;
+    height: 100vh;
+    overflow: hidden;
+    min-height: 100vh;
+    position: relative;
+    z-index: 0;
+
+    & > div {
+        position: static;
+    }
+}
+.bd-splashscreen-overlay img {
+    max-width: 600px;
+    height: auto;
+}
+.bd-splashscreen-gallery {
+    filter: blur(3px);
+    mix-blend-mode: multiply;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+
+    img {
+        min-height: 100vh;
+    }
+}
+
 span[uk-icon] svg * {
     color: $blue2;
     stroke-width: 1.5;

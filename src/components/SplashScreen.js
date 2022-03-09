@@ -2,12 +2,14 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { Fade } from "react-slideshow-image";
 import Button from "../components/Button";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 
 const SplashScreen = () => {
     return (
-        <div className="content homepage">
-            <div className="titles">
+        <div className='bd-splashscreen' uk-height-viewport='expand: true'>
+            <div className="uk-inline">
+
+                <div className="uk-overlay uk-position-center bd-splashscreen-overlay">
                 <StaticImage
                     class="logo"
                     src="../images/bd-text-paleblue-01.png"
@@ -18,12 +20,17 @@ const SplashScreen = () => {
                 <div className="headliner">
                     <p>Supporting Small Bussiness and Sole Traders</p>
                     <div>
-                        <Button text="Book Now" to="/contact/" />
-                        <Button text="Learn More" to="/#home" />
+                        <Link className="uk-button" to='/contact'>Book Now</Link>
+                        <Link className="uk-button" to="/#home">Learn More</Link>
+
+                        {/* <Button className='uk-button' text="Book Now" to="/contact/" />
+                        <Button text="Learn More" to="/#home" /> */}
                     </div>
                 </div>
             </div>
-            <div className="slide-container home-gallery">
+
+
+            <div className="bd-splashscreen-gallery">
                 <Fade {...fadeProperties}>
                     <div className="each-fade">
                         <StaticImage
@@ -55,6 +62,10 @@ const SplashScreen = () => {
                     </div>
                 </Fade>
             </div>
+
+            
+            </div>
+
         </div>
     );
 };

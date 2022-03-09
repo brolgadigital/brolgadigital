@@ -61,11 +61,14 @@ export default function Layout({ location, children }) {
                 <Webmenu />
             </div>
 
-            
-            {path === "/" ? <SplashScreen /> : <></>}
-            {path === "/main/" ? <SplashScreen2 /> : <></>}
+            <div className="uk-width-expand bd-main-content">            
+                {path === "/" ? <SplashScreen /> : <></>}
+                {path === "/main/" ? <SplashScreen2 /> : <></>}
 
-            <div className="uk-padding uk-width-expand">{children}</div>
+                <div className="uk-padding" >
+                    {children}
+                </div>
+            </div>
         </div>
         </>
     );
