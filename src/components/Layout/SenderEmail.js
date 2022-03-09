@@ -36,51 +36,54 @@ const SenderEmail = () => {
 
 
     return (
-        <form className='uk-width-1' onSubmit={handleSubmit}>
+        <form className='uk-width-1 uk-width-1-2@m uk-margin' onSubmit={handleSubmit}>
             <p>Get Our Monthly Newsletter</p>
 
-            <div uk-grid=''>
-            <div className='uk-child-width-1-2 uk-flex'>
-                <div className='uk-margin-right'><label className='uk-form-label'>First Name</label>
-                    <input 
-                        className='uk-input'
-                        type='text'
-                        name='fName'
-                        onChange={(e) => {
-                            setFName(e.target.value);
-                        }}
-                        value={fName}
-                    ></input>
+            <div className='uk-grid-small' uk-grid=''>
+                <div className='uk-width-1-1 uk-child-width-1-2 uk-flex'>
+                    <div className='uk-margin-right'>
+                        <label className='uk-form-label'>First Name</label>
+                        <input 
+                            className='uk-input'
+                            type='text'
+                            name='fName'
+                            onChange={(e) => {
+                                setFName(e.target.value);
+                            }}
+                            value={fName}
+                        ></input>
+                    </div>
+                    <div className='uk-margin-left'>
+                        <label className='uk-form-label'>Last Name</label>
+                        <input
+                            className='uk-input'
+                            type='text'
+                            name='lName'
+                            onChange={(e) => {
+                                setLName(e.target.value);
+                            }}
+                            value={lName}
+                        ></input>
+                    </div>
                 </div>
-                <div className='uk-margin-left'>
-                <label className='uk-form-label'>Last Name</label>
+                <div className='uk-width-1'>
+                    <label 
+                        className='uk-form-label'
+                        htmlFor='email'>Email Address</label>
                     <input
                         className='uk-input'
-                        type='text'
-                        name='lName'
+                        type='email'
+                        id='email'
                         onChange={(e) => {
-                            setLName(e.target.value);
+                            setEmail(e.target.value);
                         }}
-                        value={lName}
+                        value={email}
                     ></input>
                 </div>
-            </div>
-            <div className='uk-width-1'>
-            <label 
-            className='uk-form-label'
-            htmlFor='email'>Email Address</label>
-            <input
-            className='uk-input'
-                type='email'
-                id='email'
-                onChange={(e) => {
-                    setEmail(e.target.value);
-                }}
-                value={email}
-            ></input>
-            </div>
             
-            <div><button className='uk-button' type='submit'>Subscribe</button></div>
+                <div>
+                    <button className='uk-button' type='submit'>Subscribe</button>
+                </div>
             </div>
         </form>
     )

@@ -39,7 +39,7 @@ export default function Layout({ location, children }) {
     return (
         <>
         <Mobilemenu />
-        <div className="uk-flex uk-flex-row uk-flex-stretch">
+        <div className="uk-flex uk-flex-row uk-flex-stretch" uk-height-viewport='expand: true'>
             <Helmet
                 title={title}
                 meta={[{ name: "description", content: description }]}

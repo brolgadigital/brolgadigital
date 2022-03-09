@@ -24,10 +24,10 @@ const Footer = () => {
 
     return (
         <footer className="uk-margin-large uk-flex uk-flex-between uk-flex-wrap bd-footer">
-            <div className="uk-flex uk-flex-top uk-width-1-2">
+            <div className="uk-flex uk-flex-left uk-flex-center@m uk-width-3-4 uk-width-1-3@m">
                 <StaticImage
                     src="../../images/brolga-red-01.png"
-                    className="uk-margin-top footer-logo"
+                    className="uk-margin-top bd-footer-logo"
                     height={50}
                     alt='Brolga Icon'
                 />

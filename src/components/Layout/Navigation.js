@@ -13,7 +13,7 @@ const Navigation = ({location}) => {
         // addAtt = uk-toggle="target: #bd-nav"
     }
     if (location === 'bd-footer') {
-        addClass = 'uk-margin uk-width-1-2 bd-footer'
+        addClass = 'uk-margin uk-width-1-4 uk-width-1-6@m uk-text-right uk-text-center@m bd-footer'
     }
     
     const MobileOffCanvas = ({ condition, wrap, children }) => (
