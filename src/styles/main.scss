@@ -235,3 +235,7 @@ span[uk-icon] svg *[stroke] {
 footer.bd-footer {
     border-top: 2px solid $blue2;
 }
+.bd-calendar > iframe {
+    min-height: 500px;
+    width: 100%;
+}

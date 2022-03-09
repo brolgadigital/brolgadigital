@@ -47,7 +47,7 @@ export default function contact() {
                 subtitle="Find out what we can do for you"
                 title="Book a Consultation"
             />
-            <div className="cal">
+            <div className="bd-calendar">
                 <iframe
                     src="https://cal.brolgadigital.com.au/brolgadigital/consult"
                     title="Book a consultation with Brolga Digital"
