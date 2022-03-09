@@ -19,29 +19,25 @@ const managedWebsites = () => {
 
                 <CardWrapper>
                     <PriceCard
-                        title="Website Support Package"
+                        title="Base Plan"
                         price="30"
                         desc="Perfect for those with a give-it-a-go mentality"
                         details={[
-                            "Single Domain Registration",
-                            "Website Hosting",
-                            "Plugin and Security Updates",
-                            "Monthly Backups",
+                            'Hosting',
+                            'Domain',
+                            'Weekly Backups',
+                            'Security Updates',
                         ]}
                     />
                     <PriceCard
-                        title="Small Business Starter Package"
+                        title="Everyday Plan"
                         price="50"
                         desc="Manage your content while we look after the tech"
                         details={[
-                            "Multiple Domain Registration",
-                            "Website Hosting",
-                            "Plugin and Security Updates",
-                            "Weekly Backups",
-                            "Basic SEO",
-                            "Troubleshooting and Debugging Support",
-                            "Uptime Monitoring",
-                            "Analytics Access"
+                            'Base +',
+                            'Troubleshooting and Support',
+                            'Uptime Monitoring',
+                            'Analytics Access',
                         ]}
                     />
                     <PriceCard
@@ -49,16 +45,10 @@ const managedWebsites = () => {
                         price="75"
                         desc="Let us do the hard work and manage your site"
                         details={[
-                            "Multiple Domain Registration",
-                            "Website Hosting",
-                            "Plugin and Security Updates",
-                            "Weekly Backups",
-                            "Advanced SEO",
-                            "Troubleshooting and Debugging",
-                            "Uptime Monitoring",
-                            "Analytics Access",
-                            "Priority Support",
-                            "Content Management and Updating"
+                            'Everyday +',
+                            'Priority Support',
+                            'Content and Plugin Updates',
+                            'Improvement Suggestions',
                         ]}
                     />
                 </CardWrapper>
