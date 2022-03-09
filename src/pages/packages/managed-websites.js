@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from '../../components/Head'
 import Headers from '../../components/Headers'
-import PriceCard from '../../components/PriceCard'
+import { PriceCard, CardWrapper } from '../../components/Cards'
 import { Link } from 'gatsby'
 
 const managedWebsites = () => {
@@ -17,7 +17,7 @@ const managedWebsites = () => {
                     Not everyone wants to learn the technical side of their website. At Brolga Digital we support you in learning the parts you're interested in, and then manage the parts you're not. The choice is yours.
                 </p>
 
-                <div className="cardwrapper">
+                <CardWrapper>
                     <PriceCard
                         title="Website Support Package"
                         price="30"
@@ -61,7 +61,7 @@ const managedWebsites = () => {
                             "Content Management and Updating"
                         ]}
                     />
-                </div>
+                </CardWrapper>
 
                 <p>
                     Need something a little different or some help deciding what's right for you? We're flexible, just <Link to="/contact">contact us</Link>.

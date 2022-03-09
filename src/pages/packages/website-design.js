@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from '../../components/Head'
 import Headers from '../../components/Headers'
-import PriceCard from '../../components/PriceCard'
+import { PriceCard, CardWrapper } from '../../components/Cards'
 import { Link } from 'gatsby'
 
 const webDesign = () => {
@@ -17,7 +17,7 @@ const webDesign = () => {
                     Not sure where to begin with your website? We have a few simple categories to get you started.
                 </p>
 
-                <div className="cardwrapper">
+                <CardWrapper>
                     <PriceCard
                         title="Static Websites"
                         single="true"
@@ -48,7 +48,7 @@ const webDesign = () => {
                             "Add almost any system to your website; including booking, stock management, memberships and much more",
                         ]}
                     />
-                </div>
+                </CardWrapper>
                 <p>
                     Need something a little different or some help deciding what's right for you? We're flexible, just <Link to="/contact">contact us</Link>.
                 </p>

@@ -23,24 +23,27 @@ const Footer = () => {
     };
 
     return (
-        <footer className="uk-flex uk-flex-between uk-flex-wrap bd-footer">
-            <address className="uk-width-1-2">
+        <footer className="uk-margin-large uk-flex uk-flex-between uk-flex-wrap bd-footer">
+            <div className="uk-flex uk-flex-top uk-width-1-2">
                 <StaticImage
-                    src="../images/brolga-red-01.png"
-                    className="footer-logo"
-                    height="50"
+                    src="../../images/brolga-red-01.png"
+                    className="uk-margin-top footer-logo"
+                    height={50}
+                    alt='Brolga Icon'
                 />
-                <h3>Brolga Digital</h3>
-                <p>Melbourne, Australia</p>
-                <button onClick={copyEmail} id="brolga-email">
-                    hello@brolgadigital.com.au
-                </button>
-                <p>03 9191 1063</p>
-                <Link to="/contact" activeClassName="currentPage">
-                        Book a Consultation
-                    </Link>
+                <address className="">
+                    <h3>Brolga Digital</h3>
+                    <p>Melbourne, Australia</p>
+                    <button onClick={copyEmail} id="brolga-email">
+                        hello@brolgadigital.com.au
+                    </button>
+                    <p>03 9191 1063</p>
+                    <Link to="/contact" activeClassName="currentPage">
+                            Book a Consultation
+                        </Link>
 
-            </address>
+                </address>
+            </div>
 
             <Navigation location='bd-footer' />
 

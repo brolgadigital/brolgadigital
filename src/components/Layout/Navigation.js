@@ -3,21 +3,31 @@ import { Link } from 'gatsby'
 
 const Navigation = ({location}) => {
 
-    let locationClass = ''
+    let addClass = ''
+    let addAtt = ''
     if ( location === 'bd-sidenav') {
-        locationClass = 'uk-nav-center bd-sidenav'
+        addClass = 'uk-nav-center bd-sidenav'
     }
-    if (location === 'bd-mobile') {
-        locationClass = 'bd-mobile'
-
+    if ( location === 'bd-mobile') {
+        addClass = 'uk-nav-center uk-nav-primary bd-mobile'
+        // addAtt = uk-toggle="target: #bd-nav"
     }
     if (location === 'bd-footer') {
-        locationClass = 'uk-margin uk-width-1-2 bd-footer'
+        addClass = 'uk-margin uk-width-1-2 bd-footer'
     }
     
+    const MobileOffCanvas = ({ condition, wrap, children }) => (
+        condition ? wrap(children) : children
+    )
 
     return (
-        <ul className={"uk-nav-default uk-nav " + locationClass}>
+        <>
+        <MobileOffCanvas
+            condition = {location === 'bd-mobile'}
+            wrap = { children => <div id='bd-nav' uk-offcanvas=''><div className='uk-offcanvas-bar'> {children} </div></div> }
+        >
+
+        <ul className={"uk-nav-default uk-nav " + addClass}>
             <li>
                 <Link to="/services" activeClassName="uk-active" partiallyActive={true}>
                     Services
@@ -54,6 +64,8 @@ const Navigation = ({location}) => {
                 </Link>
             </li>
         </ul>
+        </MobileOffCanvas>
+        </>
     )
 }
 

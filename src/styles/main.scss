@@ -21,6 +21,8 @@ $global-inverse-color: $blue1;
 $global-link-color: $blue2;
 $global-link-hover-color: $blue3;
 
+$navbar-background: $blue3;
+
 // $nav-item-padding-vertical: 15px;
 $nav-default-item-color: $blue1;
 $nav-default-item-hover-color: #fff;
@@ -36,9 +38,29 @@ $nav-default-item-active-color: $blue1;
         font-weight: 600;
     }
 }
+@mixin hook-offcanvas-misc() {
+    .uk-offcanvas {
+        right: 0;
+        margin-top: 60px;
+    }
+    .uk-offcanvas-bar {
+        left: 0;
+        top: 0;
+        width: 100%;
+        background: #486181;
+        bottom: 100vh;
+    }
+    .uk-open > .uk-offcanvas-bar {
+        bottom: 0;
+    }
+    .uk-offcanvas-bar-animation {
+        transition: bottom 0.3s ease-out;
+    }
+}
 @mixin hook-base-h1() {
     font-family: $marcellus;
     border-bottom: 3px solid $red;
+    display: inline-block;
 }
 @mixin hook-card() {
     background-color: $blue1;
@@ -46,6 +68,21 @@ $nav-default-item-active-color: $blue1;
 @mixin hook-card-title() {
     font-weight: 500;
     font-size: 1.2em;
+}
+@mixin hook-form-misc() {
+    .uk-input {
+        border: 1px solid #486181;
+        background-color: #f4f6f8;
+    }
+    .uk-input:focus,
+    .uk-select:focus,
+    .uk-textarea:focus {
+        background-color: #e2eaed;
+    }
+}
+@mixin hook-form-label() {
+    color: $blue2;
+    font-size: 0.8em;
 }
 
 // 4. Import UIkit.
@@ -64,6 +101,20 @@ html {
         justify-content: space-between;
     }
 }
+.bd-mobile-menu {
+    height: 60px;
+}
+.bd-mobile-menu-logo {
+    display: inline-block;
+    width: 100px;
+}
+#bd-mobile-menu-toggle {
+    color: #e2eaed;
+
+    &:hover {
+        color: #e2eaed;
+    }
+}
 
 .bd-sidenav,
 .bd-mobile {
@@ -73,9 +124,18 @@ html {
     }
 }
 .bd-footer {
-    li > a {
-        justify-content: flex-end;
-        padding: 0;
+    li {
+        text-align: right;
+
+        & > a {
+            display: inline;
+            justify-content: flex-end;
+            padding: 0;
+            color: #7fa1c4;
+            &:hover {
+                color: #486181;
+            }
+        }
     }
 }
 
@@ -94,7 +154,27 @@ span[uk-icon] svg *[stroke] {
     margin: 15px 0 15px 0;
     margin-right: calc(100% - 30px);
 }
+.bd-card-hr-center {
+    margin: 15px auto;
+}
+.bd-card-price {
+    color: #486181;
+    display: block;
+    font-size: 4em;
+    font-weight: 600;
+    line-height: 1em;
+    margin-left: -20px;
+    margin-top: -10px;
 
-.bd-footer {
+    &::before {
+        content: "$";
+        font-size: 0.5em;
+        opacity: 50%;
+        padding-right: 3px;
+        vertical-align: text-top;
+    }
+}
+
+footer.bd-footer {
     border-top: 2px solid $blue2;
 }

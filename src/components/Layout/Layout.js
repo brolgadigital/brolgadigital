@@ -6,7 +6,11 @@ import Mobilemenu from "./Mobilemenu";
 import config from "../../../brolga-config";
 import {SplashScreen, SplashScreen2} from "../SplashScreen";
 
-import "../../styles/style.scss";
+import UIkit from 'uikit';
+import uikitIcons from "uikit/dist/js/uikit-icons";
+UIkit.use(uikitIcons);
+
+// import "../../styles/style.scss";
 import "../../styles/main.scss"
 
 export default function Layout({ location, children }) {
@@ -33,6 +37,8 @@ export default function Layout({ location, children }) {
         frontmatter;
 
     return (
+        <>
+        <Mobilemenu />
         <div className="uk-flex uk-flex-row uk-flex-stretch">
             <Helmet
                 title={title}
@@ -48,18 +54,19 @@ export default function Layout({ location, children }) {
                 
                 {/* <!-- UIkit JS --> */}
                 <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
+                {/* <script src="js/uikit-icons.min.js"></script> */}
             </Helmet>
 
-            <div className="bd-menu">
+            <div className="uk-visible@s bd-menu">
                 <Webmenu />
             </div>
 
-            <Mobilemenu />
+            
             {path === "/" ? <SplashScreen /> : <></>}
             {path === "/main/" ? <SplashScreen2 /> : <></>}
 
             <div className="uk-padding uk-width-expand">{children}</div>
         </div>
+        </>
     );
 }

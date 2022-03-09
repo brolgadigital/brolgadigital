@@ -9,7 +9,7 @@ export default function Webmenu() {
         <div className="uk-width-expand uk-flex uk-flex-column uk-padding uk-position-fixed">
             <Link to="/">
                 <StaticImage
-                    src="../images/bd-text-paleblue-01.png"
+                    src="../../images/bd-text-paleblue-01.png"
                     alt="Brolga Digital"
                     loading="eager"
                     placeholder="tracedSVG"

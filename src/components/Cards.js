@@ -1,7 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
 import Button from "./Button";
-// import * as Icon from "react-feather";
 
 const InfoCard = (props) => {
     
@@ -26,9 +25,6 @@ const InfoCard = (props) => {
                     }
                 className='uk-margin-small-bottom uk-preserve'
                 ></span>
-                {/* {props?.cardData?.icon
-                    ? iconSvg[props?.cardData?.icon]
-                    : iconSvg[props.icon]} */}
                 <h3 className="uk-card-title uk-margin-remove-top">
                     {props?.cardData?.boxtitle
                         ? props?.cardData?.boxtitle
@@ -53,15 +49,37 @@ const InfoCard = (props) => {
     );
 }
 
-const PriceCard = () => {
-  return (
-    <div>Cards</div>
-  )
+const PriceCard = (props) => {
+
+    const listItems = props.details.map((detail, index) => (
+        <li key={index}>{detail}</li>
+    ));
+
+    return (
+        <div>
+        <div className="uk-card uk-text-center">
+            <div className="uk-card-header">
+                <h3 className="uk-card-title">{props.title}</h3>
+                <p>
+                    {props.minimum ? "starting from" : <></>}<span className="bd-card-price">{props.price}</span>
+                    {props.single ? <></> : "per month"}
+                </p>
+                <hr className="bd-card-hr bd-card-hr-center"/>
+            </div>
+
+            <div className="uk-card-body">
+                <p>{props.desc}</p>
+                <h4>Includes:</h4>
+                <ul className="uk-list">{listItems}</ul>
+            </div>
+        </div>
+        </div>
+    )
 }
 
 const CardWrapper = ({children}) => {
     return (
-        <div className='uk-grid-small uk-grid-match uk-child-width-1-2@s' uk-grid=''>
+        <div className='uk-grid-small uk-grid-match uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l' uk-grid=''>
             {children}
         </div>
     )

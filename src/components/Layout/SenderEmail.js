@@ -35,12 +35,15 @@ const SenderEmail = () => {
     }
 
 
-  return (
-      <form onSubmit={handleSubmit}>
-          <p>Get Our Monthly Newsletter</p>
-          <div className='name'>
-                <label>First Name
+    return (
+        <form className='uk-width-1' onSubmit={handleSubmit}>
+            <p>Get Our Monthly Newsletter</p>
+
+            <div uk-grid=''>
+            <div className='uk-child-width-1-2 uk-flex'>
+                <div className='uk-margin-right'><label className='uk-form-label'>First Name</label>
                     <input 
+                        className='uk-input'
                         type='text'
                         name='fName'
                         onChange={(e) => {
@@ -48,9 +51,11 @@ const SenderEmail = () => {
                         }}
                         value={fName}
                     ></input>
-                </label>
-                <label>Last Name
+                </div>
+                <div className='uk-margin-left'>
+                <label className='uk-form-label'>Last Name</label>
                     <input
+                        className='uk-input'
                         type='text'
                         name='lName'
                         onChange={(e) => {
@@ -58,20 +63,27 @@ const SenderEmail = () => {
                         }}
                         value={lName}
                     ></input>
-          </label>
-          </div>
-          <label htmlFor='email'>Email Address</label>
-          <input
-            type='email'
-            id='email'
-            onChange={(e) => {
-                setEmail(e.target.value);
-            }}
-            value={email}
-        ></input>
-          <button className='lessButton' type='submit'>Subscribe</button>
-      </form>
-  )
+                </div>
+            </div>
+            <div className='uk-width-1'>
+            <label 
+            className='uk-form-label'
+            htmlFor='email'>Email Address</label>
+            <input
+            className='uk-input'
+                type='email'
+                id='email'
+                onChange={(e) => {
+                    setEmail(e.target.value);
+                }}
+                value={email}
+            ></input>
+            </div>
+            
+            <div><button className='uk-button' type='submit'>Subscribe</button></div>
+            </div>
+        </form>
+    )
 }
 
 export default SenderEmail;

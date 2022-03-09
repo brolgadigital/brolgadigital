@@ -17,6 +17,7 @@ export default function services() {
             <StaticImage
                 src="../../images/graphics/faq.png"
                 className="brand-image"
+                alt=''
             />
             
             <p>
