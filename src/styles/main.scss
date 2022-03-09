@@ -14,6 +14,7 @@ $barlow: "Barlow Condensed", sans-serif;
 // UiKit Styles
 // 1. Your custom variables and variable overwrites.
 $global-font-family: $barlow;
+$global-small-font-size: 0.75rem;
 
 $global-color: $blue3;
 $global-emphasis-color: $blue3;
@@ -114,6 +115,17 @@ html {
     &:hover {
         color: #e2eaed;
     }
+}
+.bd-menu-footer {
+    span[uk-icon] svg * {
+        color: $blue4;
+        stroke-width: 1.5;
+    }
+    span[uk-icon] svg *[stroke] {
+        stroke: $blue4;
+    }
+
+    color: #202e42;
 }
 
 .bd-sidenav,
