@@ -17,7 +17,7 @@ export default function main() {
                 <CardWrapper>
                     <InfoCard
                         title="Ecommerce and Online Shopping"
-                        icon="shopping-bag"
+                        icon="bag"
                         desc="Need an online shop or booking system? We can help build one tailored to your business needs."
                         info="/services/ecommerce"
                     />
@@ -29,7 +29,7 @@ export default function main() {
                     />
                     <InfoCard
                         title="Usability, Speed and Search Engine Optimisations"
-                        icon="activity"
+                        icon="bolt"
                         desc="Organic web traffic is still best lead generator. We can enhance how your website appears in search results."
                         info="/services/seo"
                     />
@@ -39,13 +39,13 @@ export default function main() {
                 <CardWrapper>
                     <InfoCard
                         title="Micro and Static Sites"
-                        icon="layout"
+                        icon="world"
                         desc="Our websites are built to fit your business. Big our small, we can make something perfectly tailored to you."
                         info="/services/smallsite"
                     />
                     <InfoCard
                         title="Ecommerce and Online Shopping"
-                        icon="shopping-bag"
+                        icon="bag"
                         desc="Need an online shop or booking system? We can help build one tailored to your business needs."
                         info="/services/ecommerce"
                     />
@@ -55,13 +55,13 @@ export default function main() {
                 <CardWrapper>
                     <InfoCard
                         title="Branding"
-                        icon="gift"
+                        icon="star"
                         desc="From a brand guide to business cards, social icons to marketing collateral, we'll present your story cohesively wherever your customers and clients are."
                         info="/services/branding"
                     />
                     <InfoCard
                         title="Micro and Static Sites"
-                        icon="layout"
+                        icon="world"
                         desc="Our websites are built to fit your business. Big our small, we can make something perfectly tailored to you."
                         info="/services/smallsite"
                     />
@@ -71,7 +71,7 @@ export default function main() {
                 <CardWrapper>
                     <InfoCard
                         title="Support and Maintenance"
-                        icon="life-buoy"
+                        icon="lifesaver"
                         desc="Not technically minded? Let us manage the hard parts, and explain things in easy-to-understand language."
                         info="/services/support"
                     />
