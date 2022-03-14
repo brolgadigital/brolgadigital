@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { graphql, useStaticQuery } from "gatsby";
 import Webmenu from "./Webmenu";
@@ -6,13 +6,17 @@ import Mobilemenu from "./Mobilemenu";
 import config from "../../../brolga-config";
 import {SplashScreen, SplashScreen2} from "../SplashScreen";
 
+import 'uikit/dist/css/uikit.min.css'
 import UIkit from 'uikit';
 import uikitIcons from "uikit/dist/js/uikit-icons";
-UIkit.use(uikitIcons);
 
 import "../../styles/main.scss"
 
 export default function Layout({ location, children }) {
+    useEffect(() => {
+        UIkit.use(uikitIcons)
+    })
+
     const path = location.pathname;
 
     const data = useStaticQuery(graphql`
@@ -51,9 +55,6 @@ export default function Layout({ location, children }) {
                 {/* <!-- Google Optimize --> */}
                 <script src="https://www.googleoptimize.com/optimize.js?id=OPT-P5MZWCD"></script>
                 
-                {/* <!-- UIkit JS --> */}
-                <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
-                <script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
             </Helmet>
 
             <div className="uk-visible@s bd-menu">
