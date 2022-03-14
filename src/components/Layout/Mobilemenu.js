@@ -2,41 +2,9 @@ import React, {useState, useEffect, useCallback} from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import Navigation from "./Navigation";
-import UIkit from "uikit";
+
 
 const Mobilemenu = () => {
-
-    // const [state, setState] = useState({
-    //     'icon': 'menu',
-    // });
-
-    // const toggleMenu = () => {
-    //     if (state.icon === 'menu') {
-    //         UIkit.offcanvas('#bd-nav').show();
-    //         setState({
-    //             'icon': 'close',
-    //         })
-    //     }
-    //     else {
-    //         UIkit.offcanvas('#bd-nav').hide();
-    //         setState({
-    //             'icon': 'menu',
-    //         })
-    //     }
-    // }
-
-    
-    
-    // useEffect( () => {
-    //     // const element = document.getElementById('bd-nav')
-
-    //     document.getElementById('bd-mobile-menu-toggle').addEventListener('click', toggleMenu)
-    //     return () => {
-    //         document.getElementById('bd-mobile-menu-toggle').removeEventListener('click', toggleMenu)
-    //     }
-    // }, [toggleMenu])
-            
-
     return (
         <div className="uk-navbar-container uk-hidden@s bd-mobile-menu" uk-navbar=''>
             

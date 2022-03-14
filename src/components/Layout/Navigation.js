@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import NavFooter from './NavFooter'
 
 const Navigation = ({location}) => {
 
@@ -24,7 +25,7 @@ const Navigation = ({location}) => {
         <>
         <MobileOffCanvas
             condition = {location === 'bd-mobile'}
-            wrap = { children => <div id='bd-nav' uk-offcanvas=''><div className='uk-offcanvas-bar'> {children} </div></div> }
+            wrap = { children => <div id='bd-nav' uk-offcanvas=''><div className='uk-offcanvas-bar'> {children} <NavFooter /></div></div> }
         >
 
         <ul className={"uk-nav-default uk-nav " + addClass}>
