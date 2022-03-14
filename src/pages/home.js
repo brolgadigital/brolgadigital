@@ -19,13 +19,13 @@ export default function home() {
                         title="Ecommerce and Online Shopping"
                         icon="bag"
                         desc="Need an online shop or booking system? We can help build one tailored to your business needs."
-                        info="/services/ecommerce"
+                        info="/services/websites"
                     />
                     <InfoCard
                         title="Social Media and Marketing Strategies"
                         icon="users"
                         desc="Get help designing marketing plans and campaigns that will boost your business and generate valuable leads."
-                        info="/services/strategy"
+                        info="/services/marketing"
                     />
                     <InfoCard
                         title="Usability, Speed and Search Engine Optimisations"
@@ -48,7 +48,7 @@ export default function home() {
                         title="Micro and Static Sites"
                         icon="world"
                         desc="Our websites are built to fit your business. Big our small, we can make something perfectly tailored to you."
-                        info="/services/smallsite"
+                        info="/services/websites"
                     />
                     <InfoCard
                         title="Support and Maintenance"
