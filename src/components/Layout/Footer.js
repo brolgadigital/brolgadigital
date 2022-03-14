@@ -16,9 +16,9 @@ const Footer = () => {
         document.execCommand("copy");
         selection.removeAllRanges();
 
-        copyText.classList.toggle('copied')
+        document.getElementById("bd-copy-success").classList.toggle('bd-visible')
         setTimeout(function() {
-            copyText.classList.toggle('copied')
+            document.getElementById("bd-copy-success").classList.toggle('bd-visible')
         }, 1000);
     };
 
@@ -34,8 +34,9 @@ const Footer = () => {
                 <address className="">
                     <h3>Brolga Digital</h3>
                     <p>Melbourne, Australia</p>
-                    <button onClick={copyEmail} id="brolga-email">
+                    <button className='uk-button bd-copy-email' onClick={copyEmail} id="brolga-email">
                         hello@brolgadigital.com.au
+                        <span class="uk-badge" id='bd-copy-success'>Copied!</span>
                     </button>
                     <p>03 9191 1063</p>
                     <Link to="/contact" activeClassName="currentPage">

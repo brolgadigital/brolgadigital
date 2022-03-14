@@ -266,6 +266,21 @@ footer.bd-footer {
     width: 100%;
 }
 
+.bd-copy-email {
+    position: relative;
+}
+#bd-copy-success {
+    background-color: #bf3c43;
+    color: #e2eaed;
+    display: none;
+    position: absolute;
+    top: -6px;
+    right: -14px;
+}
+#bd-copy-success.bd-visible {
+    display: inline-flex;
+}
+
 figure {
     align-items: flex-end;
     background-color: #e2eaed;
