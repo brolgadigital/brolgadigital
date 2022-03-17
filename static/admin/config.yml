@@ -2,7 +2,7 @@ backend:
     name: github
     branch: main
     repo: brolgadigital/brolgadigital
-    base_url: https://brolgadigital-cms.herokuapp.com/
+    base_url: https://brolgadigital-blog-cms.herokuapp.com/
     commit_messages:
         create: "Created {{collection}} “{{slug}}”"
         update: "Updated {{collection}} “{{slug}}”"
