@@ -1,9 +1,8 @@
 import React from "react";
 import Headers from "../components/Headers";
-import Cards from "../components/Cards";
+import { InfoCard, CardWrapper } from "../components/Cards";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
-import * as Icon from "react-feather";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 
 const Template = ({ data }) => {
     const project = data.markdownRemark;
@@ -15,12 +14,12 @@ const Template = ({ data }) => {
                 title={project.frontmatter.title}
             />
 
-            <div className="cardwrapper">
-                <Cards cardData={project.frontmatter.infobox1} />
-                <Cards cardData={project.frontmatter.infobox2} />
-                <Cards cardData={project.frontmatter.infobox3} />
-                <Cards cardData={project.frontmatter.infobox4} />
-            </div>
+            <CardWrapper>
+                <InfoCard cardData={project.frontmatter.infobox1} />
+                <InfoCard cardData={project.frontmatter.infobox2} />
+                <InfoCard cardData={project.frontmatter.infobox3} />
+                <InfoCard cardData={project.frontmatter.infobox4} />
+            </CardWrapper>
 
             <div dangerouslySetInnerHTML={{ __html: project.html }}></div>
 
@@ -42,7 +41,7 @@ const Template = ({ data }) => {
                 title={project.frontmatter.name}
                 aria-label={project.frontmatter.name}
             >
-                <Icon.ExternalLink /> View the Live Project
+                <span uk-icon="push"></span> View the Live Project
             </OutboundLink>
         </>
     );

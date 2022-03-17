@@ -7,6 +7,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const projectPageTemplate = path.resolve(
         "src/templates/projectTemplate.js"
     );
+    const downloadPageTemplate = path.resolve("src/templates/downloadTemplate.js");
 
     const result = await graphql(`
         {
@@ -44,7 +45,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                     pagePath: node.frontmatter.path,
                 },
             });
-        } else {
+        }
+        if (node.frontmatter.layout === "download") {
+            createPage({
+                path: "resources/" + node.frontmatter.path,
+                component: downloadPageTemplate,
+                context: {
+                    pagePath: node.frontmatter.path,
+                }
+            });
+        }
+        if (node.frontmatter.layout === "portfolio") {
             createPage({
                 path: node.frontmatter.layout + "/" + node.frontmatter.path,
                 component: projectPageTemplate,
@@ -65,6 +76,7 @@ exports.createSchemaCustomization = ({ actions }) => {
         }
         type Frontmatter {
             thumbnail: File @fileByRelativePath
+            download: File @fileByRelativePath
             infobox1: InfoBox1
             infobox2: InfoBox2
             infobox3: InfoBox3

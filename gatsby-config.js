@@ -37,13 +37,6 @@ module.exports = {
     },
     plugins: [
         "gatsby-plugin-image",
-        // {
-        //     resolve: `gatsby-source-filesystem`,
-        //     options: {
-        //         name: `uploads`,
-        //         path: `${__dirname}/static/images/`,
-        //     },
-        // },
         {
             resolve: `gatsby-plugin-facebook-pixel`,
             options: {
@@ -62,6 +55,13 @@ module.exports = {
             options: {
                 name: `portfolio`,
                 path: `${__dirname}/content/portfolio`,
+            },
+        },
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `downloads`,
+                path: `${__dirname}/content/downloads`,
             },
         },
         {
@@ -113,13 +113,6 @@ module.exports = {
 
         "gatsby-plugin-netlify-cms",
         "gatsby-plugin-sass",
-
-        // {
-        //     resolve: "gatsby-plugin-google-analytics",
-        //     options: {
-        //         trackingId: "G-VFZCRFC58Q",
-        //     },
-        // },
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-sitemap",
         {
@@ -155,6 +148,34 @@ module.exports = {
             resolve: "gatsby-plugin-anchor-links",
             options: {
                 offset: -50,
+            },
+        },
+        {
+            resolve: 'gatsby-plugin-htaccess',
+            options: {
+                https: true,
+                www: false,
+                SymLinksIfOwnerMatch: true,
+                host: 'brolgadigital.com.au',
+                custom: `
+                    # BROWSER CACHING USING CACHE-CONTROL HEADERS
+                    <ifModule mod_headers.c> 
+                        # One year for image and video files
+                        <filesMatch ".(flv|gif|ico|jpg|jpeg|mp4|mpeg|png|svg|swf|webp)$">
+                            Header set Cache-Control "max-age=31536000, public"
+                        </filesMatch>
+
+                        # One month for PDF files
+                        <filesMatch ".(pdf)$">
+                            Header set Cache-Control "max-age=2592000, public"
+                        </filesMatch>
+
+                        # One week for CSS and JS files
+                        <filesMatch ".(css|js)$">
+                            Header set Cache-Control "max-age=604800, public"
+                        </filesMatch>
+                    </ifModule>
+                `,
             },
         },
     ],

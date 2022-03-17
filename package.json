@@ -26,6 +26,7 @@
         "gatsby-plugin-gatsby-cloud": "^4.1.0",
         "gatsby-plugin-google-analytics": "^4.1.0",
         "gatsby-plugin-google-gtag": "^4.1.0",
+        "gatsby-plugin-htaccess": "^1.4.0",
         "gatsby-plugin-image": "^2.1.0",
         "gatsby-plugin-manifest": "^4.1.0",
         "gatsby-plugin-netlify-cms": "^6.1.0",
@@ -53,6 +54,7 @@
         "react-hook-form": "^7.19.1",
         "react-slideshow-image": "^3.5.0",
         "sass": "^1.37.5",
+        "uikit": "^3.11.1",
         "util": "^0.12.4"
     },
     "devDependencies": {

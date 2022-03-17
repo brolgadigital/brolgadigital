@@ -7,20 +7,24 @@ import { StaticImage } from "gatsby-plugin-image";
 // markup
 const NotFoundPage = () => {
     return (
-        <div>
+        <>
             <Head title="404" />
 
             <Headers subtitle="Thats a 404..." title="Page Not Found" />
-            <StaticImage
-                src="../images/graphics/404.png"
-                className="brand-image"
-            />
-            <p>
-                Sorry, this page doesn't exist. Check the URL or{" "}
-                <Link to="/contact">contact us</Link> if you think it should be
-                here.
-            </p>
-        </div>
+
+            <div className="uk-clearfix">
+                <StaticImage
+                    src="../images/graphics/404.png"
+                    className="uk-align-right uk-width-2-5"
+                    alt=''
+                />
+                <p>
+                    Sorry, this page doesn't exist. Check the URL or{" "}
+                    <Link to="/contact">contact us</Link> if you think it should be
+                    here.
+                </p>
+            </div>
+        </>
     );
 };
 
