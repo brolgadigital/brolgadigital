@@ -3,6 +3,7 @@ layout: blog
 path: what-is-jamstack
 date: 2022-03-18T00:15:30.341Z
 title: Why we choose to build with Jamstacks
+thumbnail: pexels-fauxels-3184454.jpg
 ---
 ## What is a Jamstack?
 
