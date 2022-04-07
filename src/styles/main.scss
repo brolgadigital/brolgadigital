@@ -20,7 +20,9 @@ $global-color: $blue3;
 $global-emphasis-color: $blue3;
 $global-inverse-color: $blue1;
 $global-link-color: $blue2;
+$button-link-color: $blue2;
 $global-link-hover-color: $blue3;
+$button-link-hover-color: $blue3;
 
 $navbar-background: $blue3;
 
@@ -71,7 +73,7 @@ $nav-default-item-active-color: $blue1;
     font-size: 1.2em;
 }
 @mixin hook-form-misc() {
-    .uk-input {
+    .uk-input, .uk-textarea {
         border: 1px solid #486181;
         background-color: #f4f6f8;
     }

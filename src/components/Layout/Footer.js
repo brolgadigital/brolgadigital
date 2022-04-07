@@ -36,7 +36,7 @@ const Footer = () => {
                     <p>Melbourne, Australia</p>
                     <button className='uk-button bd-copy-email' onClick={copyEmail} id="brolga-email">
                         hello@brolgadigital.com.au
-                        <span class="uk-badge" id='bd-copy-success'>Copied!</span>
+                        <span className="uk-badge" id='bd-copy-success'>Copied!</span>
                     </button>
                     <p>03 9191 1063</p>
                     <Link to="/contact" activeClassName="currentPage">

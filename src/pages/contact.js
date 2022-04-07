@@ -3,6 +3,7 @@ import Head from "../components/Head";
 import Headers from "../components/Headers";
 import SenderEmail from '../components/Layout/SenderEmail'
 import { StaticImage } from "gatsby-plugin-image";
+import ContactForm from "../components/email/ContactForm";
 
 export default function contact() {
     const copyEmail = () => {
@@ -16,9 +17,9 @@ export default function contact() {
         document.execCommand("copy");
         selection.removeAllRanges();
 
-        copyText.classList.toggle('copied')
+        document.getElementById("bd-copy-success").classList.toggle('bd-visible')
         setTimeout(function() {
-            copyText.classList.toggle('copied')
+            document.getElementById("bd-copy-success").classList.toggle('bd-visible')
         }, 1000);
     };
 
@@ -37,11 +38,15 @@ export default function contact() {
                 <p>
                     For more information about our business packages or ongoing
                     support subscriptions, email{" "}
-                    <button onClick={copyEmail} id="brolga-email">
+                    <button className='uk-button uk-button-link bd-copy-email' onClick={copyEmail} id="brolga-email">
                         hello@brolgadigital.com.au
+                        <span className="uk-badge" id='bd-copy-success'>Copied!</span>
                     </button>{" "}
                     or book a free consult
                 </p>
+
+                <ContactForm />
+            
             </div>
             
 
@@ -53,8 +58,8 @@ export default function contact() {
                 <iframe
                     src="https://cal.brolgadigital.com.au/brolgadigital/consult"
                     title="Book a consultation with Brolga Digital"
-                    frameborder="0"
-                    allowfullscreen
+                    frameBorder="0"
+                    allowFullScreen
                 ></iframe>
             </div>
 
