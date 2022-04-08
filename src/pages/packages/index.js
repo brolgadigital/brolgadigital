@@ -29,7 +29,7 @@ export default function subscriptions() {
                     title="Social Media Management"
                     icon="life-buoy"
                     desc="If running social media accounts isn't your jam, loop us in and we'll manage it all for you."
-                    // info="/packages/social-media-management"
+                    info="/packages/social-media-management"
                 />
                 {/* <InfoCard
                     title="Content and Graphics"

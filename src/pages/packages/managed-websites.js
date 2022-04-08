@@ -18,7 +18,7 @@ const managedWebsites = () => {
             </p>
         </div>
 
-        <CardWrapper>
+        <CardWrapper columns="3">
             <PriceCard
                 title="Base Plan"
                 price="30"
