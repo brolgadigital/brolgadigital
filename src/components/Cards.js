@@ -109,10 +109,22 @@ const ProjectCard = (props) => {
     )
 }
 
-const CardWrapper = ({children}) => {
+const CardWrapper = (props) => {
+
+    let classes = 'uk-grid-small uk-grid-match uk-margin-bottom '
+    if (props.columns === '3') {
+        classes += 'uk-child-width-1-2@s uk-child-width-1-3@m'
+    }
+    else if (props.columns === '2') {
+        classes += 'uk-child-width-1-2@s'
+    }
+    else {
+        classes += 'uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l '
+    }
+
     return (
-        <div className='uk-grid-small uk-grid-match uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-margin-bottom' uk-grid=''>
-            {children}
+        <div className={classes} uk-grid=''>
+            {props.children}
         </div>
     )
 }
