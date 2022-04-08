@@ -28,15 +28,15 @@ export default function subscriptions() {
                 <InfoCard
                     title="Social Media Management"
                     icon="life-buoy"
-                    desc="Not technically minded? Let us manage the hard parts, and explain things in easy-to-understand language."
+                    desc="If running social media accounts isn't your jam, loop us in and we'll manage it all for you."
                     // info="/packages/social-media-management"
                 />
-                <InfoCard
+                {/* <InfoCard
                     title="Content and Graphics"
                     icon="life-buoy"
-                    desc="Not technically minded? Let us manage the hard parts, and explain things in easy-to-understand language."
+                    desc=""
                     // info="/packages/content-graphics"
-                />
+                /> */}
                 <InfoCard
                     title="Branding"
                     icon="gift"
@@ -46,7 +46,7 @@ export default function subscriptions() {
                 <InfoCard
                     title="Web Design and Development"
                     icon="gift"
-                    desc="From a brand guide to business cards, social icons to marketing collateral, we'll present your story cohesively wherever your customers and clients are."
+                    desc="Look your best online with a website that showcases who you are and what you do."
                     info="/packages/website-design"
                 />
                 
