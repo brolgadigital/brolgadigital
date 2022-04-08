@@ -35,7 +35,7 @@ const managedWebsites = () => {
                 price="50"
                 desc="Manage your content while we look after the tech"
                 details={[
-                    'Base +',
+                    'All Base Services',
                     'Troubleshooting and Support',
                     'Uptime Monitoring',
                     'Analytics Access',
@@ -46,7 +46,7 @@ const managedWebsites = () => {
                 price="75"
                 desc="Let us do the hard work and manage your site"
                 details={[
-                    'Everyday +',
+                    'All Base and Everyday Services',
                     'Priority Support',
                     'Content and Plugin Updates',
                     'Improvement Suggestions',
