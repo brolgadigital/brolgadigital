@@ -27,7 +27,7 @@ const Template = ({ data }) => {
                         className="blog-post-content"
                         dangerouslySetInnerHTML={{ __html: post.html }}
                     ></div>
-                    <a href={post.frontmatter.download.relativePath} download={post.frontmatter.title} className="button">Download</a>
+                    <a href={post.frontmatter.download.publicURL} download={post.frontmatter.title} className="button">Download</a>
                 </div>
             </div>
         </>
@@ -47,7 +47,7 @@ export const pageQuery = graphql`
                 title
                 description
                 download {
-                    relativePath
+                    publicURL
                     size
                 }
             }
