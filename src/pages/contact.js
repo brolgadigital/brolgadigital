@@ -41,7 +41,10 @@ export default function contact() {
                     <button className='uk-button uk-button-link bd-copy-email' onClick={copyEmail} id="brolga-email">
                         hello@brolgadigital.com.au
                         <span className="uk-badge" id='bd-copy-success'>Copied!</span>
-                    </button>{" "}
+                    </button>{" "} call{" "}
+                    <a className='uk-button uk-button-link' href="tel:0391911063">
+                        03 9191 1063
+                    </a>{" "}
                     or book a free consult
                 </p>
 
