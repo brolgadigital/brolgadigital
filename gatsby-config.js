@@ -3,6 +3,13 @@ const config = require("./brolga-config");
 
 const here = (...p) => path.join(__dirname, ...p);
 
+const strapiConfig = {
+    apiURL: process.env.API_URL,
+    // accessToken: process.env.TOKEN,
+    collectionTypes: ['post', 'category', 'product', 'tag', 'page'],
+    singleTypes: [],
+};
+
 require("dotenv").config({
     path: ".env.${process.env.NODE_ENV}",
 });
@@ -110,7 +117,10 @@ module.exports = {
                 ],
             },
         },
-
+        {
+            resolve: `gatsby-source-strapi`,
+            options: strapiConfig,
+        },
         "gatsby-plugin-netlify-cms",
         "gatsby-plugin-sass",
         "gatsby-plugin-react-helmet",
