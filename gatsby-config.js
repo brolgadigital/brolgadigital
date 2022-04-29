@@ -1,3 +1,7 @@
+require("dotenv").config({
+    path: ".env.${process.env.NODE_ENV}",
+});
+
 const path = require("path");
 const config = require("./brolga-config");
 
@@ -9,10 +13,6 @@ const strapiConfig = {
     collectionTypes: ['post', 'category', 'product', 'tag', 'page'],
     singleTypes: [],
 };
-
-require("dotenv").config({
-    path: ".env.${process.env.NODE_ENV}",
-});
 
 module.exports = {
     siteMetadata: {
@@ -50,27 +50,27 @@ module.exports = {
                 pixelId: "334753701576651",
             },
         },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `blog`,
-                path: `${__dirname}/content/blog`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `portfolio`,
-                path: `${__dirname}/content/portfolio`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `downloads`,
-                path: `${__dirname}/content/downloads`,
-            },
-        },
+        // {
+        //     resolve: `gatsby-source-filesystem`,
+        //     options: {
+        //         name: `blog`,
+        //         path: `${__dirname}/content/blog`,
+        //     },
+        // },
+        // {
+        //     resolve: `gatsby-source-filesystem`,
+        //     options: {
+        //         name: `portfolio`,
+        //         path: `${__dirname}/content/portfolio`,
+        //     },
+        // },
+        // {
+        //     resolve: `gatsby-source-filesystem`,
+        //     options: {
+        //         name: `downloads`,
+        //         path: `${__dirname}/content/downloads`,
+        //     },
+        // },
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -121,7 +121,7 @@ module.exports = {
             resolve: `gatsby-source-strapi`,
             options: strapiConfig,
         },
-        "gatsby-plugin-netlify-cms",
+        // "gatsby-plugin-netlify-cms",
         "gatsby-plugin-sass",
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-sitemap",
