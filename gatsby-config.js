@@ -7,13 +7,6 @@ const config = require("./brolga-config");
 
 const here = (...p) => path.join(__dirname, ...p);
 
-const strapiConfig = {
-    apiURL: process.env.API_URL,
-    // accessToken: process.env.TOKEN,
-    collectionTypes: ['post', 'category', 'product', 'tag', 'page'],
-    singleTypes: [],
-};
-
 module.exports = {
     siteMetadata: {
         url: config.siteUrl,
@@ -83,9 +76,9 @@ module.exports = {
         "gatsby-transformer-sharp",
 
         {
-            resolve: "gatsby-transformer-remark",
+            resolve: "gatsby-plugin-mdx",
             options: {
-                plugins: [
+                gatsbyRemarkPlugins: [
                     // 'gatsby-remark-relative-images-v2',
                     //   'gatsby-remark-relative-images',
                     // {
@@ -118,8 +111,14 @@ module.exports = {
             },
         },
         {
-            resolve: `gatsby-source-strapi`,
-            options: strapiConfig,
+            resolve: "gatsby-source-strapi",
+            options: {
+                // apiURL: process.env.STRAPI_API_URL,
+                apiURL: 'https://cms.brolgadigital.com.au',
+                accessToken: process.env.STRAPI_API_TOKEN,
+                collectionTypes: ['post', 'category', 'project', 'tag', 'page'],
+                queryLimit: 5000
+            },
         },
         // "gatsby-plugin-netlify-cms",
         "gatsby-plugin-sass",
