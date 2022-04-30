@@ -51,30 +51,30 @@ const Template = ({ data }) => {
 
 export default Template;
 
-export const pageQuery = graphql`
-    query BlogPostByPath($pagePath: String) {
-        markdownRemark(frontmatter: { path: { eq: $pagePath } }) {
-            html
-            excerpt
-            frontmatter {
-                date(formatString: "MMMM DD, YYYY")
-                path
-                title
-                description
-                thumbnail {
-                    childImageSharp {
-                        gatsbyImageData
-                        original {
-                            src
-                        }
-                    }
-                }
-            }
-        }
-        site {
-            siteMetadata {
-                title
-            }
-        }
-    }
-`;
+// export const pageQuery = graphql`
+//     query BlogPostByPath($pagePath: String) {
+//         markdownRemark(frontmatter: { path: { eq: $pagePath } }) {
+//             html
+//             excerpt
+//             frontmatter {
+//                 date(formatString: "MMMM DD, YYYY")
+//                 path
+//                 title
+//                 description
+//                 thumbnail {
+//                     childImageSharp {
+//                         gatsbyImageData
+//                         original {
+//                             src
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//         site {
+//             siteMetadata {
+//                 title
+//             }
+//         }
+//     }
+// `;

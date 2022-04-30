@@ -49,44 +49,44 @@ const Template = ({ data }) => {
 
 export default Template;
 
-export const pageQuery = graphql`
-    query ProjectsByPath($pagePath: String) {
-        markdownRemark(frontmatter: { path: { eq: $pagePath } }) {
-            html
-            frontmatter {
-                date(formatString: "MMMM DD, YYYY")
-                path
-                title
-                subtitle
-                website
-                quoteAttribute
-                quote
-                summary
-                infobox1 {
-                    display
-                    icon
-                    boxtitle
-                    blurb
-                }
-                infobox2 {
-                    display
-                    icon
-                    boxtitle
-                    blurb
-                }
-                infobox3 {
-                    display
-                    icon
-                    boxtitle
-                    blurb
-                }
-                infobox4 {
-                    display
-                    icon
-                    boxtitle
-                    blurb
-                }
-            }
-        }
-    }
-`;
+// export const pageQuery = graphql`
+//     query ProjectsByPath($pagePath: String) {
+//         markdownRemark(frontmatter: { path: { eq: $pagePath } }) {
+//             html
+//             frontmatter {
+//                 date(formatString: "MMMM DD, YYYY")
+//                 path
+//                 title
+//                 subtitle
+//                 website
+//                 quoteAttribute
+//                 quote
+//                 summary
+//                 infobox1 {
+//                     display
+//                     icon
+//                     boxtitle
+//                     blurb
+//                 }
+//                 infobox2 {
+//                     display
+//                     icon
+//                     boxtitle
+//                     blurb
+//                 }
+//                 infobox3 {
+//                     display
+//                     icon
+//                     boxtitle
+//                     blurb
+//                 }
+//                 infobox4 {
+//                     display
+//                     icon
+//                     boxtitle
+//                     blurb
+//                 }
+//             }
+//         }
+//     }
+// `;
