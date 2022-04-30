@@ -1,50 +1,45 @@
 import React from "react";
 import { graphql } from "gatsby";
 // import SeoWithQuery from '../components/seo/seo'
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
+import Head from "../components/Head";
 import Headers from "../components/Headers";
+import { MDXProvider } from "@mdx-js/react"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 const Template = ({ data }) => {
-    const post = data.markdownRemark;
-    const page = data.site.siteMetadata;
+    // const post = data.markdownRemark;
+    // const page = data.site.siteMetadata;
 
-    const pageTitle = post.frontmatter.title + " || " + page.title;
+    // const pageTitle = post.frontmatter.title + " || " + page.title;
 
     return (
         <div>
-            <Head title="About Us" />
+            <Head title={data.strapiPage.title} />
 
-            <Headers title="About Brolga Digital" />
+            <Headers title={data.strapiPage.title} />
+
+            <MDXProvider>
+                <MDXRenderer>{data.strapiPage.body.data.childMdx.body}</MDXRenderer>
+            </MDXProvider>
         </div>
     );
 };
 
 export default Template;
 
-// export const pageQuery = graphql`
-//     query BlogPostByPath($pagePath: String) {
-//         markdownRemark(frontmatter: { path: { eq: $pagePath } }) {
-//             html
-//             excerpt
-//             frontmatter {
-//                 date(formatString: "MMMM DD, YYYY")
-//                 path
-//                 title
-//                 description
-//                 thumbnail {
-//                     childImageSharp {
-//                         gatsbyImageData
-//                         original {
-//                             src
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//         site {
-//             siteMetadata {
-//                 title
-//             }
-//         }
-//     }
-// `;
+export const pageQuery = graphql`
+    query PageByPath($pagePath: String) {
+        strapiPage(slug: { eq: $pagePath }) {
+            title
+            slug
+            body {
+                data {
+                    childMdx {
+                        body
+                    }
+                }
+            }
+        }
+    }
+`;
