@@ -10,7 +10,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         "src/templates/projectTemplate.js"
     );
     const downloadPageTemplate = path.resolve("src/templates/downloadTemplate.js");
-    const pageTemplate = path.resolve("src/templates/downloadTemplate.js");
+    const pageTemplate = path.resolve("src/templates/pageTemplate.js");
 
     const result = await graphql(`
         {
