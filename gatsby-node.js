@@ -10,6 +10,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         "src/templates/projectTemplate.js"
     );
     const downloadPageTemplate = path.resolve("src/templates/downloadTemplate.js");
+    const pageTemplate = path.resolve("src/templates/downloadTemplate.js");
 
     const result = await graphql(`
         {
@@ -112,7 +113,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     result.data.allStrapiPage.edges.forEach(({ node }) => {
         createPage({
             path: node.slug,
-            component: projectPageTemplate,
+            component: pageTemplate,
             context: {
                 pagePath: node.slug,
             },
