@@ -1,6 +1,8 @@
 const path = require("path");
 const { escape } = require("querystring");
 
+const crypto = require('crypto');
+
 exports.createPages = async ({ graphql, actions, reporter }) => {
     const { createPage } = actions;
 
@@ -119,4 +121,33 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             },
         });
     });
+};
+
+exports.onCreateNode = async ({ node, actions, createNodeId }) => {
+    if (
+        node.internal.type === "STRAPI_POST" ||
+        node.internal.type === "STRAPI_PAGE" ||
+        node.internal.type === "STRAPI_PROJECT"
+    ) {
+        const newNode = {
+            ...node,
+            id: createNodeId(node.id),
+            parent: node.id,
+            children: [],
+            internal: {
+                content: node.content || " ",
+                type: "StrapiMDX",
+                mediaType: "text/markdown",
+                contentDigest: crypto
+                    .createHash("md5")
+                    .update(node.content || " ")
+                    .digest("hex"),
+            },
+        };
+        actions.createNode(newNode);
+        actions.createParentChildLink({
+            parent: node,
+            child: newNode,
+        });
+    }
 };
