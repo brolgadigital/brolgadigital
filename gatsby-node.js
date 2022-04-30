@@ -19,9 +19,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             allStrapiPost(sort: {order: DESC, fields: PublishDate}) {
                 edges {
                     node {
-                        id
-                        title
-                        PublishDate
                         slug
                         categories {
                             slug
