@@ -47,6 +47,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                     }
                 }
             }
+            allStrapiPage {
+                edges {
+                    node {
+                        slug
+                    }
+                }
+            }
         }
     `);
 
@@ -97,6 +104,17 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             component: projectPageTemplate,
             context: {
                 pagePath: node.Slug,
+            },
+        });
+    });
+
+    // ADDITIONAL PAGES
+    result.data.allStrapiPage.edges.forEach(({ node }) => {
+        createPage({
+            path: node.slug,
+            component: projectPageTemplate,
+            context: {
+                pagePath: node.slug,
             },
         });
     });
