@@ -16,7 +16,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
     const result = await graphql(`
         {
-            allStrapiPost(sort: {order: DESC, fields: PublishDate}) {
+            allStrapiPost(sort: {order: DESC, fields: publishDate}) {
                 edges {
                     node {
                         slug
@@ -43,7 +43,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             allStrapiProject {
                 edges {
                     node {
-                        Slug
+                        slug
                     }
                 }
             }
@@ -100,10 +100,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     // PORTFOLIO PROJECT PAGES
     result.data.allStrapiProject.edges.forEach(({ node }) => {
         createPage({
-            path: "portfolio/" + node.Slug,
+            path: "portfolio/" + node.slug,
             component: projectPageTemplate,
             context: {
-                pagePath: node.Slug,
+                pagePath: node.slug,
             },
         });
     });
