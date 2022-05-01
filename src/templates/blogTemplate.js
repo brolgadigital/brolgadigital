@@ -4,6 +4,9 @@ import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import Headers from "../components/Headers";
 import Head from "../components/Head";
+import { MDXProvider } from "@mdx-js/react"
+import { MDXRenderer } from "gatsby-plugin-mdx"
+import moment from "moment";
 
 const Template = ({ data }) => {
 
@@ -11,26 +14,26 @@ const Template = ({ data }) => {
         <>
             <Helmet
                 isBlogPost={true}
-                imageMeta={
-                    post.frontmatter.thumbnail.childImageSharp.original.src
-                }
+                // imageMeta={
+                //     post.frontmatter.thumbnail.childImageSharp.original.src
+                // }
                 meta={[
                     {
                         name: "description",
-                        content: post.frontmatter.description || post.excerpt,
+                        content: data.strapiPost.description || data.strapiPost.excerpt,
                     },
-                    {
-                        name: "image",
-                        content:
-                            post.frontmatter.thumbnail.childImageSharp.original
-                                .src,
-                    },
-                    { name: "datePublished", content: post.frontmatter.date },
+                    // {
+                    //     name: "image",
+                    //     content:
+                    //         post.frontmatter.thumbnail.childImageSharp.original
+                    //             .src,
+                    // },
+                    { name: "datePublished", content: data.strapiPost.publishDate },
                 ]}
             ></Helmet>
             <Head title={data.strapiPost.title} />
 
-            <Headers title={data.strapiPost.title} subtitle={data.strapiPost.publishDate}/>
+            <Headers title={data.strapiPost.title} subtitle={moment(data.strapiPost.publishDate).format('MMMM Do YYYY')}/>
 
             <MDXProvider>
                 <MDXRenderer>{data.strapiPost.body.data.childMdx.body}</MDXRenderer>

@@ -6,6 +6,7 @@ import Head from "../components/Head";
 import Headers from "../components/Headers";
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import { uikitComponents } from "../components/MdxComponents";
 
 const Template = ({ data }) => {
     // const post = data.markdownRemark;
@@ -19,7 +20,7 @@ const Template = ({ data }) => {
 
             <Headers title={data.strapiPage.title} />
 
-            <MDXProvider>
+            <MDXProvider components={uikitComponents}>
                 <MDXRenderer>{data.strapiPage.body.data.childMdx.body}</MDXRenderer>
             </MDXProvider>
         </div>
