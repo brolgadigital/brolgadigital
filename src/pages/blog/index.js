@@ -37,7 +37,7 @@ const BlogIndex = ({ data, location }) => {
                                     {/* Thumbnail */}
                                 </div>
                                 <div className="uk-card-body">
-                                    <h2>{post.title}</h2>
+                                    <h3 className="uk-h4">{post.title}</h3>
                                     <small>{post.publishDate}</small>
                                 </div>
                                 <div class="uk-card-footer">
