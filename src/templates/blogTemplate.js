@@ -6,6 +6,8 @@ import Headers from "../components/Headers";
 import Head from "../components/Head";
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import { uikitComponents } from "../components/MdxComponents";
+import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 import moment from "moment";
 
 const Template = ({ data }) => {
@@ -35,7 +37,7 @@ const Template = ({ data }) => {
 
             <Headers title={data.strapiPost.title} subtitle={moment(data.strapiPost.publishDate).format('MMMM Do YYYY')}/>
 
-            <MDXProvider>
+            <MDXProvider components={uikitComponents}>
                 <MDXRenderer>{data.strapiPost.body.data.childMdx.body}</MDXRenderer>
             </MDXProvider>
         </>

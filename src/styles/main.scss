@@ -297,7 +297,7 @@ figure {
     padding: 20px;
     position: relative;
 
-    & p {
+    & p, &>div {
         flex-basis: 66%;
         margin-bottom: 0 !important;
     }

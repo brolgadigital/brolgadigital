@@ -79,18 +79,11 @@ module.exports = {
             resolve: "gatsby-plugin-mdx",
             options: {
                 gatsbyRemarkPlugins: [
-                    // 'gatsby-remark-relative-images-v2',
-                    //   'gatsby-remark-relative-images',
-                    // {
-                    //     resolve: "gatsby-remark-relative-images",
-                    //     options: {
-                    //       name: "uploads",
-                    //     },
-                    //   },
                     {
                         resolve: `gatsby-remark-images`,
                         options: {
                             maxWidth: 630,
+                            showCaptions: ['title', 'alt'],
                         },
                     },
                     {
