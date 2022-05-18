@@ -2,10 +2,7 @@ import * as React from "react";
 import Head from "../../components/Head";
 import { Link, graphql } from "gatsby";
 import Headers from "../../components/Headers";
-import Button from "../../components/Button";
 import { CardWrapper } from "../../components/Cards";
-
-// import Bio from "../components/bio"
 
 const BlogIndex = ({ data, location }) => {
     const posts = data.allStrapiPost.nodes;

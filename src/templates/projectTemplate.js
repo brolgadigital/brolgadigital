@@ -1,27 +1,33 @@
 import React from "react";
 import Headers from "../components/Headers";
+import Head from "../components/Head";
 import { InfoCard, CardWrapper } from "../components/Cards";
 import { OutboundLink } from "gatsby-plugin-google-gtag";
 import { graphql } from "gatsby";
+import { MDXProvider } from "@mdx-js/react"
+import { MDXRenderer } from "gatsby-plugin-mdx"
+import { uikitComponents } from "../components/MdxComponents";
+import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 
 const Template = ({ data }) => {
-    const project = data.markdownRemark;
+    const project = data.strapiProject;
 
     return (
         <>
-            <Headers
-                subtitle={project.frontmatter.subtitle}
-                title={project.frontmatter.title}
-            />
+            <Head title={project.title} />
+
+            <Headers title={project.title} subtitle={project.subtitle}/>
 
             <CardWrapper>
-                <InfoCard cardData={project.frontmatter.infobox1} />
-                <InfoCard cardData={project.frontmatter.infobox2} />
-                <InfoCard cardData={project.frontmatter.infobox3} />
-                <InfoCard cardData={project.frontmatter.infobox4} />
+                {project.overviews.map((card) => {
+                    console.log(card)
+                    return (<InfoCard icon={card.icon} title={card.title} desc={card.description}/>)
+                })}
             </CardWrapper>
 
-            <div dangerouslySetInnerHTML={{ __html: project.html }}></div>
+            <MDXProvider components={uikitComponents}>
+                <MDXRenderer>{project.caseStudy.data.childMdx.body}</MDXRenderer>
+            </MDXProvider>
 
             <Headers
                 subtitle="We can help you"
@@ -29,17 +35,17 @@ const Template = ({ data }) => {
             />
             <p
                 dangerouslySetInnerHTML={{
-                    __html: project.frontmatter.summary,
+                    __html: project.summary,
                 }}
             ></p>
 
-            <h2>From {project.frontmatter.quoteAttribute}</h2>
-            <p className="last">{project.frontmatter.quote}</p>
+            <h2>From {project.review.reviewerName}</h2>
+            <p className="last">{project.review.reviewBody}</p>
             <OutboundLink
-                href={project.frontmatter.website}
+                href={project.website}
                 className="button"
-                title={project.frontmatter.name}
-                aria-label={project.frontmatter.name}
+                title={project.title}
+                aria-label={project.title}
             >
                 <span uk-icon="push"></span> View the Live Project
             </OutboundLink>
@@ -49,44 +55,28 @@ const Template = ({ data }) => {
 
 export default Template;
 
-// export const pageQuery = graphql`
-//     query ProjectsByPath($pagePath: String) {
-//         markdownRemark(frontmatter: { path: { eq: $pagePath } }) {
-//             html
-//             frontmatter {
-//                 date(formatString: "MMMM DD, YYYY")
-//                 path
-//                 title
-//                 subtitle
-//                 website
-//                 quoteAttribute
-//                 quote
-//                 summary
-//                 infobox1 {
-//                     display
-//                     icon
-//                     boxtitle
-//                     blurb
-//                 }
-//                 infobox2 {
-//                     display
-//                     icon
-//                     boxtitle
-//                     blurb
-//                 }
-//                 infobox3 {
-//                     display
-//                     icon
-//                     boxtitle
-//                     blurb
-//                 }
-//                 infobox4 {
-//                     display
-//                     icon
-//                     boxtitle
-//                     blurb
-//                 }
-//             }
-//         }
-//     }
-// `;
+export const pageQuery = graphql`
+    query ProjectByPath($pagePath: String) {
+        strapiProject(slug: { eq: $pagePath }) {
+            title
+            subtitle
+            slug
+            summary
+            caseStudy {
+                data {
+                    childMdx {
+                        body
+                    }
+                }
+            }
+            overviews {
+                title
+                description
+            }
+            review {
+                reviewerName
+                reviewBody
+            }
+        }
+    }
+`;

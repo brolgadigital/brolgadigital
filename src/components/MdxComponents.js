@@ -22,7 +22,6 @@ const Tooltip = (props) => {
 }
 
 const Image = (props) => {
-    console.log(props.src)
     return (
         <StaticQuery
         query={graphql`
@@ -61,11 +60,34 @@ const BetterPTags = (props) => {
     else return <p {...props}></p>
 };
 
+const ImageRow = (props) => {
+    return (
+        <figure>
+            {props.children.map(data => {
+                return Image(data.props.children.props)
+            })}
+        <figcaption>{props.caption}</figcaption>
+        </figure>
+    )
+}
+const ImageCol = (props) => {
+    return (
+        <figure>
+            {props.children.map(data => {
+                return Image(data.props.children.props)
+            })}
+        <figcaption>{props.caption}</figcaption>
+        </figure>
+    )
+}
+
 export const uikitComponents = {
     Accordian,
     Alert,
     img: Image,
     p: BetterPTags,
-    Tooltip
+    Tooltip,
+    ImageRow,
+    ImageCol
 }
 
