@@ -36,26 +36,26 @@ const Template = ({ data }) => {
 
 export default Template;
 
-export const pageQuery = graphql`
-    query DownloadByPath($pagePath: String) {
-        markdownRemark(frontmatter: { path: { eq: $pagePath } }) {
-            html
-            excerpt
-            frontmatter {
-                date(formatString: "MMMM DD, YYYY")
-                path
-                title
-                description
-                download {
-                    publicURL
-                    size
-                }
-            }
-        }
-        site {
-            siteMetadata {
-                title
-            }
-        }
-    }
-`;
+// export const pageQuery = graphql`
+//     query DownloadByPath($pagePath: String) {
+//         markdownRemark(frontmatter: { path: { eq: $pagePath } }) {
+//             html
+//             excerpt
+//             frontmatter {
+//                 date(formatString: "MMMM DD, YYYY")
+//                 path
+//                 title
+//                 description
+//                 download {
+//                     publicURL
+//                     size
+//                 }
+//             }
+//         }
+//         site {
+//             siteMetadata {
+//                 title
+//             }
+//         }
+//     }
+// `;

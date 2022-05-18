@@ -1,29 +1,56 @@
 const path = require("path");
+const { escape } = require("querystring");
+
+const crypto = require('crypto');
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
     const { createPage } = actions;
 
     const blogPostTemplate = path.resolve("src/templates/blogTemplate.js");
+    const categoryPageTemplate = path.resolve("src/templates/categoryTemplate.js");
     const projectPageTemplate = path.resolve(
         "src/templates/projectTemplate.js"
     );
     const downloadPageTemplate = path.resolve("src/templates/downloadTemplate.js");
+    const pageTemplate = path.resolve("src/templates/pageTemplate.js");
 
     const result = await graphql(`
         {
-            allMarkdownRemark(
-                sort: { order: DESC, fields: [frontmatter___date] }
-                limit: 1000
-            ) {
+            allStrapiPost(sort: {order: DESC, fields: publishDate}) {
                 edges {
                     node {
-                        id
-                        frontmatter {
-                            date
-                            path
-                            title
-                            layout
+                        slug
+                        categories {
+                            slug
                         }
+                    }
+                }
+            }
+            allStrapiCategory {
+                edges {
+                    node {
+                        slug
+                    }
+                }
+            }
+            allStrapiTag {
+                edges {
+                    node {
+                        name
+                    }
+                }
+            }
+            allStrapiProject {
+                edges {
+                    node {
+                        slug
+                    }
+                }
+            }
+            allStrapiPage {
+                edges {
+                    node {
+                        slug
                     }
                 }
             }
@@ -36,77 +63,88 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         return;
     }
 
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-        if (node.frontmatter.layout === "blog") {
-            createPage({
-                path: node.frontmatter.layout + "/" + node.frontmatter.path,
-                component: blogPostTemplate,
-                context: {
-                    pagePath: node.frontmatter.path,
-                },
-            });
-        }
-        if (node.frontmatter.layout === "download") {
-            createPage({
-                path: "resources/" + node.frontmatter.path,
-                component: downloadPageTemplate,
-                context: {
-                    pagePath: node.frontmatter.path,
-                }
-            });
-        }
-        if (node.frontmatter.layout === "portfolio") {
-            createPage({
-                path: node.frontmatter.layout + "/" + node.frontmatter.path,
-                component: projectPageTemplate,
-                context: {
-                    pagePath: node.frontmatter.path,
-                },
-            });
-        }
+    // BLOG POST PAGES
+    result.data.allStrapiPost.edges.forEach(({ node }) => {
+        createPage({
+            path: "blog/" + node.categories[0].slug + '/' + node.slug ,
+            component: blogPostTemplate,
+            context: {
+                pagePath: node.slug,
+            },
+        });
+    });
+
+    // BLOG CATEGORY PAGES
+    result.data.allStrapiCategory.edges.forEach(({ node }) => {
+        createPage({
+            path: "blog/" + node.slug,
+            component: categoryPageTemplate,
+            context: {
+                pagePath: node.slug,
+            },
+        });
+    });
+
+    // BLOG TAG PAGES
+    result.data.allStrapiTag.edges.forEach(({ node }) => {
+        let slug = node.name.replaceAll(/\//g, '-').replaceAll(' ', '-').toLowerCase()
+        createPage({
+            path: "blog/tag/" + escape(slug),
+            component: categoryPageTemplate,
+            context: {
+                pagePath: node.name,
+            },
+        });
+    });
+
+    // PORTFOLIO PROJECT PAGES
+    result.data.allStrapiProject.edges.forEach(({ node }) => {
+        createPage({
+            path: "portfolio/" + node.slug,
+            component: projectPageTemplate,
+            context: {
+                pagePath: node.slug,
+            },
+        });
+    });
+
+    // ADDITIONAL PAGES
+    result.data.allStrapiPage.edges.forEach(({ node }) => {
+        createPage({
+            path: node.slug,
+            component: pageTemplate,
+            context: {
+                pagePath: node.slug,
+            },
+        });
     });
 };
 
-exports.createSchemaCustomization = ({ actions }) => {
-    const { createTypes } = actions;
-
-    createTypes(`
-        type MarkdownRemark implements Node {
-            frontmatter: Frontmatter
-        }
-        type Frontmatter {
-            thumbnail: File @fileByRelativePath
-            download: File @fileByRelativePath
-            infobox1: InfoBox1
-            infobox2: InfoBox2
-            infobox3: InfoBox3
-            infobox4: InfoBox4
-        }
-
-
-        type InfoBox1 {
-            display: Boolean!
-            icon: String
-            boxtitle: String
-            blurb: String
-        }
-        type InfoBox2 {
-            display: Boolean!
-            icon: String
-            boxtitle: String
-            blurb: String
-        }
-        type InfoBox3 {
-            display: Boolean!
-            icon: String
-            boxtitle: String
-            blurb: String
-        }
-        type InfoBox4 {
-            display: Boolean!
-            icon: String
-            boxtitle: String
-            blurb: String
-        }
-    `);
+exports.onCreateNode = async ({ node, actions, createNodeId }) => {
+    if (
+        node.internal.type === "STRAPI_POST" ||
+        node.internal.type === "STRAPI_PAGE" ||
+        node.internal.type === "STRAPI_PROJECT"
+    ) {
+        const newNode = {
+            ...node,
+            id: createNodeId(node.id),
+            parent: node.id,
+            children: [],
+            internal: {
+                content: node.content || " ",
+                type: "StrapiMDX",
+                mediaType: "text/markdown",
+                contentDigest: crypto
+                    .createHash("md5")
+                    .update(node.content || " ")
+                    .digest("hex"),
+            },
+        };
+        actions.createNode(newNode);
+        actions.createParentChildLink({
+            parent: node,
+            child: newNode,
+        });
+    }
 };

@@ -19,28 +19,28 @@ export default function resources({data}) {
                 
             </div>
 
-            <ul>
+            {/* <ul>
                 {data.allMarkdownRemark.nodes.map((download) => {
                     return (
                         <li><Link to={"/resources/" + download.frontmatter.path}>{download.frontmatter.title}</Link></li>
                     )
                 })}
-            </ul>
+            </ul> */}
         </>
     );
 }
 
-export const query = graphql`
-        query {
-            allMarkdownRemark(filter: {frontmatter: {layout: {eq: "download"}}}) {
-                nodes {
-                    id
-                    frontmatter {
-                        path
-                        title
-                        layout
-                    }
-                }
-            }
-        }
-    `
+// export const query = graphql`
+//         query {
+//             allMarkdownRemark(filter: {frontmatter: {layout: {eq: "download"}}}) {
+//                 nodes {
+//                     id
+//                     frontmatter {
+//                         path
+//                         title
+//                         layout
+//                     }
+//                 }
+//             }
+//         }
+//     `

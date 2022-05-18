@@ -69,25 +69,25 @@ const SplashScreen = () => {
 
 const SplashScreen2 = () => {
     
-    const data = useStaticQuery(graphql`
-        query {
-            allMarkdownRemark(filter: {frontmatter: {layout: {eq: "portfolio"}}}) {
+    // const data = useStaticQuery(graphql`
+    //     query {
+    //         allMarkdownRemark(filter: {frontmatter: {layout: {eq: "portfolio"}}}) {
                 
-                    nodes {
-                        frontmatter {
-                            quote
-                            quoteAttribute
-                            title
-                            layout
-                        }
-                    }
+    //                 nodes {
+    //                     frontmatter {
+    //                         quote
+    //                         quoteAttribute
+    //                         title
+    //                         layout
+    //                     }
+    //                 }
             
-            }
-        }
-    `)
+    //         }
+    //     }
+    // `)
 
-    const testimonial = data.allMarkdownRemark.nodes
-    console.log(testimonial)
+    // const testimonial = data.allMarkdownRemark.nodes
+    // console.log(testimonial)
     
     return (
         <div className='bd-splashscreen' uk-height-viewport='expand: true'>
@@ -104,7 +104,7 @@ const SplashScreen2 = () => {
                     <div className="uk-card uk-card-secondary uk-card-body uk-margin-medium uk-text-large uk-text-center bd-splashscreen-text">
                         <p>Supporting Small Bussiness and Sole Traders</p>
 
-                        <div uk-slideshow='animation: slide; ratio: 1:1; max-height: fit-content;'>
+                        {/* <div uk-slideshow='animation: slide; ratio: 1:1; max-height: fit-content;'>
                             <ul class="uk-slideshow-items bd-splashscreen-testimonial">
                                 {testimonial.map((quote, i) => (
                                 <li uk-slideshow-item={i}>
@@ -120,7 +120,7 @@ const SplashScreen2 = () => {
                             <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous='' uk-slideshow-item="previous"></a>
                             <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next='' uk-slideshow-item="next"></a>
 
-                        </div>
+                        </div> */}
                         
                     </div>
                 </div>

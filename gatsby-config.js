@@ -1,11 +1,11 @@
+require("dotenv").config({
+    path: ".env.${process.env.NODE_ENV}",
+});
+
 const path = require("path");
 const config = require("./brolga-config");
 
 const here = (...p) => path.join(__dirname, ...p);
-
-require("dotenv").config({
-    path: ".env.${process.env.NODE_ENV}",
-});
 
 module.exports = {
     siteMetadata: {
@@ -43,27 +43,27 @@ module.exports = {
                 pixelId: "334753701576651",
             },
         },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `blog`,
-                path: `${__dirname}/content/blog`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `portfolio`,
-                path: `${__dirname}/content/portfolio`,
-            },
-        },
-        {
-            resolve: `gatsby-source-filesystem`,
-            options: {
-                name: `downloads`,
-                path: `${__dirname}/content/downloads`,
-            },
-        },
+        // {
+        //     resolve: `gatsby-source-filesystem`,
+        //     options: {
+        //         name: `blog`,
+        //         path: `${__dirname}/content/blog`,
+        //     },
+        // },
+        // {
+        //     resolve: `gatsby-source-filesystem`,
+        //     options: {
+        //         name: `portfolio`,
+        //         path: `${__dirname}/content/portfolio`,
+        //     },
+        // },
+        // {
+        //     resolve: `gatsby-source-filesystem`,
+        //     options: {
+        //         name: `downloads`,
+        //         path: `${__dirname}/content/downloads`,
+        //     },
+        // },
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -76,21 +76,14 @@ module.exports = {
         "gatsby-transformer-sharp",
 
         {
-            resolve: "gatsby-transformer-remark",
+            resolve: "gatsby-plugin-mdx",
             options: {
-                plugins: [
-                    // 'gatsby-remark-relative-images-v2',
-                    //   'gatsby-remark-relative-images',
-                    // {
-                    //     resolve: "gatsby-remark-relative-images",
-                    //     options: {
-                    //       name: "uploads",
-                    //     },
-                    //   },
+                gatsbyRemarkPlugins: [
                     {
                         resolve: `gatsby-remark-images`,
                         options: {
                             maxWidth: 630,
+                            showCaptions: ['title', 'alt'],
                         },
                     },
                     {
@@ -110,8 +103,17 @@ module.exports = {
                 ],
             },
         },
-
-        "gatsby-plugin-netlify-cms",
+        {
+            resolve: "gatsby-source-strapi",
+            options: {
+                // apiURL: process.env.STRAPI_API_URL,
+                apiURL: 'https://cms.brolgadigital.com.au',
+                accessToken: process.env.STRAPI_API_TOKEN,
+                collectionTypes: ['post', 'category', 'project', 'tag', 'page'],
+                queryLimit: 5000
+            },
+        },
+        // "gatsby-plugin-netlify-cms",
         "gatsby-plugin-sass",
         "gatsby-plugin-react-helmet",
         "gatsby-plugin-sitemap",
