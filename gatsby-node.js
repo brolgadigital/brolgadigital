@@ -75,15 +75,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     });
 
     // BLOG CATEGORY PAGES
-    result.data.allStrapiCategory.edges.forEach(({ node }) => {
-        createPage({
-            path: "blog/" + node.slug,
-            component: categoryPageTemplate,
-            context: {
-                pagePath: node.slug,
-            },
-        });
-    });
+    // result.data.allStrapiCategory.edges.forEach(({ node }) => {
+    //     createPage({
+    //         path: "blog/" + node.slug,
+    //         component: categoryPageTemplate,
+    //         context: {
+    //             pagePath: node.slug,
+    //         },
+    //     });
+    // });
 
     // BLOG TAG PAGES
     // result.data.allStrapiTag.edges.forEach(({ node }) => {
