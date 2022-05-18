@@ -86,16 +86,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     });
 
     // BLOG TAG PAGES
-    result.data.allStrapiTag.edges.forEach(({ node }) => {
-        let slug = node.name.replaceAll(/\//g, '-').replaceAll(' ', '-').toLowerCase()
-        createPage({
-            path: "blog/tag/" + escape(slug),
-            component: categoryPageTemplate,
-            context: {
-                pagePath: node.name,
-            },
-        });
-    });
+    // result.data.allStrapiTag.edges.forEach(({ node }) => {
+    //     let slug = node.name.replaceAll(/\//g, '-').replaceAll(' ', '-').toLowerCase()
+    //     createPage({
+    //         path: "blog/tag/" + escape(slug),
+    //         component: categoryPageTemplate,
+    //         context: {
+    //             pagePath: node.name,
+    //         },
+    //     });
+    // });
 
     // PORTFOLIO PROJECT PAGES
     result.data.allStrapiProject.edges.forEach(({ node }) => {
