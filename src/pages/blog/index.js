@@ -30,8 +30,7 @@ const BlogIndex = ({ data, location }) => {
             <CardWrapper>
                 {posts.map((post) => {
                     return (
-                        <div>
-                            {console.log([post].title)}
+                        <div key={post.id}>
                             <div className='uk-card'>
                                 <div className="uk-card-header">
                                     {/* Thumbnail */}
@@ -40,7 +39,7 @@ const BlogIndex = ({ data, location }) => {
                                     <h3 className="uk-h4">{post.title}</h3>
                                     <small>{post.publishDate}</small>
                                 </div>
-                                <div class="uk-card-footer">
+                                <div className="uk-card-footer">
                                     <Link to={post.categories[0].slug + '/' + post.slug}>Read More</Link>
                                 </div>
                             </div>
@@ -60,6 +59,7 @@ export const pageQuery = graphql`
             nodes {
                 title
                 slug
+                id
                 publishDate
                 categories {
                     slug
