@@ -18,7 +18,7 @@ const webDesign = () => {
             </p>
         </div>
 
-        <CardWrapper>
+        <CardWrapper columns='3'>
             <PriceCard
                 title="Static Websites"
                 single="true"

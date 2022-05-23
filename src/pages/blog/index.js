@@ -22,7 +22,7 @@ const BlogIndex = ({ data, location }) => {
         <>
             <Head title="Blog" />
 
-            <Headers subtitle="Stay Informed" title="Blog Posts" />
+            <Headers subtitle="From Our Studio" title="Blog Posts" />
 
             <CardWrapper>
                 {posts.map((post) => {
