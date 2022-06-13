@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "../components/Head";
-import { Helmet } from "react-helmet";
 import Headers from "../components/Headers";
 import SenderEmail from "../components/Layout/SenderEmail";
+import { InlineWidget } from "react-calendly";
 import { StaticImage } from "gatsby-plugin-image";
 import ContactForm from "../components/email/ContactForm";
 
@@ -31,13 +31,6 @@ export default function contact() {
     return (
         <>
             <Head title="Contact Us" />
-            <Helmet>
-                <script
-                    type="text/javascript"
-                    src="https://assets.calendly.com/assets/external/widget.js"
-                    async
-                ></script>
-            </Helmet>
 
             <Headers subtitle="Reach out and say hello" title="Contact Us" />
 
@@ -77,21 +70,9 @@ export default function contact() {
                 subtitle="Find out what we can do for you"
                 title="Book a Consultation"
             />
-            {/* <div className="uk-margin-medium-bottom bd-calendar">
-                <iframe
-                    src="https://cal.brolgadigital.com.au/brolgadigital/consult"
-                    title="Book a consultation with Brolga Digital"
-                    frameBorder="0"
-                    allowFullScreen
-                ></iframe>
-            </div> */}
 
             <div className="uk-margin-medium-bottom">
-                <div
-                    className="calendly-inline-widget"
-                    data-url="https://calendly.com/brolgadigital/consult"
-                    style={{ minWidth: "320px", height: "630px" }}
-                ></div>
+                <InlineWidget url="https://calendly.com/brolgadigital/consult" />
             </div>
 
             <Headers subtitle="Keep up to date with us" title="Mailing List" />
