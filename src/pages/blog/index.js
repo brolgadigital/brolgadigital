@@ -10,9 +10,9 @@ const BlogIndex = ({ data, location }) => {
     if (posts.length === 0) {
         return (
             <p>
-                No blog posts found. Add markdown posts to "content/blog"
-                (or the directory you specified for the
-                "gatsby-source-filesystem" plugin in gatsby-config.js).
+                No blog posts found. Add markdown posts to "content/blog" (or
+                the directory you specified for the "gatsby-source-filesystem"
+                plugin in gatsby-config.js).
             </p>
         );
     }
@@ -28,7 +28,7 @@ const BlogIndex = ({ data, location }) => {
                 {posts.map((post) => {
                     return (
                         <div key={post.id}>
-                            <div className='uk-card'>
+                            <div className="uk-card">
                                 <div className="uk-card-header">
                                     {/* Thumbnail */}
                                 </div>
@@ -37,11 +37,11 @@ const BlogIndex = ({ data, location }) => {
                                     <small>{post.publishDate}</small>
                                 </div>
                                 <div className="uk-card-footer">
-                                    <Link to={post.categories[0].slug + '/' + post.slug}>Read More</Link>
+                                    <Link to={"/" + post.slug}>Read More</Link>
                                 </div>
                             </div>
                         </div>
-                    )
+                    );
                 })}
             </CardWrapper>
         </>
@@ -52,15 +52,12 @@ export default BlogIndex;
 
 export const pageQuery = graphql`
     query {
-        allStrapiPost(sort: {order: DESC, fields: publishDate}) {
+        allStrapiPost(sort: { order: DESC, fields: publishDate }) {
             nodes {
                 title
                 slug
                 id
                 publishDate
-                categories {
-                    slug
-                }
             }
         }
     }

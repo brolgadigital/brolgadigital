@@ -1,32 +1,26 @@
 const path = require("path");
 const { escape } = require("querystring");
 
-const crypto = require('crypto');
+const crypto = require("crypto");
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
     const { createPage } = actions;
 
     const blogPostTemplate = path.resolve("src/templates/blogTemplate.js");
-    const categoryPageTemplate = path.resolve("src/templates/categoryTemplate.js");
+    const categoryPageTemplate = path.resolve(
+        "src/templates/categoryTemplate.js"
+    );
     const projectPageTemplate = path.resolve(
         "src/templates/projectTemplate.js"
     );
-    const downloadPageTemplate = path.resolve("src/templates/downloadTemplate.js");
+    const downloadPageTemplate = path.resolve(
+        "src/templates/downloadTemplate.js"
+    );
     const pageTemplate = path.resolve("src/templates/pageTemplate.js");
 
     const result = await graphql(`
         {
-            allStrapiPost(sort: {order: DESC, fields: publishDate}) {
-                edges {
-                    node {
-                        slug
-                        categories {
-                            slug
-                        }
-                    }
-                }
-            }
-            allStrapiCategory {
+            allStrapiPost(sort: { order: DESC, fields: publishDate }) {
                 edges {
                     node {
                         slug
@@ -66,36 +60,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     // BLOG POST PAGES
     result.data.allStrapiPost.edges.forEach(({ node }) => {
         createPage({
-            path: "blog/" + node.categories[0].slug + '/' + node.slug ,
+            path: "blog/" + node.slug,
             component: blogPostTemplate,
             context: {
                 pagePath: node.slug,
             },
         });
     });
-
-    // BLOG CATEGORY PAGES
-    // result.data.allStrapiCategory.edges.forEach(({ node }) => {
-    //     createPage({
-    //         path: "blog/" + node.slug,
-    //         component: categoryPageTemplate,
-    //         context: {
-    //             pagePath: node.slug,
-    //         },
-    //     });
-    // });
-
-    // BLOG TAG PAGES
-    // result.data.allStrapiTag.edges.forEach(({ node }) => {
-    //     let slug = node.name.replaceAll(/\//g, '-').replaceAll(' ', '-').toLowerCase()
-    //     createPage({
-    //         path: "blog/tag/" + escape(slug),
-    //         component: categoryPageTemplate,
-    //         context: {
-    //             pagePath: node.name,
-    //         },
-    //     });
-    // });
 
     // PORTFOLIO PROJECT PAGES
     result.data.allStrapiProject.edges.forEach(({ node }) => {
