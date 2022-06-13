@@ -29,7 +29,13 @@ export default function contact() {
 
     return (
         <>
-            <Head title="Contact Us" />
+            <Head title="Contact Us">
+                <script
+                    type="text/javascript"
+                    src="https://assets.calendly.com/assets/external/widget.js"
+                    async
+                ></script>
+            </Head>
 
             <Headers subtitle="Reach out and say hello" title="Contact Us" />
 
@@ -85,11 +91,7 @@ export default function contact() {
                     data-url="https://calendly.com/brolgadigital/consult"
                     style={{ minWidth: "320px", height: "630px" }}
                 ></div>
-                <script
-                    type="text/javascript"
-                    src="https://assets.calendly.com/assets/external/widget.js"
-                    async
-                ></script>
+
                 {/* <!-- Calendly inline widget end --> */}
             </div>
 
