@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "../components/Head";
+import { Helmet } from "react-helmet";
 import Headers from "../components/Headers";
 import SenderEmail from "../components/Layout/SenderEmail";
 import { StaticImage } from "gatsby-plugin-image";
@@ -29,13 +30,14 @@ export default function contact() {
 
     return (
         <>
-            <Head title="Contact Us">
+            <Head title="Contact Us" />
+            <Helmet>
                 <script
                     type="text/javascript"
                     src="https://assets.calendly.com/assets/external/widget.js"
-                    async
+                    // async
                 ></script>
-            </Head>
+            </Helmet>
 
             <Headers subtitle="Reach out and say hello" title="Contact Us" />
 
@@ -85,14 +87,11 @@ export default function contact() {
             </div> */}
 
             <div className="uk-margin-medium-bottom">
-                {/* <!-- Calendly inline widget begin --> */}
                 <div
                     className="calendly-inline-widget"
                     data-url="https://calendly.com/brolgadigital/consult"
                     style={{ minWidth: "320px", height: "630px" }}
                 ></div>
-
-                {/* <!-- Calendly inline widget end --> */}
             </div>
 
             <Headers subtitle="Keep up to date with us" title="Mailing List" />
