@@ -35,7 +35,7 @@ export default function contact() {
                 <script
                     type="text/javascript"
                     src="https://assets.calendly.com/assets/external/widget.js"
-                    // async
+                    async
                 ></script>
             </Helmet>
 
