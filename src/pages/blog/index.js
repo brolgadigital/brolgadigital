@@ -37,7 +37,9 @@ const BlogIndex = ({ data, location }) => {
                                     <small>{post.publishDate}</small>
                                 </div>
                                 <div className="uk-card-footer">
-                                    <Link to={"/" + post.slug}>Read More</Link>
+                                    <Link to={"/blog/" + post.slug}>
+                                        Read More
+                                    </Link>
                                 </div>
                             </div>
                         </div>
